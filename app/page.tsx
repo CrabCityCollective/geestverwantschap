@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { getBooks } from '../lib/boekenclub';
 import type { Beoordeling } from '../lib/types';
 
@@ -19,6 +20,9 @@ export default function HomePage() {
     <main className="container">
       <h1>Geestverwantschap</h1>
       <p>Administratie van de boekenclub: welke boeken zijn gelezen en wat vond iedereen ervan.</p>
+      <p>
+        <Link href="/analyse">Bekijk de analyse van alle boeken &rarr;</Link>
+      </p>
 
       {boeken.length === 0 ? (
         <p>Er zijn nog geen boeken toegevoegd.</p>

@@ -22,3 +22,8 @@ export interface BoekenclubData {
   genres: string[];
   boeken: Boek[];
 }
+
+export interface Telling {
+  label: string;
+  aantal: number;
+}
