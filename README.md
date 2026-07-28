@@ -25,6 +25,7 @@ De boeken staan in [`data/books.json`](data/books.json). Dit bestand bevat:
   - `genre` (moet voorkomen in `genres`)
   - `landSetting`, `tijdSetting` (land en tijd waarin het boek zich afspeelt)
   - `jaartalEersteDruk`
+  - `datumGelezen` (optioneel, datum waarop het boek gelezen is, bv. `2024-05-01`)
   - `beoordelingen`: per lid van de boekenclub een object met `sterren` (0 t/m 5) en `quote`
 
 ## Data uitlezen en toevoegen

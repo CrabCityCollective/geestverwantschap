@@ -13,6 +13,7 @@ export interface Boek {
   landSetting?: string;
   tijdSetting?: string;
   jaartalEersteDruk: number;
+  datumGelezen?: string;
   beoordelingen: Record<string, Beoordeling>;
 }
 
