@@ -33,6 +33,7 @@ export default function HomePage() {
                   {boek.auteur}
                   {boek.genre ? <> &middot; {boek.genre}</> : null} &middot; {boek.jaartalEersteDruk}
                 </p>
+                {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
                 <p className="gemiddelde">
                   {score !== null ? `Gemiddelde score: ${score} / 5` : 'Nog geen beoordelingen'}
                 </p>
