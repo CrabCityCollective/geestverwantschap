@@ -10,21 +10,22 @@ vond ieder lid ervan. Het is een Next.js-app (App Router) met TypeScript voor de
 
 ## Structuur
 
-- `data/books.json` - de brondata: leden, toegestane genres en de lijst met boeken.
-- `lib/boekenclub.ts` - module met de logica om boeken te lezen/toe te voegen en te valideren
-  (`readData`, `writeData`, `getBooks`, `addBook`, `validateBook`). Wordt zowel door de tests
-  als door de Next.js-app gebruikt. Gebruikt intern nog `require`/`module.exports` (CommonJS),
-  maar is getypeerd TypeScript; consumers importeren rechtstreeks vanuit dit bestand, er is
-  geen los `.d.ts`-bestand meer nodig.
+- `data/books.json` - de brondata: leden, toegestane genres en de lijst met boeken. Nieuwe
+  boeken worden rechtstreeks in dit bestand toegevoegd via git, niet via de app of `lib/`.
+- `lib/boekenclub.ts` - module met de logica om boeken te lezen (`readData`, `getBooks`).
+  Bevat bewust geen functies meer om boeken op te slaan of toe te voegen (`writeData`,
+  `addBook`, `validateBook` zijn verwijderd) - boeken worden samen via git aan
+  `data/books.json` toegevoegd. Wordt zowel door de tests als door de Next.js-app gebruikt.
+  Gebruikt intern nog `require`/`module.exports` (CommonJS), maar is getypeerd TypeScript;
+  consumers importeren rechtstreeks vanuit dit bestand, er is geen los `.d.ts`-bestand meer
+  nodig.
 - `lib/types.ts` - gedeelde TypeScript-types (`Boek`, `Beoordeling`, `BoekenclubData`) die door
   `lib/boekenclub.ts` en de `app/`-pagina's gebruikt worden.
 - `test/` - tests voor `lib/boekenclub.ts`, draaien met de ingebouwde Node.js testrunner
   (`npm test`, geen dependencies nodig).
 - `app/` - de Next.js App Router pagina's, geschreven in TypeScript (`.tsx`). De app is
   alleen-lezen: ze toont het overzicht van boeken (`app/page.tsx`) via `getBooks`, maar heeft
-  geen pagina, formulier of Server Action meer om boeken toe te voegen of te wijzigen.
-  `addBook` blijft wel beschikbaar in `lib/boekenclub.ts` (en wordt getest), maar wordt bewust
-  niet meer vanuit de `app/`-laag aangeroepen.
+  geen pagina, formulier of Server Action om boeken toe te voegen of te wijzigen.
 - `tsconfig.json` / `next-env.d.ts` - standaard Next.js TypeScript-configuratie.
 
 ## Conventies
@@ -43,7 +44,9 @@ vond ieder lid ervan. Het is een Next.js-app (App Router) met TypeScript voor de
   en Server Actions rechtstreeks met `lib/boekenclub.ts` kunnen praten.
 - De `app/`-laag mag geen manier bieden om boeken toe te voegen of te wijzigen (alleen
   uitlezen via `getBooks`/`readData`). Voeg geen nieuwe route, formulier of Server Action toe
-  die `addBook`/`writeData` vanuit `app/` aanroept.
+  om boeken toe te voegen of te wijzigen, en voeg ook geen `writeData`/`addBook`/`validateBook`
+  meer toe aan `lib/boekenclub.ts` - nieuwe boeken worden samen via git aan
+  `data/books.json` toegevoegd.
 
 ## Bekende beperking bij geautomatiseerde runs
 
