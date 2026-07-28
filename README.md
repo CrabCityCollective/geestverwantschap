@@ -1,7 +1,7 @@
 # geestverwantschap
 
 Administratie van de boekenclub: welke boeken zijn gelezen en wat vond iedereen ervan.
-Gebouwd als Next.js-app (App Router).
+Gebouwd als Next.js-app (App Router) met TypeScript.
 
 ## App draaien
 

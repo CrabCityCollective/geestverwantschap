@@ -1,31 +1,34 @@
 import { redirect } from 'next/navigation';
 import { readData, addBook } from '../../../lib/boekenclub';
+import type { Beoordeling, Boek } from '../../../lib/types';
 
 export const dynamic = 'force-dynamic';
 
-async function nieuwBoekToevoegen(formData) {
+async function nieuwBoekToevoegen(formData: FormData) {
   'use server';
 
   const data = readData();
-  const beoordelingen = {};
+  const beoordelingen: Record<string, Beoordeling> = {};
   for (const lid of data.leden) {
     beoordelingen[lid] = {
       sterren: Number(formData.get(`sterren-${lid}`)),
-      quote: formData.get(`quote-${lid}`) || '',
+      quote: String(formData.get(`quote-${lid}`) || ''),
     };
   }
 
-  addBook({
-    titel: formData.get('titel'),
-    auteur: formData.get('auteur'),
-    landVanHerkomstAuteur: formData.get('landVanHerkomstAuteur'),
-    geslachtAuteur: formData.get('geslachtAuteur'),
-    genre: formData.get('genre'),
-    landSetting: formData.get('landSetting'),
-    tijdSetting: formData.get('tijdSetting'),
+  const boek: Boek = {
+    titel: String(formData.get('titel')),
+    auteur: String(formData.get('auteur')),
+    landVanHerkomstAuteur: String(formData.get('landVanHerkomstAuteur')),
+    geslachtAuteur: String(formData.get('geslachtAuteur')),
+    genre: String(formData.get('genre')),
+    landSetting: String(formData.get('landSetting')),
+    tijdSetting: String(formData.get('tijdSetting')),
     jaartalEersteDruk: Number(formData.get('jaartalEersteDruk')),
     beoordelingen,
-  });
+  };
+
+  addBook(boek);
 
   redirect('/');
 }
