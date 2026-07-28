@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { getBooks } from '../lib/boekenclub';
+import type { Beoordeling } from '../lib/types';
 
 export const dynamic = 'force-dynamic';
 
-function gemiddelde(beoordelingen) {
+function gemiddelde(beoordelingen: Record<string, Beoordeling>) {
   const sterren = Object.values(beoordelingen).map((beoordeling) => beoordeling.sterren);
   const totaal = sterren.reduce((a, b) => a + b, 0);
   return (totaal / sterren.length).toFixed(1);

@@ -1,0 +1,22 @@
+export interface Beoordeling {
+  sterren: number;
+  quote: string;
+}
+
+export interface Boek {
+  titel: string;
+  auteur: string;
+  landVanHerkomstAuteur: string;
+  geslachtAuteur: string;
+  genre: string;
+  landSetting: string;
+  tijdSetting: string;
+  jaartalEersteDruk: number;
+  beoordelingen: Record<string, Beoordeling>;
+}
+
+export interface BoekenclubData {
+  leden: string[];
+  genres: string[];
+  boeken: Boek[];
+}
