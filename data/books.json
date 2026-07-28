@@ -13,5 +13,519 @@
     "literaire fictie",
     "anders"
   ],
-  "boeken": []
+  "boeken": [
+    {
+      "titel": "Een tijd als nooit tevoren",
+      "auteur": "Nadine Gordimer",
+      "landVanHerkomstAuteur": "Zuid-Afrika",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Marije",
+      "jaartalEersteDruk": 2012,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Het Boek Ont",
+      "auteur": "Anton Valens",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2012,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De perfecte stilte",
+      "auteur": "Thomas Verbogt",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Marije",
+      "jaartalEersteDruk": 2011,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Het tumult van de tijd",
+      "auteur": "Julian Barnes",
+      "landVanHerkomstAuteur": "Verenigd Koninkrijk",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2016,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Simpele story's",
+      "auteur": "Ingo Schulze",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 1998,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De beesten",
+      "auteur": "Gijs Wilbrik",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2022,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Oorlog en terpentijn",
+      "auteur": "Stefan Hertmans",
+      "landVanHerkomstAuteur": "België",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 2013,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Albrecht en wij",
+      "auteur": "Lodewijk van Oord",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2014,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Aleksandra",
+      "auteur": "Lisa Weeda",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 2021,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Gloed",
+      "auteur": "Sandor Marai",
+      "landVanHerkomstAuteur": "Hongarije",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 1942,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Judas",
+      "auteur": "Amos Oz",
+      "landVanHerkomstAuteur": "Israël",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 2014,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Paarse hibiscus",
+      "auteur": "Chimamanda Ngozi Adichie",
+      "landVanHerkomstAuteur": "Nigeria",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2003,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Alles wat er was",
+      "auteur": "Hanna Bervoets",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2013,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Herkomst",
+      "auteur": "Sasa Stanisic",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2019,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Alles wat is",
+      "auteur": "James Salter",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 2013,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Het verhaal van de dienstmaagd",
+      "auteur": "Margaret Atwood",
+      "landVanHerkomstAuteur": "Canada",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 1985,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De man die de taal van slangen sprak",
+      "auteur": "Andrus Kivirahk",
+      "landVanHerkomstAuteur": "Estland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2007,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De dood in Taormina",
+      "auteur": "Arnon Grunberg",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2021,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De macht",
+      "auteur": "Naomi Alderman",
+      "landVanHerkomstAuteur": "Verenigd Koninkrijk",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 2016,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Achter de deur",
+      "auteur": "Giorgio Bassani",
+      "landVanHerkomstAuteur": "Italië",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 1964,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Kom hier dat ik u kus",
+      "auteur": "Griet op de Beek",
+      "landVanHerkomstAuteur": "België",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 2014,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De gelukkigen",
+      "auteur": "Kristine Bilkau",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2015,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Kosmikomische verhalen",
+      "auteur": "Italo Calvino",
+      "landVanHerkomstAuteur": "Italië",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 1965,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Open stad",
+      "auteur": "Teju Cole",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2011,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De pest",
+      "auteur": "Albert Camus",
+      "landVanHerkomstAuteur": "Frankrijk",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 1947,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De acht bergen",
+      "auteur": "Paolo Cognetti",
+      "landVanHerkomstAuteur": "Italië",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2017,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Fietsmod",
+      "auteur": "Tobi Dahmen",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 2018,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De terugkeer van de wespendief",
+      "auteur": "Aimee de Jongh",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 2017,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Grip",
+      "auteur": "Stephan Enter",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2011,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Een handvol sneeuw",
+      "auteur": "Jenny Erpenbeck",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2012,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De uren die we deelden",
+      "auteur": "Yi-Young Gong",
+      "landVanHerkomstAuteur": "Zuid-Korea",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2005,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Onderworpen",
+      "auteur": "Michel Houellebecq",
+      "landVanHerkomstAuteur": "Frankrijk",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 2015,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Rimini",
+      "auteur": "Sonja Heiss",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2017,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De zonderlinge avonturen van het geniale bommenmeisje",
+      "auteur": "Jonas Jonasson",
+      "landVanHerkomstAuteur": "Zweden",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2009,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Gestolen leven",
+      "auteur": "Adam Johnson",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2012,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De gewichtlozen",
+      "auteur": "Valeria Luiselli",
+      "landVanHerkomstAuteur": "Mexico",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 2014,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De onervarenen",
+      "auteur": "Joke van Leeuwen",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 2015,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De geestverwantschap",
+      "auteur": "David Mitchell",
+      "landVanHerkomstAuteur": "Verenigd Koninkrijk",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 1999,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Buurtsupermens",
+      "auteur": "Sayaka Murata",
+      "landVanHerkomstAuteur": "Japan",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2016,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Huis van volmaakte eenzaamheid",
+      "auteur": "Edna O'Brien",
+      "landVanHerkomstAuteur": "Ierland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 1995,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De geheugenpolitie",
+      "auteur": "Yoko Ogawa",
+      "landVanHerkomstAuteur": "Japan",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 1994,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Normale mensen",
+      "auteur": "Sally Rooney",
+      "landVanHerkomstAuteur": "Ierland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2019,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De hemel is altijd paars",
+      "auteur": "Sholeh Rezazadeh",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 2021,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "NW",
+      "auteur": "Zadie Smith",
+      "landVanHerkomstAuteur": "Verenigd Koninkrijk",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 2012,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De hydrograaf",
+      "auteur": "Allard Schröder",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 2002,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Shuggie Bain",
+      "auteur": "Douglas Stuart",
+      "landVanHerkomstAuteur": "Verenigd Koninkrijk",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jet",
+      "jaartalEersteDruk": 2020,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Vaders en zonen",
+      "auteur": "Ivan Toergenjev",
+      "landVanHerkomstAuteur": "Rusland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 1862,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Slachthuis Vijf",
+      "auteur": "Kurt Vonnegut",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 1969,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De zomer hou je ook niet tegen",
+      "auteur": "Dimitri Verhulst",
+      "landVanHerkomstAuteur": "België",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "n.v.t.",
+      "jaartalEersteDruk": 2015,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Stoner",
+      "auteur": "John Williams",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 1965,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De consequenties",
+      "auteur": "Niña Weijers",
+      "landVanHerkomstAuteur": "Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 2014,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Het einde van de eenzaamheid",
+      "auteur": "Benedict Wells",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2016,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Hard land",
+      "auteur": "Benedict Wells",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2021,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Waar is onze moeder",
+      "auteur": "Kyung-sook Shin",
+      "landVanHerkomstAuteur": "Zuid-Korea",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Min Ae",
+      "jaartalEersteDruk": 2008,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Middaguur",
+      "auteur": "Dörte Hansen",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2018,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "Waar de rivierkreeften zingen",
+      "auteur": "Delia Owens",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2018,
+      "beoordelingen": {}
+    },
+    {
+      "titel": "De Parade",
+      "auteur": "Dave Eggers",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2019,
+      "beoordelingen": {}
+    }
+  ]
 }

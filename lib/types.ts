@@ -8,9 +8,10 @@ export interface Boek {
   auteur: string;
   landVanHerkomstAuteur: string;
   geslachtAuteur: string;
-  genre: string;
-  landSetting: string;
-  tijdSetting: string;
+  uitgekozenDoor: string;
+  genre?: string;
+  landSetting?: string;
+  tijdSetting?: string;
   jaartalEersteDruk: number;
   beoordelingen: Record<string, Beoordeling>;
 }

@@ -5,6 +5,9 @@ export const dynamic = 'force-dynamic';
 
 function gemiddelde(beoordelingen: Record<string, Beoordeling>) {
   const sterren = Object.values(beoordelingen).map((beoordeling) => beoordeling.sterren);
+  if (sterren.length === 0) {
+    return null;
+  }
   const totaal = sterren.reduce((a, b) => a + b, 0);
   return (totaal / sterren.length).toFixed(1);
 }
@@ -21,15 +24,21 @@ export default function HomePage() {
         <p>Er zijn nog geen boeken toegevoegd.</p>
       ) : (
         <ul className="boekenlijst">
-          {boeken.map((boek, index) => (
-            <li key={`${boek.titel}-${index}`} className="boek">
-              <h2>{boek.titel}</h2>
-              <p className="meta">
-                {boek.auteur} &middot; {boek.genre} &middot; {boek.jaartalEersteDruk}
-              </p>
-              <p className="gemiddelde">Gemiddelde score: {gemiddelde(boek.beoordelingen)} / 5</p>
-            </li>
-          ))}
+          {boeken.map((boek, index) => {
+            const score = gemiddelde(boek.beoordelingen);
+            return (
+              <li key={`${boek.titel}-${index}`} className="boek">
+                <h2>{boek.titel}</h2>
+                <p className="meta">
+                  {boek.auteur}
+                  {boek.genre ? <> &middot; {boek.genre}</> : null} &middot; {boek.jaartalEersteDruk}
+                </p>
+                <p className="gemiddelde">
+                  {score !== null ? `Gemiddelde score: ${score} / 5` : 'Nog geen beoordelingen'}
+                </p>
+              </li>
+            );
+          })}
         </ul>
       )}
     </main>
