@@ -2,11 +2,13 @@
   "name": "geestverwantschap",
   "version": "0.1.0",
   "private": true,
+  "description": "Boekenclub administratie: Next.js app die de gelezen boeken en beoordelingen uit data/books.json uitleest",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "node --test"
   },
   "dependencies": {
     "next": "^15.1.0",
