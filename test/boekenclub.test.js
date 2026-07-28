@@ -12,7 +12,7 @@ const {
   getBooks,
   addBook,
   validateBook,
-} = require('../lib/boekenclub');
+} = require('../lib/boekenclub.ts');
 
 function makeTempDataFile() {
   const data = readData(DATA_PATH);
