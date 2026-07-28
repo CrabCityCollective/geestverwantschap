@@ -1,11 +1,19 @@
 {
   "name": "geestverwantschap",
   "version": "1.0.0",
+  "private": true,
   "description": "Boekenclub administratie: opslaan en uitlezen van gelezen boeken en beoordelingen",
-  "main": "lib/boekenclub.js",
-  "type": "commonjs",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "test": "node --test"
+  },
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "license": "MIT"
 }

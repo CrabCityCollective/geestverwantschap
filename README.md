@@ -1,6 +1,17 @@
 # geestverwantschap
 
 Administratie van de boekenclub: welke boeken zijn gelezen en wat vond iedereen ervan.
+Gebouwd als Next.js-app (App Router).
+
+## App draaien
+
+```bash
+npm install
+npm run dev
+```
+
+De app is dan te bereiken op `http://localhost:3000`. De homepage toont het overzicht van
+gelezen boeken; via "Nieuw boek toevoegen" kun je een boek met beoordelingen toevoegen.
 
 ## Data
 
