@@ -11,7 +11,8 @@ npm run dev
 ```
 
 De app is dan te bereiken op `http://localhost:3000`. De homepage toont het overzicht van
-gelezen boeken; via "Nieuw boek toevoegen" kun je een boek met beoordelingen toevoegen.
+gelezen boeken en beoordelingen. De app is alleen-lezen: er is geen pagina of formulier om
+boeken toe te voegen of te wijzigen.
 
 ## Data
 
@@ -28,10 +29,12 @@ De boeken staan in [`data/books.json`](data/books.json). Dit bestand bevat:
 
 ## Data opslaan en uitlezen
 
-Gebruik de module `lib/boekenclub.js` om boeken te lezen en toe te voegen:
+De app zelf leest boeken alleen uit (via `getBooks`) en biedt geen manier om boeken toe te
+voegen. Voor scripts of eenmalig databeheer buiten de app om kan de module
+`lib/boekenclub.ts` nog rechtstreeks gebruikt worden om boeken te lezen en toe te voegen:
 
 ```js
-const { getBooks, addBook } = require('./lib/boekenclub');
+const { getBooks, addBook } = require('./lib/boekenclub.ts');
 
 // Uitlezen
 const boeken = getBooks();

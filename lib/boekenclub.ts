@@ -1,11 +1,13 @@
 'use strict';
 
+import type { Boek, BoekenclubData } from './types';
+
 const fs = require('fs');
 const path = require('path');
 
-const DATA_PATH = path.join(__dirname, '..', 'data', 'books.json');
+const DATA_PATH: string = path.join(__dirname, '..', 'data', 'books.json');
 
-const REQUIRED_STRING_FIELDS = [
+const REQUIRED_STRING_FIELDS: Array<keyof Boek> = [
   'titel',
   'auteur',
   'landVanHerkomstAuteur',
@@ -15,24 +17,24 @@ const REQUIRED_STRING_FIELDS = [
   'tijdSetting',
 ];
 
-function readData(filePath = DATA_PATH) {
+function readData(filePath: string = DATA_PATH): BoekenclubData {
   const raw = fs.readFileSync(filePath, 'utf8');
   return JSON.parse(raw);
 }
 
-function writeData(data, filePath = DATA_PATH) {
+function writeData(data: BoekenclubData, filePath: string = DATA_PATH): void {
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-function getBooks(filePath = DATA_PATH) {
+function getBooks(filePath: string = DATA_PATH): Boek[] {
   return readData(filePath).boeken;
 }
 
-function validateBook(book, data) {
-  const errors = [];
+function validateBook(book: Boek, data: BoekenclubData): string[] {
+  const errors: string[] = [];
 
   for (const field of REQUIRED_STRING_FIELDS) {
-    if (typeof book[field] !== 'string' || book[field].trim() === '') {
+    if (typeof book[field] !== 'string' || (book[field] as string).trim() === '') {
       errors.push(`Veld "${field}" is verplicht en moet een niet-lege string zijn.`);
     }
   }
@@ -70,7 +72,7 @@ function validateBook(book, data) {
   return errors;
 }
 
-function addBook(book, filePath = DATA_PATH) {
+function addBook(book: Boek, filePath: string = DATA_PATH): Boek[] {
   const data = readData(filePath);
   const errors = validateBook(book, data);
   if (errors.length > 0) {
