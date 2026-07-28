@@ -1,0 +1,17 @@
+{
+  "leden": ["Chris", "Esther", "Jelte", "Ruben", "Min Ae", "Jet", "Robbie"],
+  "genres": [
+    "poezie",
+    "magisch realisme",
+    "detective",
+    "thriller",
+    "sciencefiction",
+    "fantasy",
+    "historisch",
+    "familieroman",
+    "distopie",
+    "literaire fictie",
+    "anders"
+  ],
+  "boeken": []
+}

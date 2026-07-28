@@ -1,0 +1,11 @@
+{
+  "name": "geestverwantschap",
+  "version": "1.0.0",
+  "description": "Boekenclub administratie: opslaan en uitlezen van gelezen boeken en beoordelingen",
+  "main": "lib/boekenclub.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
