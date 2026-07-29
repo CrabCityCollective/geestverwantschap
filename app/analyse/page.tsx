@@ -65,25 +65,27 @@ export default function AnalysePagina() {
   const boeken = data.boeken;
 
   return (
-    <main className="container container-breed">
-      <Nav actief="analytics" />
-      <h1>Analyse van de boeken</h1>
+    <>
+      <Nav actief="analytics" breed />
+      <main className="container container-breed">
+        <h1>Analyse van de boeken</h1>
 
-      <AnalyseSectie titel="Alle boeken" boeken={boeken} />
+        <AnalyseSectie titel="Alle boeken" boeken={boeken} />
 
-      {data.leden.map((lid: string) => (
-        <section key={lid} className="lid-sectie">
-          <h2>
-            <LidIcoon lid={lid} size={40} />
-            {lid}
-          </h2>
-          <LidStatistieken lid={lid} boeken={boeken} />
-          <AnalyseSectie
-            titel={`Uitgekozen door ${lid}`}
-            boeken={boeken.filter((boek: Boek) => boek.uitgekozenDoor === lid)}
-          />
-        </section>
-      ))}
-    </main>
+        {data.leden.map((lid: string) => (
+          <section key={lid} className="lid-sectie">
+            <h2>
+              <LidIcoon lid={lid} size={40} />
+              {lid}
+            </h2>
+            <LidStatistieken lid={lid} boeken={boeken} />
+            <AnalyseSectie
+              titel={`Uitgekozen door ${lid}`}
+              boeken={boeken.filter((boek: Boek) => boek.uitgekozenDoor === lid)}
+            />
+          </section>
+        ))}
+      </main>
+    </>
   );
 }

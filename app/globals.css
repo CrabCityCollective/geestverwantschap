@@ -63,7 +63,7 @@ a:focus-visible {
 
 .container {
   max-width: 720px;
-  margin: 2.5rem auto;
+  margin: 0 auto 2.5rem;
   padding: 2.5rem 2.5rem 3rem;
   background: linear-gradient(180deg, var(--perkament) 0%, var(--perkament-schaduw) 100%);
   border: 6px solid var(--inkt);
@@ -82,15 +82,24 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 5;
-  margin: 0 -2.5rem 1.5rem;
-  padding: 0.6rem 2.5rem;
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+  padding: 0.6rem 1.5rem;
   background: linear-gradient(180deg, var(--perkament) 0%, var(--perkament-schaduw) 100%);
-  border-bottom: 2px solid var(--goud-diep);
+  border: 3px solid var(--inkt);
+  border-radius: 10px;
+  box-shadow:
+    inset 0 0 0 2px var(--goud),
+    0 6px 16px rgba(0, 0, 0, 0.35);
   display: flex;
   gap: 0.6rem;
   font-variant: small-caps;
   letter-spacing: 0.04em;
   font-weight: 600;
+}
+
+.site-nav-breed {
+  max-width: 1200px;
 }
 
 .site-nav [aria-current='page'] {
