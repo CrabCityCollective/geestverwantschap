@@ -27,12 +27,9 @@ function LandIcoon({ land }: { land: string }) {
   return (
     <span className="kenmerk-icoon" title={`Land van herkomst auteur: ${land}`}>
       <svg viewBox="0 0 24 24" width="100%" height="100%">
-        <g fill="none" stroke="#e8c766" strokeWidth="1.6">
-          <circle cx="12" cy="12" r="9" />
-          <ellipse cx="12" cy="12" rx="4" ry="9" />
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <path d="M4.5 7.5 C7 9 17 9 19.5 7.5" />
-          <path d="M4.5 16.5 C7 15 17 15 19.5 16.5" />
+        <g fill="none" stroke="#e8c766" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="5" y1="21" x2="5" y2="4" />
+          <path d="M5 15s1-1 4-1 5 2 8 2 4-1 4-1V4s-1 1-4 1-5-2-8-2-4 1-4 1z" />
         </g>
       </svg>
     </span>
