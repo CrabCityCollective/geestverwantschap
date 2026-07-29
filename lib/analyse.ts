@@ -30,8 +30,66 @@ function telTijdvakken(boeken: Boek[]): Telling[] {
   );
 }
 
+function gemiddeldeSterren(boek: Boek): number | null {
+  const sterren = Object.values(boek.beoordelingen).map((beoordeling) => beoordeling.sterren);
+  if (sterren.length === 0) {
+    return null;
+  }
+  return sterren.reduce((a, b) => a + b, 0) / sterren.length;
+}
+
+function sorteerOpGemiddeldeSterren(boeken: Boek[]): Boek[] {
+  return [...boeken].sort((a, b) => {
+    const gemiddeldeA = gemiddeldeSterren(a);
+    const gemiddeldeB = gemiddeldeSterren(b);
+    if (gemiddeldeA === null && gemiddeldeB === null) {
+      return 0;
+    }
+    if (gemiddeldeA === null) {
+      return 1;
+    }
+    if (gemiddeldeB === null) {
+      return -1;
+    }
+    return gemiddeldeB - gemiddeldeA;
+  });
+}
+
+function gemiddeldeSterrenGegeven(boeken: Boek[], lid: string): number | null {
+  const sterren = boeken
+    .map((boek) => boek.beoordelingen[lid]?.sterren)
+    .filter((sterren): sterren is number => typeof sterren === 'number');
+  if (sterren.length === 0) {
+    return null;
+  }
+  return sterren.reduce((a, b) => a + b, 0) / sterren.length;
+}
+
+function besteBoekVoorLid(boeken: Boek[], lid: string): Boek | null {
+  let beste: Boek | null = null;
+  let besteSterren = -Infinity;
+  for (const boek of boeken) {
+    const sterren = boek.beoordelingen[lid]?.sterren;
+    if (sterren === undefined) {
+      continue;
+    }
+    const isBeter =
+      sterren > besteSterren ||
+      (sterren === besteSterren && (boek.datumGelezen ?? '') > (beste?.datumGelezen ?? ''));
+    if (isBeter) {
+      beste = boek;
+      besteSterren = sterren;
+    }
+  }
+  return beste;
+}
+
 module.exports = {
   telLandenVanAuteurs,
   telGeslachtVanAuteurs,
   telTijdvakken,
+  gemiddeldeSterren,
+  sorteerOpGemiddeldeSterren,
+  gemiddeldeSterrenGegeven,
+  besteBoekVoorLid,
 };

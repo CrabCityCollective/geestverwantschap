@@ -74,6 +74,16 @@ body {
   font-weight: 600;
 }
 
+.lid-sectie {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--raster);
+}
+
+.lid-statistieken {
+  color: var(--tekst-secundair);
+}
+
 .analyse-sectie {
   margin-top: 2.5rem;
 }
