@@ -86,6 +86,19 @@ a:focus-visible {
   padding: 0.6rem 2.5rem;
   background: linear-gradient(180deg, var(--perkament) 0%, var(--perkament-schaduw) 100%);
   border-bottom: 2px solid var(--goud-diep);
+  display: flex;
+  gap: 0.6rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.site-nav [aria-current='page'] {
+  color: var(--tekst-muted);
+}
+
+.site-nav-scheiding {
+  color: var(--tekst-muted);
 }
 
 h1 {
@@ -94,6 +107,15 @@ h1 {
   margin: 0 0 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 3px double var(--goud-diep);
+}
+
+.titel-boekenclub {
+  font-size: 1.05rem;
+  color: var(--tekst-secundair);
+}
+
+.titel-naam {
+  font-size: 1.5rem;
 }
 
 h1::before,
@@ -141,6 +163,34 @@ h1::after {
   background: linear-gradient(180deg, #3a2510 0%, #1c1006 100%);
   border-bottom: 2px solid var(--goud-diep);
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.boek-titel-tekst {
+  min-width: 0;
+}
+
+.boek-titel-iconen {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+.kenmerk-icoon,
+.lid-icoon {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+}
+
+.lid-icoon {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px var(--goud-diep);
 }
 
 .boek p {
@@ -189,9 +239,12 @@ h1::after {
 }
 
 .gemiddelde {
-  display: inline-block;
-  margin: 0.85rem 1.1rem 1.25rem;
-  padding: 0.25rem 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  list-style: none;
+  margin: 0.85rem 1.1rem 1.25rem 1.75rem;
+  padding: 0.25rem 0.7rem;
   border-radius: 999px;
   border: 2px solid var(--inkt);
   background: linear-gradient(180deg, #2c1c0c, #140d06);
@@ -202,27 +255,61 @@ h1::after {
   box-shadow: inset 0 0 0 1px var(--goud-diep);
 }
 
-.boek-details {
-  margin: 0 1.1rem 1.1rem;
+.boek p.gemiddelde {
+  margin: 0.85rem 1.1rem 1.25rem 1.75rem;
+  padding: 0.25rem 0.7rem;
 }
 
-.boek-details summary {
+.gemiddelde::-webkit-details-marker {
+  display: none;
+}
+
+summary.gemiddelde {
   cursor: pointer;
-  font-weight: 700;
-  font-variant: small-caps;
-  letter-spacing: 0.03em;
-  color: var(--tekst-secundair);
 }
 
-.boek-details summary:hover,
-.boek-details summary:focus-visible {
-  color: var(--tekst);
+summary.gemiddelde:hover,
+summary.gemiddelde:focus-visible {
+  color: #fff;
+  border-color: var(--goud);
+}
+
+.boek-details {
+  margin: 0 0 1.1rem;
+}
+
+.sterren {
+  position: relative;
+  display: inline-block;
+}
+
+.sterren-leeg {
+  color: rgba(236, 217, 168, 0.25);
+}
+
+.sterren-vol {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--goud-licht);
+}
+
+.beoordelingen-lijst .sterren-leeg,
+.lid-statistieken .sterren-leeg {
+  color: rgba(23, 14, 5, 0.25);
+}
+
+.beoordelingen-lijst .sterren-vol,
+.lid-statistieken .sterren-vol {
+  color: var(--goud);
 }
 
 .beoordelingen-lijst {
   list-style: none;
   margin: 0.75rem 0 0;
-  padding: 0;
+  padding: 0 1.1rem;
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -237,6 +324,12 @@ h1::after {
 .quote {
   font-style: italic;
   color: var(--tekst-secundair);
+}
+
+.lid-sectie h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 .lid-sectie {

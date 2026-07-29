@@ -1,9 +1,11 @@
-import Link from 'next/link';
 import * as boekenclub from '../../lib/boekenclub';
 import * as analyse from '../../lib/analyse';
 import type { Boek, BoekenclubData, Telling } from '../../lib/types';
 import Balkdiagram from '../components/Balkdiagram';
 import Verdelingsbalk from '../components/Verdelingsbalk';
+import Nav from '../components/Nav';
+import Sterren from '../components/Sterren';
+import LidIcoon from '../components/LidIcoon';
 
 const { readData } = boekenclub as unknown as { readData: (filePath?: string) => BoekenclubData };
 const { telLandenVanAuteurs, telGeslachtVanAuteurs, telTijdvakken, gemiddeldeSterrenGegeven, besteBoekVoorLid } =
@@ -41,14 +43,16 @@ function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
   return (
     <p className="lid-statistieken">
       {gemiddelde !== null ? (
-        <>Gemiddeld aantal sterren gegeven: {gemiddelde.toFixed(1)} / 5</>
+        <>
+          Gemiddeld aantal sterren gegeven: <Sterren score={gemiddelde} />
+        </>
       ) : (
         <>Nog geen sterren gegeven</>
       )}
       {besteBoek ? (
         <>
           {' '}
-          &middot; Best beoordeeld: {besteBoek.titel} ({besteBoek.beoordelingen[lid].sterren} / 5)
+          &middot; Best beoordeeld: {besteBoek.titel} (<Sterren score={besteBoek.beoordelingen[lid].sterren} />)
         </>
       ) : null}
     </p>
@@ -61,20 +65,17 @@ export default function AnalysePagina() {
 
   return (
     <main className="container container-breed">
-      <nav className="site-nav">
-        <Link href="/">&larr; Terug naar boekenlijst</Link>
-      </nav>
+      <Nav actief="analytics" />
       <h1>Analyse van de boeken</h1>
-      <p>
-        Een overzicht van alle {boeken.length} gelezen boeken, en per boekenclublid van de boeken die diegene heeft
-        uitgekozen.
-      </p>
 
       <AnalyseSectie titel="Alle boeken" boeken={boeken} />
 
       {data.leden.map((lid: string) => (
         <section key={lid} className="lid-sectie">
-          <h2>{lid}</h2>
+          <h2>
+            <LidIcoon lid={lid} size={40} />
+            {lid}
+          </h2>
           <LidStatistieken lid={lid} boeken={boeken} />
           <AnalyseSectie
             titel={`Uitgekozen door ${lid}`}
