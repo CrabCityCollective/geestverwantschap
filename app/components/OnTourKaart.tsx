@@ -74,6 +74,25 @@ export default function OnTourKaart({ locatieGroepen }: { locatieGroepen: Locati
   return (
     <div className="on-tour-kaart-wrap">
       <div className="on-tour-kaart">
+        <svg
+          className="on-tour-kaart-afbeelding"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            className="on-tour-kaart-land"
+            d="M22 33 L26 18 L38 9 L52 6 L68 6 L82 9 L90 18 L94 35 L92 50 L88 62 L80 72 L72 82 L66 92 L63 99 L56 99 L50 90 L44 82 L34 79 L22 80 L12 82 L3 76 L8 66 L14 60 L16 51 L18 45 L20 38 Z"
+          />
+          <path
+            className="on-tour-kaart-water"
+            d="M46 32 L50 20 L58 17 L66 22 L68 30 L62 36 L53 38 Z"
+          />
+          <ellipse className="on-tour-kaart-eiland" cx="32" cy="5" rx="4" ry="1.8" />
+          <ellipse className="on-tour-kaart-eiland" cx="46" cy="3" rx="5" ry="1.6" />
+          <ellipse className="on-tour-kaart-eiland" cx="58" cy="2" rx="4" ry="1.5" />
+          <ellipse className="on-tour-kaart-eiland" cx="70" cy="3" rx="3.5" ry="1.4" />
+        </svg>
         <svg className="on-tour-kompas" viewBox="0 0 100 100" aria-hidden="true">
           <circle cx="50" cy="50" r="32" fill="none" stroke="currentColor" strokeWidth="2" />
           <path d="M50 22 L58 50 L50 78 L42 50 Z" fill="currentColor" />
@@ -82,7 +101,12 @@ export default function OnTourKaart({ locatieGroepen }: { locatieGroepen: Locati
           </text>
         </svg>
         {Array.from(perStad.values()).map(({ stad, groepen }) => (
-          <details key={stad.naam} className="kaart-pin" style={{ left: `${stad.x}%`, top: `${stad.y}%` }}>
+          <details
+            key={stad.naam}
+            name="on-tour-locatie"
+            className="kaart-pin"
+            style={{ left: `${stad.x}%`, top: `${stad.y}%` }}
+          >
             <summary className="kaart-pin-marker">
               <span className="kaart-pin-stip" />
               <span className="kaart-pin-label">{stad.naam}</span>

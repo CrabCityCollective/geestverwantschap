@@ -535,7 +535,7 @@ summary.gemiddelde:focus-visible {
   margin: 0 auto;
   background:
     radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, 0.15), transparent 60%),
-    linear-gradient(180deg, #f2e4bc 0%, #e6d09a 100%);
+    linear-gradient(180deg, #7ea3a1 0%, #5c8482 100%);
   border: 3px solid var(--inkt);
   border-radius: 10px;
   box-shadow: inset 0 0 0 2px var(--goud);
@@ -549,6 +549,35 @@ summary.gemiddelde:focus-visible {
   border: 2px dashed var(--goud-diep);
   border-radius: 6px;
   pointer-events: none;
+  z-index: 1;
+}
+
+.on-tour-kaart-afbeelding {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.on-tour-kaart-land {
+  fill: #e6d09a;
+  stroke: var(--inkt);
+  stroke-width: 0.6;
+  stroke-linejoin: round;
+}
+
+.on-tour-kaart-water {
+  fill: #5c8482;
+  stroke: var(--inkt);
+  stroke-width: 0.4;
+  stroke-linejoin: round;
+}
+
+.on-tour-kaart-eiland {
+  fill: #e6d09a;
+  stroke: var(--inkt);
+  stroke-width: 0.5;
 }
 
 .on-tour-kompas {
@@ -559,10 +588,12 @@ summary.gemiddelde:focus-visible {
   height: 2.5rem;
   color: var(--goud-diep);
   opacity: 0.85;
+  z-index: 1;
 }
 
 .kaart-pin {
   position: absolute;
+  z-index: 2;
   transform: translate(-50%, -100%);
 }
 
