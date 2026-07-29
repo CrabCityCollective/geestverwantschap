@@ -1,4 +1,5 @@
 import LidIcoon from './LidIcoon';
+import VlagIcoon from './VlagIcoon';
 
 function GeslachtIcoon({ geslacht }: { geslacht: string }) {
   const isVrouw = geslacht.toLowerCase() === 'vrouw';
@@ -23,19 +24,6 @@ function GeslachtIcoon({ geslacht }: { geslacht: string }) {
   );
 }
 
-function LandIcoon({ land }: { land: string }) {
-  return (
-    <span className="kenmerk-icoon" title={`Land van herkomst auteur: ${land}`}>
-      <svg viewBox="0 0 24 24" width="100%" height="100%">
-        <g fill="none" stroke="#e8c766" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <line x1="5" y1="21" x2="5" y2="4" />
-          <path d="M5 15s1-1 4-1 5 2 8 2 4-1 4-1V4s-1 1-4 1-5-2-8-2-4 1-4 1z" />
-        </g>
-      </svg>
-    </span>
-  );
-}
-
 export default function BoekTitelIconen({
   geslachtAuteur,
   landVanHerkomstAuteur,
@@ -48,7 +36,7 @@ export default function BoekTitelIconen({
   return (
     <span className="boek-titel-iconen">
       <GeslachtIcoon geslacht={geslachtAuteur} />
-      <LandIcoon land={landVanHerkomstAuteur} />
+      <VlagIcoon land={landVanHerkomstAuteur} />
       <LidIcoon lid={uitgekozenDoor} />
     </span>
   );

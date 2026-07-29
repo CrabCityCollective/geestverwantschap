@@ -1,16 +1,35 @@
-import type { ReactElement, ReactNode } from 'react';
+import type { ReactElement } from 'react';
 
-const HUIDSKLEUR = '#e8c39b';
-const LICHAAMSKLEUR = '#5c4a33';
-const HAARKLEUR = '#2b1a10';
+const INKT = '#170e05';
+const PERKAMENT = '#ecd9a8';
+const GOUD = '#c9a227';
+const GOUD_DIEP = '#8a6d2f';
+const GOUD_LICHT = '#e8c766';
+const SERIE_1 = '#14528c';
+const SERIE_2 = '#9a1c1c';
+const SERIE_3 = '#145c34';
 
-function Poppetje({ children }: { children?: ReactNode }) {
+function Badge({ achtergrond, children }: { achtergrond: string; children?: ReactElement | ReactElement[] }) {
   return (
     <>
-      <path d="M6 37 C6 27 12 22 20 22 C28 22 34 27 34 37 Z" fill={LICHAAMSKLEUR} />
-      <circle cx="20" cy="16" r="10" fill={HUIDSKLEUR} />
+      <circle cx="20" cy="20" r="19" fill={achtergrond} />
       {children}
     </>
+  );
+}
+
+function JelteIcoon() {
+  // Kenmerk: fiets
+  return (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <Badge achtergrond={GOUD_DIEP}>
+        <g fill="none" stroke={PERKAMENT} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="13" cy="27" r="6" />
+          <circle cx="27" cy="27" r="6" />
+          <path d="M13 27 L20 15 L27 27 M20 15 L24 15 M20 21 L14 21" />
+        </g>
+      </Badge>
+    </svg>
   );
 }
 
@@ -18,98 +37,96 @@ function ChrisIcoon() {
   // Kenmerk: bril
   return (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <g fill="none" stroke="#170e05" strokeWidth="1.6">
-          <circle cx="15.5" cy="16" r="4" />
-          <circle cx="24.5" cy="16" r="4" />
-          <line x1="19.5" y1="16" x2="20.5" y2="16" />
-          <line x1="11.5" y1="15" x2="9.5" y2="14" />
-          <line x1="28.5" y1="15" x2="30.5" y2="14" />
+      <Badge achtergrond={GOUD}>
+        <g fill="none" stroke={INKT} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="14" cy="20" r="5" />
+          <circle cx="26" cy="20" r="5" />
+          <line x1="19" y1="20" x2="21" y2="20" />
+          <line x1="9" y1="19" x2="6" y2="17" />
+          <line x1="31" y1="19" x2="34" y2="17" />
         </g>
-      </Poppetje>
-    </svg>
-  );
-}
-
-function EstherIcoon() {
-  // Kenmerk: pony
-  return (
-    <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <path
-          d="M9.5 14 C9.5 7 14 6 20 6 C26 6 30.5 7 30.5 14 C30.5 14 26 12 20 12 C14 12 9.5 14 9.5 14 Z"
-          fill={HAARKLEUR}
-        />
-      </Poppetje>
-    </svg>
-  );
-}
-
-function JetIcoon() {
-  // Kenmerk: grote knot op haar hoofd
-  return (
-    <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <circle cx="20" cy="5.5" r="5.5" fill={HAARKLEUR} />
-      </Poppetje>
+      </Badge>
     </svg>
   );
 }
 
 function MinAeIcoon() {
-  // Kenmerk: Koreaans - strak, steil haar
+  // Kenmerk: eetstokjes
   return (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <path
-          d="M9 16 C8 7 13 5 20 5 C27 5 32 7 31 16 L29.5 22 L29.5 15 C29.5 15 25 13 20 13 C15 13 10.5 15 10.5 15 L10.5 22 Z"
-          fill={HAARKLEUR}
-        />
-      </Poppetje>
+      <Badge achtergrond={SERIE_2}>
+        <g stroke={PERKAMENT} strokeWidth="2" strokeLinecap="round">
+          <line x1="12" y1="30" x2="26" y2="10" />
+          <line x1="16" y1="32" x2="30" y2="12" />
+        </g>
+      </Badge>
     </svg>
   );
 }
 
 function RubenIcoon() {
-  // Kenmerk: afro en baard
+  // Kenmerk: video game (controller)
   return (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <circle cx="20" cy="14.5" r="12.5" fill={HAARKLEUR} />
-        <circle cx="20" cy="16" r="10" fill={HUIDSKLEUR} />
-        <path
-          d="M12 23 C12.5 28 16 30 20 30 C24 30 27.5 28 28 23 C27 26.5 24 28 20 28 C16 28 13 26.5 12 23 Z"
-          fill={HAARKLEUR}
-        />
-      </Poppetje>
+      <Badge achtergrond={SERIE_1}>
+        <g stroke={PERKAMENT} fill="none" strokeLinecap="round">
+          <rect x="8" y="17" width="24" height="12" rx="6" strokeWidth="2" />
+          <path d="M15 20 L15 26 M12 23 L18 23" strokeWidth="1.8" />
+          <circle cx="25" cy="21" r="1.6" fill={PERKAMENT} />
+          <circle cx="28.5" cy="24.5" r="1.6" fill={PERKAMENT} />
+        </g>
+      </Badge>
     </svg>
   );
 }
 
-function JelteIcoon() {
-  // Kenmerk: kaal en baard
+function EstherIcoon() {
+  // Kenmerk: tent
   return (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <path
-          d="M11 23 C11.5 28.5 15.5 31 20 31 C24.5 31 28.5 28.5 29 23 C28 27 24 29 20 29 C16 29 12 27 11 23 Z"
-          fill={HAARKLEUR}
-        />
-      </Poppetje>
+      <Badge achtergrond={SERIE_3}>
+        <g fill="none" stroke={PERKAMENT} strokeWidth="2" strokeLinejoin="round" strokeLinecap="round">
+          <path d="M20 10 L30 30 L10 30 Z" />
+          <path d="M17 30 L20 22 L23 30" />
+        </g>
+      </Badge>
+    </svg>
+  );
+}
+
+function JetIcoon() {
+  // Kenmerk: wol met breinaalden
+  return (
+    <svg viewBox="0 0 40 40" width="100%" height="100%">
+      <Badge achtergrond={GOUD_LICHT}>
+        <g fill="none" stroke={INKT} strokeLinecap="round">
+          <circle cx="20" cy="23" r="8" strokeWidth="1.6" />
+          <path d="M13.5 19 C18 25 22 17 27 23 M14.5 27 C19 21 23 29 27.5 19" strokeWidth="1.1" />
+          <line x1="13" y1="11" x2="19.5" y2="17.5" strokeWidth="2" />
+          <line x1="27" y1="11" x2="20.5" y2="17.5" strokeWidth="2" />
+        </g>
+      </Badge>
     </svg>
   );
 }
 
 function RobbieIcoon() {
-  // Kenmerk: woelig haar
+  // Kenmerk: zaag
   return (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje>
-        <path
-          d="M9 15 C8 10 10 5 13 7 C14 3 18 3 19 6 C20 2 24 3 24 6 C27 4 30 6 29 10 C32 9 32 14 29 15 C28 11 26 9 24 10 C22 8 18 8 16 10 C13 8 10 11 9 15 Z"
-          fill={HAARKLEUR}
-        />
-      </Poppetje>
+      <Badge achtergrond={INKT}>
+        <g>
+          <path d="M9 26 C9 21 13 19 17 21 L14 28 C11 29 9 28 9 26 Z" fill={GOUD_LICHT} />
+          <path
+            d="M16 22 L32 10 M18 21 L19 23 L21 20 L22 22 L24 19 L25 21 L27 18 L28 20 L30 17 L31 19"
+            fill="none"
+            stroke={GOUD_LICHT}
+            strokeWidth="1.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </g>
+      </Badge>
     </svg>
   );
 }
@@ -117,7 +134,7 @@ function RobbieIcoon() {
 function OnbekendIcoon() {
   return (
     <svg viewBox="0 0 40 40" width="100%" height="100%">
-      <Poppetje />
+      <Badge achtergrond={GOUD_DIEP} />
     </svg>
   );
 }
