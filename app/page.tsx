@@ -18,12 +18,12 @@ export default function HomePage() {
 
   return (
     <main className="container">
+      <Nav actief="boekenlijst" />
       <h1>
         <span className="titel-boekenclub">Boekenclub</span>
         <br />
         <span className="titel-naam">De Geestverwantschap</span>
       </h1>
-      <Nav actief="boekenlijst" />
 
       {boeken.length === 0 ? (
         <p>Er zijn nog geen boeken toegevoegd.</p>

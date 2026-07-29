@@ -41,21 +41,22 @@ function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
   const besteBoek = besteBoekVoorLid(boeken, lid);
 
   return (
-    <p className="lid-statistieken">
-      {gemiddelde !== null ? (
-        <>
-          Gemiddeld aantal sterren gegeven: <Sterren score={gemiddelde} />
-        </>
-      ) : (
-        <>Nog geen sterren gegeven</>
-      )}
+    <div className="lid-statistieken">
+      <p>
+        {gemiddelde !== null ? (
+          <>
+            Gemiddeld aantal sterren gegeven: <Sterren score={gemiddelde} />
+          </>
+        ) : (
+          <>Nog geen sterren gegeven</>
+        )}
+      </p>
       {besteBoek ? (
-        <>
-          {' '}
-          &middot; Best beoordeeld: {besteBoek.titel} (<Sterren score={besteBoek.beoordelingen[lid].sterren} />)
-        </>
+        <p>
+          Best beoordeeld: {besteBoek.titel} (<Sterren score={besteBoek.beoordelingen[lid].sterren} />)
+        </p>
       ) : null}
-    </p>
+    </div>
   );
 }
 
