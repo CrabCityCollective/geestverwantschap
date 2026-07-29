@@ -526,6 +526,86 @@
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2019,
       "beoordelingen": {}
+    },
+    {
+      "titel": "De Vlucht",
+      "auteur": "Jesús Carrasco",
+      "landVanHerkomstAuteur": "Spanje",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Chris",
+      "genre": "literaire fictie",
+      "landSetting": "Spanje (provincie Extremadura)",
+      "tijdSetting": "onbestemd, 20e eeuw",
+      "jaartalEersteDruk": 2013,
+      "datumGelezen": "2026-05-24",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Prachtig weergegeven warme band tussen twee mensen onder meedogenloze omstandigheden"
+        },
+        "Min Ae": {
+          "sterren": 5,
+          "quote": "Subtiel en goor en bijzonder"
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Unieke schrijfstijl"
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "De hel van de Spaanse steppen"
+        },
+        "Jelte": {
+          "sterren": 5,
+          "quote": "Filmische vertelling"
+        },
+        "Chris": {
+          "sterren": 5,
+          "quote": "Bloedstollend en meeslepend"
+        }
+      }
+    },
+    {
+      "titel": "Gittersee",
+      "auteur": "Charlotte Gneuß",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Esther",
+      "genre": "literaire fictie",
+      "landSetting": "Duitsland (Gittersee, wijk in Dresden, DDR)",
+      "tijdSetting": "1976",
+      "jaartalEersteDruk": 2023,
+      "datumGelezen": "2026-07-11",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Klein persoonlijk verhaal in een complex politiek landschap"
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Mooie sfeertekening van de DDR en een meisje dat verstrikt raakt in de netten van de Stasi"
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Aangrijpend verhaal en mooi geschreven"
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Ik vond het gewoon een beetje saai"
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Snel gelezen, snel vergeten"
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "De gelaagdheid en verhaallijn vond ik leuk"
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Iets met opgroeien en de Stasi"
+        }
+      }
     }
   ]
 }
