@@ -606,6 +606,44 @@
           "quote": "Iets met opgroeien en de Stasi"
         }
       }
+    },
+    {
+      "titel": "Als mens mislukt",
+      "auteur": "Osamu Dazai",
+      "landVanHerkomstAuteur": "Japan",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "genre": "literaire fictie",
+      "landSetting": "Japan",
+      "tijdSetting": "jaren 1930",
+      "jaartalEersteDruk": 1948,
+      "datumGelezen": "2026-03-22",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 2,
+          "quote": "Deprimerende karakters die niet echt tot leven kwamen"
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Nawoord fijne toevoeging"
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Mentaal een zware kluif. Er zit 0 hoop in. Nergens perspectief, ellende tot het einde"
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Door mijn eigen literaire kennis kon ik als enige gelukkig die werk op waarde schatten. De rest van die boerenlullen hebben helaas te weinig culturele baggage, dus die zullen weinig begrijpen van dit baanbrekend werk"
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "Hoofdpersoon die worstelt met het onvermogen tot leven. Geen pretje om te lezen."
+        },
+        "Esther": {
+          "sterren": 1,
+          "quote": "Dit is geen boek voor mij. Werkvorm top! Wat zegt dit over Japan?"
+        }
+      }
     }
   ]
 }
