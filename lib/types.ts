@@ -14,6 +14,7 @@ export interface Boek {
   tijdSetting?: string;
   jaartalEersteDruk: number;
   datumGelezen?: string;
+  locatieBespreking?: string;
   beoordelingen: Record<string, Beoordeling>;
 }
 

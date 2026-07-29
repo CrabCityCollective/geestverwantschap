@@ -73,6 +73,12 @@ export default function HomePage() {
                         <dd>{boek.tijdSetting}</dd>
                       </div>
                     ) : null}
+                    {boek.locatieBespreking ? (
+                      <div>
+                        <dt>Locatie bespreking</dt>
+                        <dd>{boek.locatieBespreking}</dd>
+                      </div>
+                    ) : null}
                   </dl>
                   {score !== null ? (
                     <details className="boek-details">

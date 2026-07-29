@@ -11,6 +11,7 @@ const {
   sorteerOpGemiddeldeSterren,
   gemiddeldeSterrenGegeven,
   besteBoekVoorLid,
+  groepeerPerLocatie,
 } = require('../lib/analyse.ts');
 
 const boeken = [
@@ -144,4 +145,49 @@ test('besteBoekVoorLid geeft het boek met de hoogste sterren van dat lid, bij ge
 
 test('besteBoekVoorLid geeft null als een lid nog niets beoordeeld heeft', () => {
   assert.equal(besteBoekVoorLid(boekenMetSterren, 'Jelte'), null);
+});
+
+const boekenMetLocatie = [
+  {
+    titel: 'A',
+    auteur: 'X',
+    landVanHerkomstAuteur: 'Nederland',
+    geslachtAuteur: 'Vrouw',
+    uitgekozenDoor: 'Chris',
+    jaartalEersteDruk: 2001,
+    locatieBespreking: 'Café De Kroon te Utrecht',
+    beoordelingen: {},
+  },
+  {
+    titel: 'B',
+    auteur: 'Y',
+    landVanHerkomstAuteur: 'Nederland',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Esther',
+    jaartalEersteDruk: 2005,
+    locatieBespreking: 'Café De Kroon te Utrecht',
+    beoordelingen: {},
+  },
+  {
+    titel: 'C',
+    auteur: 'Z',
+    landVanHerkomstAuteur: 'Frankrijk',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Chris',
+    jaartalEersteDruk: 1994,
+    beoordelingen: {},
+  },
+];
+
+test('groepeerPerLocatie groepeert boeken met dezelfde locatie en negeert boeken zonder locatie', () => {
+  assert.deepEqual(groepeerPerLocatie(boekenMetLocatie), [
+    {
+      locatie: 'Café De Kroon te Utrecht',
+      boeken: [boekenMetLocatie[0], boekenMetLocatie[1]],
+    },
+  ]);
+});
+
+test('groepeerPerLocatie geeft lege lijst als geen enkel boek een locatie heeft', () => {
+  assert.deepEqual(groepeerPerLocatie(boekenMetSterren), []);
 });

@@ -65,6 +65,19 @@ function gemiddeldeSterrenGegeven(boeken: Boek[], lid: string): number | null {
   return sterren.reduce((a, b) => a + b, 0) / sterren.length;
 }
 
+function groepeerPerLocatie(boeken: Boek[]): { locatie: string; boeken: Boek[] }[] {
+  const groepen = new Map<string, Boek[]>();
+  for (const boek of boeken) {
+    if (!boek.locatieBespreking) {
+      continue;
+    }
+    const lijst = groepen.get(boek.locatieBespreking) ?? [];
+    lijst.push(boek);
+    groepen.set(boek.locatieBespreking, lijst);
+  }
+  return Array.from(groepen, ([locatie, boeken]) => ({ locatie, boeken }));
+}
+
 function besteBoekVoorLid(boeken: Boek[], lid: string): Boek | null {
   let beste: Boek | null = null;
   let besteSterren = -Infinity;
@@ -92,4 +105,5 @@ module.exports = {
   sorteerOpGemiddeldeSterren,
   gemiddeldeSterrenGegeven,
   besteBoekVoorLid,
+  groepeerPerLocatie,
 };
