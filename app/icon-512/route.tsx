@@ -1,25 +1,6 @@
 import { ImageResponse } from 'next/og';
+import { BoekIcoon } from '../icoon';
 
 export function GET() {
-  return new ImageResponse(
-    (
-      <div
-        style={{
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          background: '#2a78d6',
-          color: '#fff',
-          fontSize: 308,
-          fontWeight: 700,
-          fontFamily: 'system-ui, sans-serif',
-        }}
-      >
-        G
-      </div>
-    ),
-    { width: 512, height: 512 }
-  );
+  return new ImageResponse(<BoekIcoon size={512} />, { width: 512, height: 512 });
 }

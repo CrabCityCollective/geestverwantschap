@@ -1,42 +1,99 @@
 :root {
-  color-scheme: light dark;
-  --serie-1: #2a78d6;
-  --serie-2: #eb6834;
-  --serie-3: #1baf7a;
-  --serie-4: #eda100;
-  --tekst-secundair: #52514e;
-  --tekst-muted: #898781;
-  --raster: #e1e0d9;
-  --basislijn: #c3c2b7;
+  color-scheme: dark;
+
+  --inkt: #170e05;
+  --perkament: #ecd9a8;
+  --perkament-schaduw: #dcc287;
+  --goud: #c9a227;
+  --goud-diep: #8a6d2f;
+  --goud-licht: #e8c766;
+
+  --tekst: #241505;
+  --tekst-secundair: #5a3d1c;
+  --tekst-muted: #7a5b34;
+
+  --raster: var(--goud-diep);
+  --basislijn: var(--goud-diep);
+
+  --serie-1: #14528c;
+  --serie-2: #9a1c1c;
+  --serie-3: #145c34;
+  --serie-4: #8a6d2f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --serie-1: #3987e5;
-    --serie-2: #d95926;
-    --serie-3: #199e70;
-    --serie-4: #c98500;
-    --tekst-secundair: #c3c2b7;
-    --tekst-muted: #898781;
-    --raster: #2c2c2a;
-    --basislijn: #383835;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  line-height: 1.5;
+  min-height: 100vh;
+  font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, 'Times New Roman', serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--tekst);
+  background: radial-gradient(ellipse at top, #2c1c0c 0%, #140d06 55%, #0b0704 100%);
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Trajan Pro', Cinzel, Georgia, 'Times New Roman', serif;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--inkt);
+  text-shadow: 0 1px 0 rgba(255, 231, 174, 0.35);
+}
+
+a {
+  color: var(--serie-1);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover,
+a:focus-visible {
+  border-bottom-color: currentColor;
 }
 
 .container {
   max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  margin: 2.5rem auto;
+  padding: 2.5rem 2.5rem 3rem;
+  background: linear-gradient(180deg, var(--perkament) 0%, var(--perkament-schaduw) 100%);
+  border: 6px solid var(--inkt);
+  border-radius: 14px;
+  box-shadow:
+    inset 0 0 0 3px var(--goud),
+    inset 0 0 0 5px var(--inkt),
+    0 20px 45px rgba(0, 0, 0, 0.55);
 }
 
 .container-breed {
-  max-width: 960px;
+  max-width: 980px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px double var(--goud-diep);
+}
+
+h1::before,
+h1::after {
+  content: '\2766';
+  display: inline-block;
+  color: var(--goud-diep);
+  font-size: 1rem;
+  margin: 0 0.75rem;
+  vertical-align: middle;
 }
 
 .sr-only {
@@ -54,30 +111,65 @@ body {
 .boekenlijst {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .boek {
-  padding: 1rem 0;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 1.25rem;
+  border: 2px solid var(--inkt);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f2e4bc 0%, #e6d09a 100%);
+  box-shadow: inset 0 0 0 2px var(--goud);
+  overflow: hidden;
 }
 
 .boek h2 {
-  margin-bottom: 0.25rem;
+  margin: 0;
+  padding: 0.6rem 1.1rem;
+  font-size: 1.05rem;
+  color: var(--perkament);
+  background: linear-gradient(180deg, #3a2510 0%, #1c1006 100%);
+  border-bottom: 2px solid var(--goud-diep);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.boek p {
+  margin: 0.4rem 0 0;
+  padding: 0 1.1rem;
+}
+
+.boek p:last-child {
+  padding-bottom: 1rem;
 }
 
 .meta {
-  margin: 0;
-  color: #666;
+  font-style: italic;
+  color: var(--tekst-secundair);
+}
+
+.datumGelezen {
+  color: var(--tekst-muted);
+  font-size: 0.9rem;
 }
 
 .gemiddelde {
-  font-weight: 600;
+  display: inline-block;
+  margin: 0.6rem 1.1rem 1rem;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  border: 2px solid var(--inkt);
+  background: linear-gradient(180deg, #2c1c0c, #140d06);
+  color: var(--goud-licht);
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  box-shadow: inset 0 0 0 1px var(--goud-diep);
 }
 
 .lid-sectie {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 2px solid var(--raster);
+  border-top: 3px double var(--goud-diep);
 }
 
 .lid-statistieken {
@@ -89,7 +181,7 @@ body {
 }
 
 .analyse-sectie h2 {
-  border-bottom: 1px solid var(--raster);
+  border-bottom: 2px solid var(--goud-diep);
   padding-bottom: 0.5rem;
 }
 
@@ -102,14 +194,19 @@ body {
 
 .grafiek {
   margin: 0;
-  padding: 1rem;
-  border: 1px solid var(--raster);
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--inkt);
   border-radius: 8px;
+  background: linear-gradient(180deg, #f2e4bc 0%, #e6d09a 100%);
+  box-shadow: inset 0 0 0 2px var(--goud);
 }
 
 .grafiek-titel {
-  font-weight: 600;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
   margin-bottom: 0.75rem;
+  color: var(--tekst);
 }
 
 .grafiek-svg {
@@ -124,16 +221,18 @@ body {
 
 .grafiek-aslabel {
   font-size: 11px;
+  font-family: 'Palatino Linotype', Georgia, serif;
   fill: var(--tekst-secundair);
 }
 
 .grafiek-waarde {
   font-size: 11px;
+  font-family: 'Palatino Linotype', Georgia, serif;
   fill: var(--tekst-secundair);
 }
 
 .grafiek-basislijn {
-  stroke: var(--basislijn);
+  stroke: var(--goud-diep);
   stroke-width: 1;
 }
 
@@ -183,4 +282,5 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 2px;
+  box-shadow: inset 0 0 0 1px rgba(23, 14, 5, 0.4);
 }

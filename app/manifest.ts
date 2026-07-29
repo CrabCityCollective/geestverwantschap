@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Administratie van de boekenclub: welke boeken zijn gelezen en wat vond iedereen ervan.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#2a78d6',
+    background_color: '#140d06',
+    theme_color: '#1c1006',
     icons: [
       { src: '/icon-192', sizes: '192x192', type: 'image/png' },
       { src: '/icon-512', sizes: '512x512', type: 'image/png' },
