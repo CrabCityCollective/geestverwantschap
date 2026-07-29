@@ -16,11 +16,10 @@ export default function HomePage() {
 
   return (
     <main className="container">
-      <h1>Geestverwantschap</h1>
-      <p>Administratie van de boekenclub: welke boeken zijn gelezen en wat vond iedereen ervan.</p>
-      <p>
+      <h1>Boekenclub De Geestverwantschap</h1>
+      <nav className="site-nav">
         <Link href="/analyse">Bekijk de analyse van alle boeken &rarr;</Link>
-      </p>
+      </nav>
 
       {boeken.length === 0 ? (
         <p>Er zijn nog geen boeken toegevoegd.</p>
@@ -28,6 +27,7 @@ export default function HomePage() {
         <ul className="boekenlijst">
           {boeken.map((boek, index) => {
             const score = gemiddeldeSterren(boek);
+            const beoordelingen = Object.entries(boek.beoordelingen);
             return (
               <li key={`${boek.titel}-${index}`} className="boek">
                 <h2>{boek.titel}</h2>
@@ -39,6 +39,20 @@ export default function HomePage() {
                 <p className="gemiddelde">
                   {score !== null ? `Gemiddelde score: ${score.toFixed(1)} / 5` : 'Nog geen beoordelingen'}
                 </p>
+                {beoordelingen.length > 0 ? (
+                  <details className="boek-details">
+                    <summary>Sterren en quotes ({beoordelingen.length})</summary>
+                    <ul className="beoordelingen-lijst">
+                      {beoordelingen.map(([lid, beoordeling]) => (
+                        <li key={lid}>
+                          <strong>{lid}</strong> &middot; {beoordeling.sterren} / 5
+                          <br />
+                          <span className="quote">&bdquo;{beoordeling.quote}&rdquo;</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                ) : null}
               </li>
             );
           })}

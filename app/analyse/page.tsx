@@ -61,9 +61,9 @@ export default function AnalysePagina() {
 
   return (
     <main className="container container-breed">
-      <p>
+      <nav className="site-nav">
         <Link href="/">&larr; Terug naar boekenlijst</Link>
-      </p>
+      </nav>
       <h1>Analyse van de boeken</h1>
       <p>
         Een overzicht van alle {boeken.length} gelezen boeken, en per boekenclublid van de boeken die diegene heeft

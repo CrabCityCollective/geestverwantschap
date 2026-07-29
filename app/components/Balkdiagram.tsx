@@ -5,11 +5,11 @@ interface BalkdiagramProps {
   data: Telling[];
 }
 
-const BALK_HOOGTE = 18;
-const BALK_GAP = 10;
-const LABEL_BREEDTE = 170;
-const GRAFIEK_BREEDTE = 340;
-const RAND = 40;
+const BALK_HOOGTE = 26;
+const BALK_GAP = 14;
+const LABEL_BREEDTE = 210;
+const GRAFIEK_BREEDTE = 560;
+const RAND = 50;
 
 function balkPad(x: number, y: number, breedte: number, hoogte: number, radius: number): string {
   const r = Math.max(Math.min(radius, breedte, hoogte / 2), 0);
