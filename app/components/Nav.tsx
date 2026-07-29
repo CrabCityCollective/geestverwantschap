@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-export default function Nav({ actief }: { actief: 'boekenlijst' | 'analytics' }) {
+export default function Nav({ actief, breed }: { actief: 'boekenlijst' | 'analytics'; breed?: boolean }) {
   return (
-    <nav className="site-nav">
+    <nav className={breed ? 'site-nav site-nav-breed' : 'site-nav'}>
       {actief === 'boekenlijst' ? (
         <span aria-current="page">Boekenlijst</span>
       ) : (
