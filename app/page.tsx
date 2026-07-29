@@ -1,6 +1,8 @@
 import Link from 'next/link';
-import { getBooks } from '../lib/boekenclub';
-import type { Beoordeling } from '../lib/types';
+import * as boekenclub from '../lib/boekenclub';
+import type { Beoordeling, Boek } from '../lib/types';
+
+const { getBooks } = boekenclub as unknown as { getBooks: (filePath?: string) => Boek[] };
 
 export const dynamic = 'force-dynamic';
 

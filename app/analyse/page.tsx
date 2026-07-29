@@ -1,9 +1,16 @@
 import Link from 'next/link';
-import { readData } from '../../lib/boekenclub';
-import { telLandenVanAuteurs, telGeslachtVanAuteurs, telTijdvakken } from '../../lib/analyse';
-import type { Boek } from '../../lib/types';
+import * as boekenclub from '../../lib/boekenclub';
+import * as analyse from '../../lib/analyse';
+import type { Boek, BoekenclubData, Telling } from '../../lib/types';
 import Balkdiagram from '../components/Balkdiagram';
 import Verdelingsbalk from '../components/Verdelingsbalk';
+
+const { readData } = boekenclub as unknown as { readData: (filePath?: string) => BoekenclubData };
+const { telLandenVanAuteurs, telGeslachtVanAuteurs, telTijdvakken } = analyse as unknown as {
+  telLandenVanAuteurs: (boeken: Boek[]) => Telling[];
+  telGeslachtVanAuteurs: (boeken: Boek[]) => Telling[];
+  telTijdvakken: (boeken: Boek[]) => Telling[];
+};
 
 export const dynamic = 'force-dynamic';
 
