@@ -5,6 +5,8 @@ Gebouwd als Next.js-app (App Router) met TypeScript.
 
 ## App draaien
 
+Vereist Node.js `>=20.9.0` (zie [`.nvmrc`](.nvmrc); `nvm use` zet de juiste versie).
+
 ```bash
 npm install
 npm run dev
