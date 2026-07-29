@@ -342,6 +342,10 @@ summary.gemiddelde:focus-visible {
   color: var(--tekst-secundair);
 }
 
+.lid-statistieken p {
+  margin: 0.2rem 0;
+}
+
 .analyse-sectie {
   margin-top: 2.5rem;
 }
