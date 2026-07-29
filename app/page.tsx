@@ -36,6 +36,32 @@ export default function HomePage() {
                   {boek.genre ? <> &middot; {boek.genre}</> : null} &middot; {boek.jaartalEersteDruk}
                 </p>
                 {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
+                <dl className="boek-kenmerken">
+                  <div>
+                    <dt>Land van herkomst auteur</dt>
+                    <dd>{boek.landVanHerkomstAuteur}</dd>
+                  </div>
+                  <div>
+                    <dt>Geslacht auteur</dt>
+                    <dd>{boek.geslachtAuteur}</dd>
+                  </div>
+                  <div>
+                    <dt>Uitgekozen door</dt>
+                    <dd>{boek.uitgekozenDoor}</dd>
+                  </div>
+                  {boek.landSetting ? (
+                    <div>
+                      <dt>Land setting</dt>
+                      <dd>{boek.landSetting}</dd>
+                    </div>
+                  ) : null}
+                  {boek.tijdSetting ? (
+                    <div>
+                      <dt>Tijd setting</dt>
+                      <dd>{boek.tijdSetting}</dd>
+                    </div>
+                  ) : null}
+                </dl>
                 <p className="gemiddelde">
                   {score !== null ? `Gemiddelde score: ${score.toFixed(1)} / 5` : 'Nog geen beoordelingen'}
                 </p>
