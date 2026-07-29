@@ -19,10 +19,10 @@ const { telLandenVanAuteurs, telGeslachtVanAuteurs, telTijdvakken, gemiddeldeSte
 
 export const dynamic = 'force-dynamic';
 
-function AnalyseSectie({ titel, boeken }: { titel: string; boeken: Boek[] }) {
+function AnalyseSectie({ titel, boeken }: { titel?: string; boeken: Boek[] }) {
   return (
     <section className="analyse-sectie">
-      <h2>{titel}</h2>
+      {titel ? <h2>{titel}</h2> : null}
       {boeken.length === 0 ? (
         <p className="grafiek-leeg">Nog geen boeken om te analyseren.</p>
       ) : (
@@ -70,7 +70,16 @@ export default function AnalysePagina() {
       <main className="container container-breed">
         <h1>Analyse van de boeken</h1>
 
-        <AnalyseSectie titel="Alle boeken" boeken={boeken} />
+        <p className="totaal-gelezen-sectie">
+          <span className="totaal-gelezen">
+            <span className="totaal-gelezen-getal">{boeken.length}</span>
+            <span className="totaal-gelezen-label">
+              {boeken.length === 1 ? 'boek gelezen' : 'boeken gelezen'}
+            </span>
+          </span>
+        </p>
+
+        <AnalyseSectie boeken={boeken} />
 
         {data.leden.map((lid: string) => (
           <section key={lid} className="lid-sectie">
