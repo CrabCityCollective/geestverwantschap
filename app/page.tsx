@@ -1,22 +1,18 @@
 import Link from 'next/link';
 import * as boekenclub from '../lib/boekenclub';
-import type { Beoordeling, Boek } from '../lib/types';
+import * as analyse from '../lib/analyse';
+import type { Boek } from '../lib/types';
 
 const { getBooks } = boekenclub as unknown as { getBooks: (filePath?: string) => Boek[] };
+const { gemiddeldeSterren, sorteerOpGemiddeldeSterren } = analyse as unknown as {
+  gemiddeldeSterren: (boek: Boek) => number | null;
+  sorteerOpGemiddeldeSterren: (boeken: Boek[]) => Boek[];
+};
 
 export const dynamic = 'force-dynamic';
 
-function gemiddelde(beoordelingen: Record<string, Beoordeling>) {
-  const sterren = Object.values(beoordelingen).map((beoordeling) => beoordeling.sterren);
-  if (sterren.length === 0) {
-    return null;
-  }
-  const totaal = sterren.reduce((a, b) => a + b, 0);
-  return (totaal / sterren.length).toFixed(1);
-}
-
 export default function HomePage() {
-  const boeken = getBooks();
+  const boeken = sorteerOpGemiddeldeSterren(getBooks());
 
   return (
     <main className="container">
@@ -31,7 +27,7 @@ export default function HomePage() {
       ) : (
         <ul className="boekenlijst">
           {boeken.map((boek, index) => {
-            const score = gemiddelde(boek.beoordelingen);
+            const score = gemiddeldeSterren(boek);
             return (
               <li key={`${boek.titel}-${index}`} className="boek">
                 <h2>{boek.titel}</h2>
@@ -41,7 +37,7 @@ export default function HomePage() {
                 </p>
                 {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
                 <p className="gemiddelde">
-                  {score !== null ? `Gemiddelde score: ${score} / 5` : 'Nog geen beoordelingen'}
+                  {score !== null ? `Gemiddelde score: ${score.toFixed(1)} / 5` : 'Nog geen beoordelingen'}
                 </p>
               </li>
             );
