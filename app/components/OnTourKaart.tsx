@@ -5,7 +5,8 @@ type LocatieGroep = { locatie: string; boeken: Boek[] };
 type BekendeStad = { naam: string; x: number; y: number };
 
 // Positie (links/boven in %) is een grove benadering op basis van breedte-/lengtegraad,
-// bedoeld als sfeervol kaartje, niet als nauwkeurige kaart.
+// bedoeld als sfeervol kaartje, niet als nauwkeurige kaart. De omtrek hieronder volgt wel
+// de belangrijkste, herkenbare vorm van Nederland (Zeeuwse delta, Limburgse punt).
 const BEKENDE_STEDEN: BekendeStad[] = [
   { naam: 'Utrecht', x: 45.7, y: 52.1 },
   { naam: 'Zwolle', x: 70.8, y: 37.1 },
@@ -29,8 +30,6 @@ const BEKENDE_STEDEN: BekendeStad[] = [
   { naam: 'Middelburg', x: 6.7, y: 73.2 },
   { naam: 'Enschede', x: 91.7, y: 47.5 },
 ];
-
-const VASTE_PINS = ['Utrecht', 'Zwolle'];
 
 function vindStad(locatie: string): BekendeStad | null {
   const lower = locatie.toLowerCase();
@@ -64,13 +63,6 @@ export default function OnTourKaart({ locatieGroepen }: { locatieGroepen: Locati
     }
   }
 
-  for (const naam of VASTE_PINS) {
-    if (!perStad.has(naam)) {
-      const stad = BEKENDE_STEDEN.find((s) => s.naam === naam)!;
-      perStad.set(naam, { stad, groepen: [] });
-    }
-  }
-
   return (
     <div className="on-tour-kaart-wrap">
       <div className="on-tour-kaart">
@@ -82,7 +74,7 @@ export default function OnTourKaart({ locatieGroepen }: { locatieGroepen: Locati
         >
           <path
             className="on-tour-kaart-land"
-            d="M22 33 L26 18 L38 9 L52 6 L68 6 L82 9 L90 18 L94 35 L92 50 L88 62 L80 72 L72 82 L66 92 L63 99 L56 99 L50 90 L44 82 L34 79 L22 80 L12 82 L3 76 L8 66 L14 60 L16 51 L18 45 L20 38 Z"
+            d="M22 33 L26 18 L38 9 L52 6 L68 6 L82 9 L90 18 L94 35 L92 50 L88 62 L82 70 L76 75 L70 78 L66 76 L64 84 L61 99 L57 90 L54 79 L48 78 L40 79 L34 79 L22 80 L18 78 L9 79 L3 76 L10 70 L4 68 L8 66 L14 60 L16 51 L18 45 L20 38 Z"
           />
           <path
             className="on-tour-kaart-water"
