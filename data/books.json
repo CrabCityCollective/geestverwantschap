@@ -155,8 +155,41 @@
       "landVanHerkomstAuteur": "Canada",
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Ruben",
+      "genre": "distopie",
+      "landSetting": "Amerika",
+      "tijdSetting": "toekomst",
       "jaartalEersteDruk": 1985,
-      "beoordelingen": {}
+      "datumGelezen": "2018-02-25",
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Mooi verhaal en goed uitgewerkte roman, die vanwege het extreem lage tempo mij niet heeft kunnen bekoren."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Beklemming, vervreemding, een hel van vroomheid."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Ik ben wel benieuwd naar de serie, al gaf het boek an sich ook genoeg voldoening om te bekoren."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Beklemmend"
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Ondanks enige twijfel vooraf, kreeg ik tijdens het lezen al vlot een beklemmend gevoel en verdwenen deze twijfels."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Mooie beschrijving van een soort Islamitische Staat met de Bijbel."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Boeiende dystopische roman met wat opstartproblemen."
+        }
+      }
     },
     {
       "titel": "De man die de taal van slangen sprak",
