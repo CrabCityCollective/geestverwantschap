@@ -29,6 +29,17 @@ vond ieder lid ervan. Het is een Next.js-app (App Router) met TypeScript voor de
   alleen-lezen: ze toont het overzicht van boeken (`app/page.tsx`) via `getBooks`, maar heeft
   geen pagina, formulier of Server Action om boeken toe te voegen of te wijzigen.
 - `tsconfig.json` / `next-env.d.ts` - standaard Next.js TypeScript-configuratie.
+- `app/on-tour/page.tsx` toont een interactief kaartje (Leaflet + OpenStreetMap-tegels, geen
+  Google Maps) van de besprekingslocaties via `app/components/BesprekingenKaart.tsx`. Die
+  koppelt bekende steden (substring-match op `locatieBespreking`, zie `BEKENDE_STEDEN`/
+  `vindStad`) aan echte stadscentrum-coördinaten - geen geocoding van individuele adressen,
+  dat kan de app niet betrouwbaar. Locaties zonder herkende stad komen in een lijst onder de
+  kaart terecht in plaats van een pin. Omdat `leaflet` bij het importeren `window` aanraakt,
+  mag het nooit server-side renderen: `BesprekingenKaart.tsx` is een clientcomponent, en
+  `app/components/BesprekingenKaartLader.tsx` laadt die met `next/dynamic(..., { ssr: false })`
+  vanuit een clientcomponent (`ssr: false` mag niet direct in een Server Component). Volg dit
+  loader-patroon voor nieuwe kaart-/browser-only-componenten in plaats van `ssr: false` direct
+  in een paginabestand te zetten.
 
 ## Conventies
 
