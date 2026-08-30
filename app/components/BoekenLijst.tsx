@@ -20,12 +20,28 @@ function komtOvereenMetZoekterm(boek: Boek, zoekterm: string): boolean {
     .some((waarde) => waarde.toLowerCase().includes(term));
 }
 
+function uniekeWaarden(boeken: BoekMetScore[], veld: 'uitgekozenDoor' | 'landVanHerkomstAuteur'): string[] {
+  const waarden = new Set(boeken.map(({ boek }) => boek[veld]));
+  return [...waarden].sort((a, b) => a.localeCompare(b, 'nl'));
+}
+
 export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
   const [zoekterm, setZoekterm] = useState('');
+  const [geselecteerdLid, setGeselecteerdLid] = useState<string | null>(null);
+  const [geselecteerdLand, setGeselecteerdLand] = useState<string | null>(null);
+
+  const leden = useMemo(() => uniekeWaarden(boeken, 'uitgekozenDoor'), [boeken]);
+  const landen = useMemo(() => uniekeWaarden(boeken, 'landVanHerkomstAuteur'), [boeken]);
 
   const gefilterdeBoeken = useMemo(
-    () => boeken.filter(({ boek }) => komtOvereenMetZoekterm(boek, zoekterm)),
-    [boeken, zoekterm]
+    () =>
+      boeken.filter(
+        ({ boek }) =>
+          komtOvereenMetZoekterm(boek, zoekterm) &&
+          (geselecteerdLid === null || boek.uitgekozenDoor === geselecteerdLid) &&
+          (geselecteerdLand === null || boek.landVanHerkomstAuteur === geselecteerdLand)
+      ),
+    [boeken, zoekterm, geselecteerdLid, geselecteerdLand]
   );
 
   return (
@@ -44,8 +60,44 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
         />
       </div>
 
+      <div className="filters-wrap">
+        <details className="filter-dropdown">
+          <summary>Filter op lid{geselecteerdLid ? `: ${geselecteerdLid}` : ''}</summary>
+          <div className="filter-knoppen">
+            {leden.map((lid) => (
+              <button
+                key={lid}
+                type="button"
+                className={`filter-knop${geselecteerdLid === lid ? ' filter-knop-actief' : ''}`}
+                aria-pressed={geselecteerdLid === lid}
+                onClick={() => setGeselecteerdLid((huidig) => (huidig === lid ? null : lid))}
+              >
+                {lid}
+              </button>
+            ))}
+          </div>
+        </details>
+
+        <details className="filter-dropdown">
+          <summary>Filter op land auteur{geselecteerdLand ? `: ${geselecteerdLand}` : ''}</summary>
+          <div className="filter-knoppen">
+            {landen.map((land) => (
+              <button
+                key={land}
+                type="button"
+                className={`filter-knop${geselecteerdLand === land ? ' filter-knop-actief' : ''}`}
+                aria-pressed={geselecteerdLand === land}
+                onClick={() => setGeselecteerdLand((huidig) => (huidig === land ? null : land))}
+              >
+                {land}
+              </button>
+            ))}
+          </div>
+        </details>
+      </div>
+
       {gefilterdeBoeken.length === 0 ? (
-        <p>Geen boeken gevonden voor &bdquo;{zoekterm}&rdquo;.</p>
+        <p>Geen boeken gevonden{zoekterm ? <> voor &bdquo;{zoekterm}&rdquo;</> : null}.</p>
       ) : (
         <ul className="boekenlijst">
           {gefilterdeBoeken.map(({ boek, score }, index) => {
