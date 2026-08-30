@@ -647,183 +647,53 @@ summary.gemiddelde:focus-visible {
   box-shadow: inset 0 0 0 1px rgba(23, 14, 5, 0.4);
 }
 
-.stad-kaart-wrap {
+.besprekingen-kaart-wrap {
   margin-top: 1.5rem;
 }
 
-.stad-kaart-titel {
-  margin: 0 0 0.75rem;
-  border-bottom: 2px solid var(--goud-diep);
-  padding-bottom: 0.5rem;
-}
-
-.stad-kaart {
-  position: relative;
+.besprekingen-kaart {
   width: 100%;
-  aspect-ratio: 3 / 1;
+  height: 420px;
   max-width: 640px;
   margin: 0 auto;
-  background:
-    radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, 0.15), transparent 60%),
-    linear-gradient(180deg, #e6d09a 0%, #dcc287 100%);
   border: 3px solid var(--inkt);
   border-radius: 10px;
   box-shadow: inset 0 0 0 2px var(--goud);
-  overflow: visible;
 }
 
-.stad-kaart-afbeelding {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.stad-kaart-bodem {
-  fill: #e6d09a;
-}
-
-.stad-kaart-water {
-  stroke: #5c8482;
-  stroke-width: 2.5;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
-.stad-kaart-leeg {
-  position: absolute;
-  inset: 0;
+.besprekingen-kaart-laden {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0 1rem;
-  text-align: center;
+  height: 420px;
+  max-width: 640px;
+  margin: 0 auto;
+  border: 3px solid var(--inkt);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #e6d09a 0%, #dcc287 100%);
   font-style: italic;
   color: var(--tekst-muted);
 }
 
-.on-tour-uitstapjes-titel {
-  margin-top: 2.5rem;
-  border-bottom: 2px solid var(--goud-diep);
-  padding-bottom: 0.5rem;
-}
-
-.on-tour-kaart-wrap {
-  margin-top: 1.5rem;
-}
-
-.on-tour-kaart {
+.besprekingen-kaart-pin {
   position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  max-width: 640px;
-  margin: 0 auto;
-  background:
-    radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, 0.15), transparent 60%),
-    linear-gradient(180deg, #7ea3a1 0%, #5c8482 100%);
-  border: 3px solid var(--inkt);
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 2px var(--goud);
-  overflow: visible;
 }
 
-.on-tour-kaart::before {
-  content: '';
-  position: absolute;
-  inset: 10px;
-  border: 2px dashed var(--goud-diep);
-  border-radius: 6px;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.on-tour-kaart-afbeelding {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.on-tour-kaart-land {
-  fill: #e6d09a;
-  stroke: var(--inkt);
-  stroke-width: 0.6;
-  stroke-linejoin: round;
-}
-
-.on-tour-kaart-water {
-  fill: #5c8482;
-  stroke: var(--inkt);
-  stroke-width: 0.4;
-  stroke-linejoin: round;
-}
-
-.on-tour-kaart-eiland {
-  fill: #e6d09a;
-  stroke: var(--inkt);
-  stroke-width: 0.5;
-}
-
-.on-tour-kompas {
-  position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  color: var(--goud-diep);
-  opacity: 0.85;
-  z-index: 1;
-}
-
-.kaart-pin {
-  position: absolute;
-  z-index: 2;
-  transform: translate(-50%, -100%);
-}
-
-.kaart-pin[open] {
-  z-index: 10;
-}
-
-.kaart-pin-marker {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  cursor: pointer;
-  list-style: none;
-  padding: 0.15rem 0.5rem 0.15rem 0.15rem;
-  border-radius: 999px;
-  background: rgba(23, 14, 5, 0.85);
-  color: var(--perkament);
-  font-size: 0.75rem;
-  font-variant: small-caps;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-  box-shadow: inset 0 0 0 1px var(--goud-diep);
-}
-
-.kaart-pin-marker::-webkit-details-marker {
-  display: none;
-}
-
-.kaart-pin-marker:hover,
-.kaart-pin-marker:focus-visible {
-  box-shadow: inset 0 0 0 1px var(--goud);
-}
-
-.kaart-pin-stip {
-  width: 10px;
-  height: 10px;
+.besprekingen-kaart-stip {
+  display: block;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--serie-2);
-  box-shadow: 0 0 0 2px var(--goud-licht);
-  flex-shrink: 0;
+  box-shadow:
+    0 0 0 2px var(--goud-licht),
+    0 0 0 3px var(--inkt);
 }
 
-.kaart-pin-badge {
+.besprekingen-kaart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -835,52 +705,33 @@ summary.gemiddelde:focus-visible {
   color: var(--inkt);
   font-weight: 700;
   font-size: 0.7rem;
+  box-shadow: 0 0 0 1px var(--inkt);
 }
 
-.kaart-pin-inhoud {
-  position: absolute;
-  bottom: calc(100% + 0.5rem);
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-  max-width: 16rem;
-  padding: 0.6rem 0.8rem;
-  border: 2px solid var(--inkt);
-  border-radius: 8px;
-  background: linear-gradient(180deg, var(--perkament) 0%, var(--perkament-schaduw) 100%);
-  box-shadow:
-    inset 0 0 0 2px var(--goud),
-    0 8px 20px rgba(0, 0, 0, 0.4);
+.besprekingen-kaart-popup-titel {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 0.03em;
+  color: var(--tekst);
 }
 
-.kaart-pin-venue + .kaart-pin-venue {
+.besprekingen-kaart-popup-venue + .besprekingen-kaart-popup-venue {
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid var(--goud-diep);
 }
 
-.kaart-pin-venue-naam {
+.besprekingen-kaart-popup-venue-naam {
   margin: 0 0 0.25rem;
   font-weight: 700;
   color: var(--tekst);
 }
 
-.kaart-pin-aantal {
-  font-weight: 400;
-  color: var(--tekst-muted);
-}
-
-.kaart-pin-inhoud ul {
+.besprekingen-kaart-popup-venue ul {
   margin: 0;
   padding-left: 1.1rem;
   color: var(--tekst-secundair);
-}
-
-.kaart-pin-leeg {
-  margin: 0;
-  font-size: 0.85rem;
-  font-style: italic;
-  color: var(--tekst-muted);
 }
 
 .on-tour-overig {
