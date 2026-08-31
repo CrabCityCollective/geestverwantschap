@@ -35,6 +35,11 @@ const BEKENDE_STEDEN: BekendeStad[] = [
   { naam: 'Leiden', lat: 52.1601, lng: 4.497 },
   { naam: 'Middelburg', lat: 51.4988, lng: 3.6136 },
   { naam: 'Enschede', lat: 52.2215, lng: 6.8937 },
+  { naam: 'Antwerpen', lat: 51.2213, lng: 4.4051 },
+  { naam: 'Schiermonnikoog', lat: 53.4863, lng: 6.1621 },
+  { naam: 'Maasbommel', lat: 51.8261, lng: 5.5236 },
+  { naam: 'Soest', lat: 52.1747, lng: 5.2917 },
+  { naam: 'Dordrecht', lat: 51.8133, lng: 4.6901 },
 ];
 
 function vindStad(locatie: string): BekendeStad | null {
