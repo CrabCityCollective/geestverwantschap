@@ -21,6 +21,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Marije",
       "jaartalEersteDruk": 2012,
+      "datumGelezen": "2013-10-12",
+      "locatieBespreking": "Antwerpen",
       "beoordelingen": {}
     },
     {
@@ -30,6 +32,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2012,
+      "datumGelezen": "2015-03-27",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -39,6 +43,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Marije",
       "jaartalEersteDruk": 2011,
+      "datumGelezen": "2016-07-16",
+      "locatieBespreking": "Schiermonnikoog",
       "beoordelingen": {}
     },
     {
@@ -48,6 +54,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2016,
+      "datumGelezen": "2017-03-26",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -57,6 +65,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 1998,
+      "datumGelezen": "2014-12-13",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -66,6 +76,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2022,
+      "datumGelezen": "2023-02-19",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -75,6 +87,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2013,
+      "datumGelezen": "2014-06-21",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -84,6 +98,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2014,
+      "datumGelezen": "2015-02-01",
+      "locatieBespreking": "Amersfoort",
       "beoordelingen": {}
     },
     {
@@ -93,6 +109,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 2021,
+      "datumGelezen": "2022-05-14",
+      "locatieBespreking": "Soest",
       "beoordelingen": {}
     },
     {
@@ -102,6 +120,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 1942,
+      "datumGelezen": "2022-03-27",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -111,6 +131,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2014,
+      "datumGelezen": "2018-09-30",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -120,6 +142,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2003,
+      "datumGelezen": "2017-10-05",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -129,6 +153,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2013,
+      "datumGelezen": "2014-01-03",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -138,6 +164,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 2019,
+      "datumGelezen": "2022-10-08",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -147,6 +175,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2013,
+      "datumGelezen": "2018-05-02",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -160,6 +190,7 @@
       "tijdSetting": "toekomst",
       "jaartalEersteDruk": 1985,
       "datumGelezen": "2018-02-25",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {
         "Jelte": {
           "sterren": 3,
@@ -198,6 +229,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2007,
+      "datumGelezen": "2015-10-24",
+      "locatieBespreking": "Schiermonnikoog",
       "beoordelingen": {}
     },
     {
@@ -207,6 +240,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2021,
+      "datumGelezen": "2022-01-08",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -225,6 +260,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 1964,
+      "datumGelezen": "2014-08-17",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -234,6 +271,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2014,
+      "datumGelezen": "2015-09-06",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -243,6 +282,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 2015,
+      "datumGelezen": "2017-05-20",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -252,6 +293,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 1965,
+      "datumGelezen": "2015-05-22",
+      "locatieBespreking": "Amersfoort",
       "beoordelingen": {}
     },
     {
@@ -261,6 +304,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2011,
+      "datumGelezen": "2016-03-14",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -270,6 +315,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 1947,
+      "datumGelezen": "2020-08-15",
+      "locatieBespreking": "De Roos",
       "beoordelingen": {}
     },
     {
@@ -279,6 +326,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2017,
+      "datumGelezen": "2017-11-11",
+      "locatieBespreking": "Maasbommel",
       "beoordelingen": {}
     },
     {
@@ -288,6 +337,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 2018,
+      "datumGelezen": "2020-11-14",
+      "locatieBespreking": "Online",
       "beoordelingen": {}
     },
     {
@@ -297,6 +348,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 2017,
+      "datumGelezen": "2020-11-14",
+      "locatieBespreking": "Online",
       "beoordelingen": {}
     },
     {
@@ -306,6 +359,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 2011,
+      "datumGelezen": "2013-11-22",
+      "locatieBespreking": "Amersfoort",
       "beoordelingen": {}
     },
     {
@@ -315,6 +370,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 2012,
+      "datumGelezen": "2015-11-28",
+      "locatieBespreking": "Amersfoort",
       "beoordelingen": {}
     },
     {
@@ -324,6 +381,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2005,
+      "datumGelezen": "2022-12-16",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -333,6 +392,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2015,
+      "datumGelezen": "2015-07-10",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -342,6 +403,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 2017,
+      "datumGelezen": "2019-11-30",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -351,6 +414,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2009,
+      "datumGelezen": "2014-03-14",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -360,6 +425,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2012,
+      "datumGelezen": "2020-02-02",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -369,6 +436,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 2014,
+      "datumGelezen": "2016-10-02",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -378,6 +447,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2015,
+      "datumGelezen": "2017-02-12",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -387,6 +458,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 1999,
+      "datumGelezen": "2014-10-11",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -396,6 +469,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2016,
+      "datumGelezen": "2020-03-29",
+      "locatieBespreking": "Online",
       "beoordelingen": {}
     },
     {
@@ -405,6 +480,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 1995,
+      "datumGelezen": "2016-02-06",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -414,6 +491,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 1994,
+      "datumGelezen": "2021-06-23",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -423,6 +502,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2019,
+      "datumGelezen": "2019-03-24",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -432,6 +513,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2021,
+      "datumGelezen": "2023-04-09",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -441,6 +524,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2012,
+      "datumGelezen": "2013-06-14",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -450,6 +535,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 2002,
+      "datumGelezen": "2019-07-23",
+      "locatieBespreking": "De Roos",
       "beoordelingen": {}
     },
     {
@@ -459,6 +546,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2020,
+      "datumGelezen": "2021-10-09",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -468,6 +557,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 1862,
+      "datumGelezen": "2021-12-18",
+      "locatieBespreking": "Online",
       "beoordelingen": {}
     },
     {
@@ -477,6 +568,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 1969,
+      "datumGelezen": "2014-05-04",
+      "locatieBespreking": "Amersfoort",
       "beoordelingen": {}
     },
     {
@@ -486,6 +579,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "n.v.t.",
       "jaartalEersteDruk": 2015,
+      "datumGelezen": "2015-03-22",
+      "locatieBespreking": "Schiermonnikoog",
       "beoordelingen": {}
     },
     {
@@ -495,6 +590,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 1965,
+      "datumGelezen": "2013-04-28",
+      "locatieBespreking": "Amersfoort",
       "beoordelingen": {}
     },
     {
@@ -504,6 +601,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2014,
+      "datumGelezen": "2016-11-19",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -513,6 +612,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2016,
+      "datumGelezen": "2017-07-26",
+      "locatieBespreking": "Zwolle",
       "beoordelingen": {}
     },
     {
@@ -522,6 +623,8 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2021,
+      "datumGelezen": "2021-07-23",
+      "locatieBespreking": "Mariahoeve",
       "beoordelingen": {}
     },
     {
@@ -531,6 +634,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2008,
+      "datumGelezen": "2019-01-20",
+      "locatieBespreking": "Utrecht",
       "beoordelingen": {}
     },
     {
@@ -549,6 +654,8 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2018,
+      "datumGelezen": "2023-06-24",
+      "locatieBespreking": "Dordrecht",
       "beoordelingen": {}
     },
     {
