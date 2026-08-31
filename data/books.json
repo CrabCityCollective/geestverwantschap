@@ -292,14 +292,43 @@
     },
     {
       "titel": "Kom hier dat ik u kus",
-      "auteur": "Griet op de Beek",
+      "auteur": "Griet op de Beeck",
       "landVanHerkomstAuteur": "België",
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2014,
       "datumGelezen": "2015-09-06",
       "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Heel mooi gedetailleerd geschreven."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Heel mooi meeslepend maar soms te irritant."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Prachtig boek over goede bedoelingen en hoe ontaardig die soms uitpakken."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Zelden zo'n levensecht personage gezien."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Ik zie de personages levendig voor me."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Geslaagd boek dat mooi de discrepantie laat zien tussen menselijk gedrag en hoe mensen denken dat ze moeten zijn."
+        },
+        "Jet": {
+          "sterren": 5,
+          "quote": "Geweldig Vlaams."
+        }
+      }
     },
     {
       "titel": "De gelukkigen",
