@@ -450,7 +450,32 @@
       "jaartalEersteDruk": 1965,
       "datumGelezen": "2015-05-22",
       "locatieBespreking": "Amersfoort",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Na een prachtige sprookjesachtige start, verdwaalt Calvino in zijn bizarre universum."
+        },
+        "Robbie": {
+          "sterren": 1,
+          "quote": "Idee dat de schrijver het in één nacht had geschreven."
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "Af en toe wel grappig, maar het blijven teveel ideetjes die worden uitgemolken."
+        },
+        "Jet": {
+          "sterren": 1,
+          "quote": "Eerste verhaal heel mooi, maar moeilijk daarna te komen."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Paar verhaaltjes zijn wel leuk, maar was teveel, waardoor het niet meer leuk was."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Het geheel en dinosaurussen, geweldig, maar geen goede literatuur."
+        }
+      }
     },
     {
       "titel": "Open stad",
