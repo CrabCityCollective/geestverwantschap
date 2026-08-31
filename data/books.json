@@ -56,7 +56,28 @@
       "jaartalEersteDruk": 2016,
       "datumGelezen": "2017-03-26",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 4,
+          "quote": "Boeiend en tragisch biografisch portret over een kunstenaar die klem komt te zitten in het Sovjetsysteem."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Interessante inkijk in het leven in de Sovjet-Unie met inleiding en afsluiting als absoluut briljantje."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Interessant onderwerp maar met teveel namen omlijst."
+        },
+        "Esther": {
+          "sterren": 2,
+          "quote": "Het had de potentie een mooi verhaal te zijn maar het deed het niet voor mij."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Een interessant onderwerp maar ik werd er niet door gegrepen."
+        }
+      }
     },
     {
       "titel": "Simpele story's",
