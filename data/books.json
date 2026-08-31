@@ -155,7 +155,32 @@
       "jaartalEersteDruk": 2013,
       "datumGelezen": "2014-01-03",
       "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 1,
+          "quote": "Mislukt"
+        },
+        "Min Ae": {
+          "sterren": 0,
+          "quote": "Gemaakt"
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "Gekunsteld"
+        },
+        "Marije": {
+          "sterren": 3,
+          "quote": "Goed idee"
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Teleurstellend"
+        },
+        "Jelte": {
+          "sterren": 1,
+          "quote": "Onbevredigend"
+        }
+      }
     },
     {
       "titel": "Herkomst",
