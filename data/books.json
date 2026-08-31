@@ -410,7 +410,36 @@
       "jaartalEersteDruk": 2015,
       "datumGelezen": "2017-05-20",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Mooie en realistische beschrijving van een relatie onder druk, maar mist net een stukje diepgang."
+        },
+        "Min Ae": {
+          "sterren": 5,
+          "quote": "Geloofwaardig, niet overgedramatiseerd, blikverruimend."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Schitterende schets van een tijdsbeeld en Georg en Isabel."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Gewoon een heel mooi boek."
+        },
+        "Esther": {
+          "sterren": 5,
+          "quote": "Heel Duits. Ik zie Prenzlauerberg voor mij."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Mooi beschreven. Realistische personages."
+        },
+        "Chris": {
+          "sterren": 5,
+          "quote": "Adembenemende roman over de angst voor maatschappelijk verval."
+        }
+      }
     },
     {
       "titel": "Kosmikomische verhalen",
