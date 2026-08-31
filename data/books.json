@@ -251,7 +251,33 @@
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2016,
-      "beoordelingen": {}
+      "datumGelezen": "2020-05-30",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Meer gewaardeerd als ik 15 was en het dan had gelezen."
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "Een ambitieus boek dat qua verhaal niet goed uit de verf komt."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Het is ook allemaal vet oneerlijk."
+        },
+        "Robbie": {
+          "sterren": 1,
+          "quote": "Buiten dat ik het een absurd verhaal vond, was het nog eens heel slecht geschreven."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Ik vond het verhaal niet denderend, maar het onderwerp heel interessant en belangrijk."
+        },
+        "Ruben": {
+          "sterren": 1,
+          "quote": "Het is te bedacht, alsof ze haar gelijk in een internetdiscussie via dit boek wil krijgen."
+        }
+      }
     },
     {
       "titel": "Achter de deur",
