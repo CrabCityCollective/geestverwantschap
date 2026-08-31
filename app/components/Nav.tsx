@@ -4,7 +4,7 @@ export default function Nav({
   actief,
   breed,
 }: {
-  actief: 'boekenlijst' | 'analytics' | 'on-tour' | 'pixel-art';
+  actief: 'boekenlijst' | 'analytics' | 'on-tour';
   breed?: boolean;
 }) {
   return (
@@ -29,14 +29,6 @@ export default function Nav({
         <span aria-current="page">On tour</span>
       ) : (
         <Link href="/on-tour">On tour</Link>
-      )}
-      <span className="site-nav-scheiding" aria-hidden="true">
-        &middot;
-      </span>
-      {actief === 'pixel-art' ? (
-        <span aria-current="page">Pixel art</span>
-      ) : (
-        <Link href="/pixel-art">Pixel art</Link>
       )}
     </nav>
   );
