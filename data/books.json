@@ -288,7 +288,32 @@
       "jaartalEersteDruk": 1964,
       "datumGelezen": "2014-08-17",
       "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 2,
+          "quote": "Prima jeugdboek."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Mooi om samen met het personage dingen over hemzelf te ontdekken."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Je verwacht heel veel, en het komt niet, behalve op de laatste bladzijde."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Afkeer groeit naar medelijden naar sympathie in een mooi, subtiel verhaal."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Klein verhaal, met op het eerste oog weinig kanten, waar uiteindelijk toch wel het een en ander over te zeggen valt."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Ik vond de hoofdpersoon een slappeling, tot de laatste zin in het boek, toen snapte ik zijn gezeur pas."
+        }
+      }
     },
     {
       "titel": "Kom hier dat ik u kus",
