@@ -967,6 +967,41 @@
           "quote": "Dit is geen boek voor mij. Werkvorm top! Wat zegt dit over Japan?"
         }
       }
+    },
+    {
+      "titel": "Bij de buren",
+      "auteur": "Kristine Bilkau",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2020,
+      "datumGelezen": "2025-05-24",
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 4,
+          "quote": "Luchtig lezen over serieuze onderwerpen."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Heel leuke boekbespreking, maar het einde viel tegen."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Heerlijk gelezen, goed beschreven personages."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Bilkau heeft te veel willen doen in dit boek."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Goed boek, veel suspense. Extra ster dankzij bespreking."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Vrouwen lijden maar weer onder 'de man'."
+        }
+      }
     }
   ]
 }
