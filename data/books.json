@@ -497,7 +497,28 @@
       "jaartalEersteDruk": 1947,
       "datumGelezen": "2020-08-15",
       "locatieBespreking": "De Roos",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Grandioos, een Tour de force"
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Bijzonder hoe zo'n boek toch weer actueel kan zijn"
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Heel mooi gedetailleerd opgebouwd verhaal over de pest"
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Prachtige conjunctuur beschrijving van de pest"
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Geloofwaardig om te lezen, hoe gruwelijk met een ramp omgaan"
+        }
+      }
     },
     {
       "titel": "De acht bergen",
