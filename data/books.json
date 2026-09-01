@@ -484,9 +484,34 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2011,
-      "datumGelezen": "2016-03-14",
-      "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "datumGelezen": "2016-05-14",
+      "locatieBespreking": "Hornstraat te Zwolle",
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 1,
+          "quote": "Julius weet het niet, ik ook niet"
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Het heeft me niet gegrepen"
+        },
+        "Marije": {
+          "sterren": 3,
+          "quote": "Boeiend om vanuit het perspectief van de hoofdpersoon andere mensen te ontmoeten, maar het vermaakte me niet altijd. Het heeft me niet gegrepen."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Met plot had ik een ster extra gegeven."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "De dwaaltochten van een onthecht personage laten de lezer zoekend achter."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Bijzondere lezerservaring, die anderen [onduidelijk] geven aan plot, wel bekritiseerd."
+        }
+      }
     },
     {
       "titel": "De pest",
