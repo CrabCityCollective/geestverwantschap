@@ -1,5 +1,5 @@
 export interface Beoordeling {
-  sterren: number;
+  sterren: number | 'n.v.t.';
   quote: string;
 }
 

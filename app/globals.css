@@ -407,6 +407,11 @@ summary.gemiddelde:focus-visible {
   color: var(--goud);
 }
 
+.sterren-nvt {
+  color: rgba(23, 14, 5, 0.5);
+  font-style: italic;
+}
+
 .beoordelingen-lijst {
   list-style: none;
   margin: 0.75rem 0 0;
