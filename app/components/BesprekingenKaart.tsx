@@ -40,6 +40,10 @@ const BEKENDE_STEDEN: BekendeStad[] = [
   { naam: 'Maasbommel', lat: 51.8261, lng: 5.5236 },
   { naam: 'Soest', lat: 52.1747, lng: 5.2917 },
   { naam: 'Dordrecht', lat: 51.8133, lng: 4.6901 },
+  // Camping De Roos, nabij Beerze (Noord-Brabant).
+  { naam: 'De Roos', lat: 51.548, lng: 5.267 },
+  // Camping Mariahoeve, Papenvoort (Drenthe).
+  { naam: 'Mariahoeve', lat: 52.855, lng: 6.601 },
 ];
 
 function vindStad(locatie: string): BekendeStad | null {
