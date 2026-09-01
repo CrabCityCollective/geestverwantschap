@@ -39,6 +39,7 @@ function AnalyseSectie({ titel, boeken }: { titel?: string; boeken: Boek[] }) {
 function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
   const gemiddelde = gemiddeldeSterrenGegeven(boeken, lid);
   const besteBoek = besteBoekVoorLid(boeken, lid);
+  const besteSterren = besteBoek?.beoordelingen[lid].sterren;
 
   return (
     <div className="lid-statistieken">
@@ -51,9 +52,9 @@ function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
           <>Nog geen sterren gegeven</>
         )}
       </p>
-      {besteBoek ? (
+      {besteBoek && typeof besteSterren === 'number' ? (
         <p>
-          Best beoordeeld: {besteBoek.titel} (<Sterren score={besteBoek.beoordelingen[lid].sterren} />)
+          Best beoordeeld: {besteBoek.titel} (<Sterren score={besteSterren} />)
         </p>
       ) : null}
     </div>

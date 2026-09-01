@@ -31,7 +31,9 @@ function telTijdvakken(boeken: Boek[]): Telling[] {
 }
 
 function gemiddeldeSterren(boek: Boek): number | null {
-  const sterren = Object.values(boek.beoordelingen).map((beoordeling) => beoordeling.sterren);
+  const sterren = Object.values(boek.beoordelingen)
+    .map((beoordeling) => beoordeling.sterren)
+    .filter((sterren): sterren is number => typeof sterren === 'number');
   if (sterren.length === 0) {
     return null;
   }
@@ -83,7 +85,7 @@ function besteBoekVoorLid(boeken: Boek[], lid: string): Boek | null {
   let besteSterren = -Infinity;
   for (const boek of boeken) {
     const sterren = boek.beoordelingen[lid]?.sterren;
-    if (sterren === undefined) {
+    if (typeof sterren !== 'number') {
       continue;
     }
     const isBeter =

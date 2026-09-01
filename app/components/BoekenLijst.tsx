@@ -157,7 +157,12 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                     <ul className="beoordelingen-lijst">
                       {beoordelingen.map(([lid, beoordeling]) => (
                         <li key={lid}>
-                          <strong>{lid}</strong> <Sterren score={beoordeling.sterren} />
+                          <strong>{lid}</strong>{' '}
+                          {typeof beoordeling.sterren === 'number' ? (
+                            <Sterren score={beoordeling.sterren} />
+                          ) : (
+                            <span className="sterren-nvt">{beoordeling.sterren}</span>
+                          )}
                           <br />
                           <span className="quote">&bdquo;{beoordeling.quote}&rdquo;</span>
                         </li>
