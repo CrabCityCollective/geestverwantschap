@@ -64,7 +64,7 @@ a:focus-visible {
 .container {
   max-width: 720px;
   margin: 0 auto 2.5rem;
-  padding: 2.5rem 2.5rem 3rem;
+  padding: 2.5rem 1.75rem 3rem;
   background: linear-gradient(180deg, var(--perkament) 0%, var(--perkament-schaduw) 100%);
   border: 6px solid var(--inkt);
   border-radius: 14px;
@@ -75,7 +75,7 @@ a:focus-visible {
 }
 
 .container-breed {
-  max-width: 1200px;
+  max-width: 1320px;
 }
 
 .site-nav {
@@ -99,7 +99,7 @@ a:focus-visible {
 }
 
 .site-nav-breed {
-  max-width: 1200px;
+  max-width: 1320px;
 }
 
 .site-nav [aria-current='page'] {
@@ -674,6 +674,14 @@ summary.gemiddelde:focus-visible {
   font-weight: 700;
   font-size: 0.7rem;
   box-shadow: 0 0 0 1px var(--inkt);
+}
+
+.besprekingen-kaart-popup .leaflet-popup-content {
+  max-width: 220px;
+}
+
+.besprekingen-kaart-popup .leaflet-popup-content.leaflet-popup-scrolled {
+  padding-right: 0.5rem;
 }
 
 .besprekingen-kaart-popup-titel {
