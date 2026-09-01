@@ -94,7 +94,7 @@ export default function BesprekingenKaart({ locatieGroepen }: { locatieGroepen: 
         />
         {Array.from(perStad.values()).map(({ stad, groepen }) => (
           <Marker key={stad.naam} position={[stad.lat, stad.lng]} icon={maakPinIcon(aantalBoeken(groepen))}>
-            <Popup>
+            <Popup maxHeight={280} minWidth={220} className="besprekingen-kaart-popup">
               <p className="besprekingen-kaart-popup-titel">{stad.naam}</p>
               {groepen.map((groep) => (
                 <div key={groep.locatie} className="besprekingen-kaart-popup-venue">

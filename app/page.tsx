@@ -20,8 +20,8 @@ export default function HomePage() {
 
   return (
     <>
-      <Nav actief="boekenlijst" />
-      <main className="container">
+      <Nav actief="boekenlijst" breed />
+      <main className="container container-breed">
         <h1>
           <span className="titel-boekenclub">Boekenclub</span>
           <br />

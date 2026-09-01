@@ -10,9 +10,9 @@ export default function Nav({
   return (
     <nav className={breed ? 'site-nav site-nav-breed' : 'site-nav'}>
       {actief === 'boekenlijst' ? (
-        <span aria-current="page">Boekenlijst</span>
+        <span aria-current="page">Boeken</span>
       ) : (
-        <Link href="/">Boekenlijst</Link>
+        <Link href="/">Boeken</Link>
       )}
       <span className="site-nav-scheiding" aria-hidden="true">
         &middot;
