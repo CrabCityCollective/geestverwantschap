@@ -60,6 +60,23 @@ function aantalBoeken(groepen: LocatieGroep[]): number {
   return groepen.reduce((som, groep) => som + groep.boeken.length, 0);
 }
 
+// Een groep "heeft" een straatnaam als de locatietekst meer is dan alleen de stadsnaam
+// (bv. "Hornstraat te Zwolle" tegenover kaal "Zwolle").
+function heeftStraatnaam(groep: LocatieGroep, stad: BekendeStad): boolean {
+  return groep.locatie.toLowerCase() !== stad.naam.toLowerCase();
+}
+
+function sorteerOpStraatnaam(groepen: LocatieGroep[], stad: BekendeStad): LocatieGroep[] {
+  return [...groepen].sort((a, b) => {
+    const aHeeft = heeftStraatnaam(a, stad);
+    const bHeeft = heeftStraatnaam(b, stad);
+    if (aHeeft === bHeeft) {
+      return 0;
+    }
+    return aHeeft ? -1 : 1;
+  });
+}
+
 function maakPinIcon(aantal: number): L.DivIcon {
   return L.divIcon({
     className: 'besprekingen-kaart-pin',
@@ -100,7 +117,7 @@ export default function BesprekingenKaart({ locatieGroepen }: { locatieGroepen: 
           <Marker key={stad.naam} position={[stad.lat, stad.lng]} icon={maakPinIcon(aantalBoeken(groepen))}>
             <Popup maxHeight={280} minWidth={220} className="besprekingen-kaart-popup">
               <p className="besprekingen-kaart-popup-titel">{stad.naam}</p>
-              {groepen.map((groep) => (
+              {sorteerOpStraatnaam(groepen, stad).map((groep) => (
                 <div key={groep.locatie} className="besprekingen-kaart-popup-venue">
                   <p className="besprekingen-kaart-popup-venue-naam">
                     {groep.locatie}
