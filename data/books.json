@@ -1175,6 +1175,46 @@
           "quote": "±50 blz. Geen sterren."
         }
       }
+    },
+    {
+      "titel": "Kairos",
+      "auteur": "Jenny Erpenbeck",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Chris",
+      "jaartalEersteDruk": 2021,
+      "datumGelezen": "2025-03-22",
+      "locatieBespreking": "Hostel Apeldoorn",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 2,
+          "quote": "Intellectuele irritante hoofdpersoon, maar interessante geschiedenis van de DDR."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Het feit dat ik me zo aan Hans heb geërgerd, zegt wel iets dat het knap geschreven is."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Zelden zo geïrriteerd tijdens het lezen van een boek. Zou het niemand aanraden."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Kan er niks uithalen."
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Interessant maar deprimerend."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Erg boeiend beeld van Oost-Berlijn rondom de jaren van de val van de Muur."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "De scheve verrotte relatie als parabel voor de Duitse eenwording, dat vind ik zo mooi aan dit boek."
+        }
+      }
     }
   ]
 }
