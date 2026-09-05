@@ -22,8 +22,33 @@
       "uitgekozenDoor": "Marije",
       "jaartalEersteDruk": 2012,
       "datumGelezen": "2013-10-12",
-      "locatieBespreking": "Antwerpen",
-      "beoordelingen": {}
+      "locatieBespreking": "Guldensporenstraat te Antwerpen",
+      "beoordelingen": {
+        "Marije": {
+          "sterren": 3,
+          "quote": "Helft heeft het boek niet uitgelezen."
+        },
+        "Jelte": {
+          "sterren": 2,
+          "quote": "Weinig prikkelend."
+        },
+        "Min Ae": {
+          "sterren": 1,
+          "quote": "Moeilijk."
+        },
+        "Ruben": {
+          "sterren": 1,
+          "quote": "Te veel nadruk op zwart & wit."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Levert interessant beeld van Z-A, maar niet geschikt voor roman."
+        },
+        "Esther": {
+          "sterren": "n.v.t.",
+          "quote": "Te weinig personage-ontwikkeling"
+        }
+      }
     },
     {
       "titel": "Het Boek Ont",
