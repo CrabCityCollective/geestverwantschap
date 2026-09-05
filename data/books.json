@@ -591,7 +591,32 @@
       "jaartalEersteDruk": 2011,
       "datumGelezen": "2013-11-22",
       "locatieBespreking": "De Mui te Amersfoort",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 4,
+          "quote": "ambachtelijk geschreven"
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": ""
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Leuk vertelperspectief, dun maar complex, technisch goed boek"
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "verwarring wie wie was"
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "moeilijk die personages"
+        },
+        "Marije": {
+          "sterren": 2,
+          "quote": "Met veel plezier gelezen, origineel, maar onaantrekkelijke personages"
+        }
+      }
     },
     {
       "titel": "Een handvol sneeuw",
