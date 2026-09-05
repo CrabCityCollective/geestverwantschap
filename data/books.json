@@ -602,7 +602,36 @@
       "jaartalEersteDruk": 2012,
       "datumGelezen": "2015-11-28",
       "locatieBespreking": "De Mui te Amersfoort",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Hoewel ik een mooi beeld heb gekregen van de verschillende tijdperken, bleef het personage een blinde vlek."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Het is niet mijn stijl."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Als ik alle complexe details had gesnapt, gaf ik vast 4 sterren."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Deels prachtig, deels te traag."
+        },
+        "Esther": {
+          "sterren": 5,
+          "quote": "Taal en structuur vond ik erg interessant, en al die verschillende verhalen maken het tot een bruisend geheel."
+        },
+        "Jelte": {
+          "sterren": 2,
+          "quote": "Ergens voel je wel dat het een goed boek is, maar het heeft me geen seconde kunnen boeien."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Virtuoos geschreven boek dat mooi historische tijden weet op te roepen."
+        }
+      }
     },
     {
       "titel": "De uren die we deelden",
