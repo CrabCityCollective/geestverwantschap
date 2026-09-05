@@ -558,7 +558,36 @@
       "jaartalEersteDruk": 2017,
       "datumGelezen": "2017-11-11",
       "locatieBespreking": "Maasbommel",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Hoe een mens een relatie kan hebben met een gebied. Somber doch sereen. Weemoed is dit boek niet vreemd."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Het karakter van de bergen is in dit boek minstens zo belangrijk als die van de personages."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Mooie details, geloofwaardige omschrijving van echte vriendschap en ruimte om zelf dingen in te vullen."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Liefdevol maar afstandelijk tegelijk."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Het lezen van deze roman is als een bergwandeling die je naar serene hoogte brengt."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Sfeervol verhaal met rijke gevoelswereld. Bloed langzaam dood."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Ik krijg zin in een bergwandeling."
+        }
+      }
     },
     {
       "titel": "Fietsmod",
