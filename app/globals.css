@@ -274,6 +274,20 @@ h1::after {
   min-width: 0;
 }
 
+.boek-titel-link {
+  color: inherit;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.boek-titel-link:hover,
+.boek-titel-link:focus-visible {
+  color: var(--goud-licht);
+  border-bottom-color: currentColor;
+}
+
 .boek-titel-iconen {
   display: flex;
   align-items: center;
@@ -749,4 +763,70 @@ summary.gemiddelde:focus-visible {
   margin: 0.35rem 0 0;
   padding-left: 1.2rem;
   color: var(--tekst-secundair);
+}
+
+.boek-detail {
+  max-width: 760px;
+}
+
+.boek-detail-terug {
+  margin: 0 0 1.5rem;
+}
+
+.boek-detail-iconen {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: -0.5rem 0 1.5rem;
+}
+
+.boek-detail-iconen .kenmerk-icoon,
+.boek-detail-iconen .lid-icoon {
+  width: 34px;
+  height: 34px;
+}
+
+.boek-detail-meta {
+  text-align: center;
+  font-size: 1.15rem;
+}
+
+.boek-detail-datum {
+  text-align: center;
+}
+
+.boek-detail-kenmerken {
+  justify-content: center;
+  gap: 1rem 2.5rem;
+  margin-top: 1.75rem;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid var(--inkt);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f2e4bc 0%, #e6d09a 100%);
+  box-shadow: inset 0 0 0 2px var(--goud);
+}
+
+.boek-detail-kenmerken dt {
+  font-size: 0.8rem;
+}
+
+.boek-detail-kenmerken dd {
+  font-size: 1.05rem;
+}
+
+.boek-detail-gemiddelde {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+}
+
+.boek-detail-beoordelingen {
+  gap: 1rem;
+}
+
+.boek-detail-beoordelingen li {
+  padding: 0.9rem 1.25rem;
+  font-size: 1.05rem;
 }
