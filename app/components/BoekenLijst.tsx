@@ -1,12 +1,14 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import Link from 'next/link';
 import type { Boek } from '../../lib/types';
 import Sterren from './Sterren';
 import BoekTitelIconen from './BoekIconen';
 
 interface BoekMetScore {
   boek: Boek;
+  index: number;
   score: number | null;
 }
 
@@ -100,12 +102,14 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
         <p>Geen boeken gevonden{zoekterm ? <> voor &bdquo;{zoekterm}&rdquo;</> : null}.</p>
       ) : (
         <ul className="boekenlijst">
-          {gefilterdeBoeken.map(({ boek, score }, index) => {
+          {gefilterdeBoeken.map(({ boek, index, score }) => {
             const beoordelingen = Object.entries(boek.beoordelingen);
             return (
               <li key={`${boek.titel}-${index}`} className="boek">
                 <h2>
-                  <span className="boek-titel-tekst">{boek.titel}</span>
+                  <Link href={`/boek/${index}`} className="boek-titel-link">
+                    <span className="boek-titel-tekst">{boek.titel}</span>
+                  </Link>
                   <BoekTitelIconen
                     geslachtAuteur={boek.geslachtAuteur}
                     landVanHerkomstAuteur={boek.landVanHerkomstAuteur}

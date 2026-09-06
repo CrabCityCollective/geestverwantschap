@@ -13,8 +13,10 @@ const { gemiddeldeSterren, sorteerOpGemiddeldeSterren } = analyse as unknown as 
 export const dynamic = 'force-dynamic';
 
 export default function HomePage() {
-  const boeken = sorteerOpGemiddeldeSterren(getBooks()).map((boek) => ({
+  const alleBoeken = getBooks();
+  const boeken = sorteerOpGemiddeldeSterren(alleBoeken).map((boek) => ({
     boek,
+    index: alleBoeken.indexOf(boek),
     score: gemiddeldeSterren(boek),
   }));
 

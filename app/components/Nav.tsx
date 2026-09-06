@@ -4,7 +4,7 @@ export default function Nav({
   actief,
   breed,
 }: {
-  actief: 'boekenlijst' | 'analytics' | 'on-tour';
+  actief?: 'boekenlijst' | 'analytics' | 'on-tour';
   breed?: boolean;
 }) {
   return (
