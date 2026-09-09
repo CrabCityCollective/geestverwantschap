@@ -312,8 +312,33 @@
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2021,
       "datumGelezen": "2022-01-08",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Holterberg te Utrecht",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Aan het begin blij verrast met het boek en wilde verder lezen. Vond Zelda intrigerend, daarna bergafwaarts en las ik soms zelfs met irritatie."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Aanvankelijk geïntrigeerd gelezen, maar de leegheid en ongrijpbaarheid van de hoofdpersonen zorgde uiteindelijk voor teleurstelling."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Mooi geschreven, met plezier gelezen, maar het verhaal kwam niet tot leven."
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Er was teveel dat mij ergerde."
+        },
+        "Esther": {
+          "sterren": 2,
+          "quote": "Typisch zo'n boek van Grunberg waarbij ik niet zoveel heb met de hoofdpersonen."
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "De onechte personages konden mij niet boeien. Ook het verrassende einde kon de roman niet redden."
+        }
+      }
     },
     {
       "titel": "De macht",
