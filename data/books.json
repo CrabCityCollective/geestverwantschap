@@ -855,7 +855,36 @@
       "jaartalEersteDruk": 2017,
       "datumGelezen": "2019-11-30",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 5,
+          "quote": "Precies het soort boek waar ik geen genoeg van krijg."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Veel herkenning, veel gelachen, maar ik mis een diepere laag."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Vlot geschreven, maar eendimensionale roman over falende communicatie."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Huiskamerroman, thema's kwamen niet uit de verf."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ik heb nog vaak aan Alex, Barb. en Bizzy gedacht."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Komisch beschreven, doch tragische personages."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "De personages waren allemaal OK, hoe raar ook."
+        }
+      }
     },
     {
       "titel": "De zonderlinge avonturen van het geniale bommenmeisje",
