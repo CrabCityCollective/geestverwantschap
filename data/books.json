@@ -843,8 +843,33 @@
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2015,
       "datumGelezen": "2015-07-10",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Egelantierstraat te Utrecht",
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 3,
+          "quote": "Zijn oude werk bevalt mij toch beter."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Het ziet er voor vrouwen niet al te best uit."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Ondanks urgent onderwerp wordt dit boek meer door de eigen individualiteit dan door de tijdsgeest gedicteerd."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ik moest te vaak dingen twee keer lezen, maar ik vond het wel een goed boek."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Teveel theorie."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Er was een leuke opbouw, maar het kwam niet tot uitbarsting."
+        }
+      }
     },
     {
       "titel": "Rimini",
