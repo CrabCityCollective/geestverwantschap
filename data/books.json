@@ -745,8 +745,37 @@
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2005,
       "datumGelezen": "2022-12-16",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Furkabaan te Utrecht",
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 2,
+          "quote": "Tranentrekker."
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Iets teveel heftigheid."
+        },
+        "Jelte": {
+          "sterren": 2,
+          "quote": "Het had in alle opzichten wel een onsje minder gemogen."
+        },
+        "Robbie": {
+          "sterren": 2,
+          "quote": "Clichématig verhaal, maar wel met plezier gelezen."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Ik vond de film leuker."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Wanneer verdriet geen masker draagt."
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "Een overdaad aan emoties met een sausje van christelijke wijsheid."
+        }
+      }
     },
     {
       "titel": "Onderworpen",
