@@ -1308,6 +1308,37 @@
           "quote": "Leest als een trein. Check Georgia O'Keeffe."
         }
       }
+    },
+    {
+      "titel": "Lavinia",
+      "auteur": "Ursula K. Le Guin",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 2008,
+      "locatieBespreking": "Puutbeek te Zwolle",
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 3,
+          "quote": "Interessante hervertelling van Aeneas, maar ik voelde te weinig bij het verhaal."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Ik waardeer het literaire spel."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Na aanvankelijke opstartproblemen wel met plezier gelezen."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Dit heeft mijn vooroordeel van droge mythologie weggevaagd."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Goed om mythologie vanuit het perspectief van een vrouw te beleven."
+        }
+      }
     }
   ]
 }
