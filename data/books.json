@@ -134,8 +134,37 @@
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2013,
       "datumGelezen": "2014-06-21",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Kerkweg te Utrecht",
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Ik weet het niet."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "De onmogelijkheid om naar de planeet van zijn grootvader te reizen."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Mooie combinatie van het poëtische en schilderkunst en de hardheid van het soldatenbestaan."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ik hoef het boek niet nog eens te lezen."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Schitterende details in de schilderwerkplaats."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Deel één en twee vond ik heel mooi. Deel drie had van mij niet gehoeven."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Hele knappe compositie. Ik kan nog veel van Hertmans leren."
+        }
+      }
     },
     {
       "titel": "Albrecht en wij",
