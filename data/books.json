@@ -834,10 +834,31 @@
       "landVanHerkomstAuteur": "Zweden",
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Min Ae",
-      "jaartalEersteDruk": 2009,
+      "jaartalEersteDruk": 2013,
       "datumGelezen": "2014-03-14",
-      "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "locatieBespreking": "Nieuwstraat te Zwolle",
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 1,
+          "quote": "Grappig boek, maar beklijft niet."
+        },
+        "Jelte": {
+          "sterren": 2,
+          "quote": "Het boek wilde grappig zijn om leuk te zijn."
+        },
+        "Chris": {
+          "sterren": 1,
+          "quote": "Over dit boek kan ik niet teveel vertellen. Absoluut niet bulderend lachen, hooguit glimlachen (super absurd)."
+        },
+        "Esther": {
+          "sterren": 1,
+          "quote": "Is dit literatuur? Nee."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": ""
+        }
+      }
     },
     {
       "titel": "Gestolen leven",
