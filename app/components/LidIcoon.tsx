@@ -1,4 +1,5 @@
 import type { ReactElement } from 'react';
+import { weergaveNaam } from '../../lib/aliassen';
 
 const INKT = '#170e05';
 const PERKAMENT = '#ecd9a8';
@@ -154,7 +155,7 @@ export default function LidIcoon({ lid, size = 22 }: { lid: string; size?: numbe
   return (
     <span
       className="lid-icoon"
-      title={lid}
+      title={weergaveNaam(lid)}
       style={{ width: size, height: size, minWidth: size }}
     >
       <Icoon />
