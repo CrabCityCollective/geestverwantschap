@@ -175,7 +175,36 @@
       "jaartalEersteDruk": 2014,
       "datumGelezen": "2015-02-01",
       "locatieBespreking": "De Mui te Amersfoort",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 2,
+          "quote": "vlot geschreven, te weinig diepgang."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Interessant thema, te weinig diepgang."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Te voorspelbaar."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Er mist net iets."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Een mooie clash tussen de oprechte wereld van de Edo's en de oprechte wereld van de Sariahs."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Wel leuk om te lezen, bleef niet hangen."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": ""
+        }
+      }
     },
     {
       "titel": "Aleksandra",
