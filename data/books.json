@@ -1538,6 +1538,42 @@
           "quote": "Goed om dit geleerd te hebben, maar te gruwelijk om te lezen."
         }
       }
+    },
+    {
+      "titel": "Davita's Harp",
+      "auteur": "Chaim Potok",
+      "landVanHerkomstAuteur": "Verenigde Staten",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Ruben",
+      "jaartalEersteDruk": 1985,
+      "datumGelezen": "2025-02-21",
+      "locatieBespreking": "stay okay te Utrecht",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Er zitten veel kanten aan waarover je kan nadenken. Dat vind ik wel interessant."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Ondanks de worsteling aan het begin, uiteindelijk met heel veel plezier gelezen."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Interessante schets van communistisch-Joods milieu, maar wat schematische personages."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Inkijkje in deze periode vanuit Amerikaans perspectief wel interessant."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Heeft mij gebracht wat ik zocht: een ervaring van het Joods-zijn in het Amerika van de jaren '30."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Hoofdpersonage nog iets aan de oppervlakte, verhaal wel interessant."
+        }
+      }
     }
   ]
 }
