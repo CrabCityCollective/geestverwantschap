@@ -15,8 +15,17 @@ function telLandenVanAuteurs(boeken: Boek[]): Telling[] {
   return tellenPerWaarde(boeken, (boek) => boek.landVanHerkomstAuteur).sort((a, b) => b.aantal - a.aantal);
 }
 
+const GESLACHT_VOLGORDE: Record<string, number> = { Man: 0, Vrouw: 1 };
+
 function telGeslachtVanAuteurs(boeken: Boek[]): Telling[] {
-  return tellenPerWaarde(boeken, (boek) => boek.geslachtAuteur).sort((a, b) => b.aantal - a.aantal);
+  return tellenPerWaarde(boeken, (boek) => boek.geslachtAuteur).sort((a, b) => {
+    const volgordeA = GESLACHT_VOLGORDE[a.label] ?? 2;
+    const volgordeB = GESLACHT_VOLGORDE[b.label] ?? 2;
+    if (volgordeA !== volgordeB) {
+      return volgordeA - volgordeB;
+    }
+    return b.aantal - a.aantal;
+  });
 }
 
 function bepaalDecennium(jaartal: number): string {

@@ -52,10 +52,22 @@ test('telLandenVanAuteurs telt boeken per land en sorteert aflopend', () => {
   ]);
 });
 
-test('telGeslachtVanAuteurs telt boeken per geslacht en sorteert aflopend', () => {
+test('telGeslachtVanAuteurs telt boeken per geslacht en zet Man altijd eerst', () => {
   assert.deepEqual(telGeslachtVanAuteurs(boeken), [
     { label: 'Man', aantal: 2 },
     { label: 'Vrouw', aantal: 1 },
+  ]);
+});
+
+test('telGeslachtVanAuteurs zet Man eerst, ook als Vrouw vaker voorkomt', () => {
+  const boekenMeerVrouwen = [
+    { ...boeken[0], geslachtAuteur: 'Vrouw' },
+    { ...boeken[1], geslachtAuteur: 'Vrouw' },
+    { ...boeken[2], geslachtAuteur: 'Man' },
+  ];
+  assert.deepEqual(telGeslachtVanAuteurs(boekenMeerVrouwen), [
+    { label: 'Man', aantal: 1 },
+    { label: 'Vrouw', aantal: 2 },
   ]);
 });
 
