@@ -1035,8 +1035,41 @@
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 1995,
       "datumGelezen": "2016-02-06",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Kerkweg te Utrecht",
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 3,
+          "quote": "Gecompliceerd boek dat uiteindelijk niet tot begrijpelijk verhaal leidt."
+        },
+        "Esther": {
+          "sterren": 2.5,
+          "quote": "McHenko, was het maar een boekenreeks."
+        },
+        "Jelte": {
+          "sterren": 2,
+          "quote": "Onduidelijkheid omtrent plaats, tijd en passages leidde af van het anders mooie verhaal."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Mooi hoe zo'n grote gebeurtenis in de geschiedenis wordt verteld... zo'n klein verhaal."
+        },
+        "Jet": {
+          "sterren": 2.5,
+          "quote": "Leest lekker weg."
+        },
+        "Marije": {
+          "sterren": 3,
+          "quote": "Menselijk drama is geladen in complexe politiek."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Het verhaal was subtiel, niet over de top."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Iets met ambiguïteit."
+        }
+      }
     },
     {
       "titel": "De geheugenpolitie",
