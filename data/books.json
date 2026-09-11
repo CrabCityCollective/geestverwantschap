@@ -1173,15 +1173,48 @@
       "beoordelingen": {}
     },
     {
-      "titel": "Waar de rivierkreeften zingen",
+      "titel": "Daar waar de rivierkreeften zingen",
       "auteur": "Delia Owens",
       "landVanHerkomstAuteur": "Verenigde Staten",
       "geslachtAuteur": "Vrouw",
       "uitgekozenDoor": "Robbie",
       "jaartalEersteDruk": 2018,
-      "datumGelezen": "2023-06-24",
+      "datumGelezen": "2023-06-01",
       "locatieBespreking": "Dordrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Prachtige natuur, jammer van de rechtszaak."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ik ga het niet onthouden, maar wel met plezier gelezen."
+        },
+        "Chris": {
+          "sterren": 1,
+          "quote": "Aanhoudende irritatie aan de aaneenschakeling van cliché's."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Leest als een film."
+        },
+        "Esther": {
+          "sterren": 2,
+          "quote": "Ondanks dat ik meeleefde met de hoofdpersoon, was het verhaal in het geheel niet zo aansprekend."
+        },
+        "Yvonne": {
+          "sterren": 3,
+          "quote": "Ik vond het begin vooral mooi."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Prachtig omschreven natuur, is verhaal doorspekt met cliché's."
+        },
+        "Jelte": {
+          "sterren": 2,
+          "quote": "1e indruk: alles klopt, maar bij nadere inspectie is het te gemaakt."
+        }
+      }
     },
     {
       "titel": "De Parade",
