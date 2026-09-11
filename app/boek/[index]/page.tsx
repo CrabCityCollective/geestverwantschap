@@ -3,6 +3,7 @@ import Link from 'next/link';
 import * as boekenclub from '../../../lib/boekenclub';
 import * as analyse from '../../../lib/analyse';
 import type { Boek } from '../../../lib/types';
+import { weergaveNaam } from '../../../lib/aliassen';
 import Nav from '../../components/Nav';
 import Sterren from '../../components/Sterren';
 import BoekTitelIconen from '../../components/BoekIconen';
@@ -63,7 +64,7 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
           </div>
           <div>
             <dt>Uitgekozen door</dt>
-            <dd>{boek.uitgekozenDoor}</dd>
+            <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
           </div>
           {boek.landSetting ? (
             <div>
@@ -97,7 +98,7 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
           <ul className="beoordelingen-lijst boek-detail-beoordelingen">
             {beoordelingen.map(([lid, beoordeling]) => (
               <li key={lid}>
-                <strong>{lid}</strong>{' '}
+                <strong>{weergaveNaam(lid)}</strong>{' '}
                 {typeof beoordeling.sterren === 'number' ? (
                   <Sterren score={beoordeling.sterren} />
                 ) : (

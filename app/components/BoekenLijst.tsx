@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Boek } from '../../lib/types';
+import { weergaveNaam } from '../../lib/aliassen';
 import Sterren from './Sterren';
 import BoekTitelIconen from './BoekIconen';
 
@@ -64,7 +65,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
 
       <div className="filters-wrap">
         <details className="filter-dropdown">
-          <summary>Filter op lid{geselecteerdLid ? `: ${geselecteerdLid}` : ''}</summary>
+          <summary>Filter op lid{geselecteerdLid ? `: ${weergaveNaam(geselecteerdLid)}` : ''}</summary>
           <div className="filter-knoppen">
             {leden.map((lid) => (
               <button
@@ -74,7 +75,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                 aria-pressed={geselecteerdLid === lid}
                 onClick={() => setGeselecteerdLid((huidig) => (huidig === lid ? null : lid))}
               >
-                {lid}
+                {weergaveNaam(lid)}
               </button>
             ))}
           </div>
@@ -132,7 +133,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                   </div>
                   <div>
                     <dt>Uitgekozen door</dt>
-                    <dd>{boek.uitgekozenDoor}</dd>
+                    <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
                   </div>
                   {boek.landSetting ? (
                     <div>
@@ -161,7 +162,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                     <ul className="beoordelingen-lijst">
                       {beoordelingen.map(([lid, beoordeling]) => (
                         <li key={lid}>
-                          <strong>{lid}</strong>{' '}
+                          <strong>{weergaveNaam(lid)}</strong>{' '}
                           {typeof beoordeling.sterren === 'number' ? (
                             <Sterren score={beoordeling.sterren} />
                           ) : (

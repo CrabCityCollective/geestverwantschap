@@ -1,6 +1,7 @@
 import * as boekenclub from '../../lib/boekenclub';
 import * as analyse from '../../lib/analyse';
 import type { Boek, BoekenclubData, Telling } from '../../lib/types';
+import { weergaveNaam } from '../../lib/aliassen';
 import Balkdiagram from '../components/Balkdiagram';
 import Verdelingsbalk from '../components/Verdelingsbalk';
 import Nav from '../components/Nav';
@@ -98,11 +99,11 @@ export default function AnalysePagina() {
           <section key={lid} className="lid-sectie">
             <h2>
               <LidIcoon lid={lid} size={40} />
-              {lid}
+              {weergaveNaam(lid)}
             </h2>
             <LidStatistieken lid={lid} boeken={boeken} />
             <AnalyseSectie
-              titel={`Uitgekozen door ${lid}`}
+              titel={`Uitgekozen door ${weergaveNaam(lid)}`}
               boeken={boeken.filter((boek: Boek) => boek.uitgekozenDoor === lid)}
             />
           </section>
