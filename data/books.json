@@ -1018,7 +1018,32 @@
       "jaartalEersteDruk": 1994,
       "datumGelezen": "2021-06-23",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 5,
+          "quote": "Het gaf me een lekker unheimisch gevoel."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Boeiend onderwerp, maar het heeft me toch niet echt gegrepen."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Een verwachtingsvolle opbouw naar een climax, maar die bleef uit."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Toch een gebrek dat er geen uitsluitsel wordt gegeven over het hoe en waarom."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Hele hoge verwachtingen, maar die kwamen niet allemaal uit."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Spannend en beklemmend, leest als een trein."
+        }
+      }
     },
     {
       "titel": "Normale mensen",
