@@ -67,6 +67,23 @@ function gemiddeldeSterrenGegeven(boeken: Boek[], lid: string): number | null {
   return sterren.reduce((a, b) => a + b, 0) / sterren.length;
 }
 
+const MAX_STERREN = 5;
+
+function sterrenVerdelingVoorLid(boeken: Boek[], lid: string): Telling[] {
+  const tellingen = new Map<number, number>();
+  for (const boek of boeken) {
+    const sterren = boek.beoordelingen[lid]?.sterren;
+    if (typeof sterren !== 'number') {
+      continue;
+    }
+    tellingen.set(sterren, (tellingen.get(sterren) ?? 0) + 1);
+  }
+  return Array.from({ length: MAX_STERREN + 1 }, (_, sterren) => ({
+    label: sterren === 1 ? '1 ster' : `${sterren} sterren`,
+    aantal: tellingen.get(sterren) ?? 0,
+  }));
+}
+
 function groepeerPerLocatie(boeken: Boek[]): { locatie: string; boeken: Boek[] }[] {
   const groepen = new Map<string, Boek[]>();
   for (const boek of boeken) {
@@ -106,6 +123,7 @@ module.exports = {
   gemiddeldeSterren,
   sorteerOpGemiddeldeSterren,
   gemiddeldeSterrenGegeven,
+  sterrenVerdelingVoorLid,
   besteBoekVoorLid,
   groepeerPerLocatie,
 };
