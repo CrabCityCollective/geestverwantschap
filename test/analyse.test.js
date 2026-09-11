@@ -10,6 +10,7 @@ const {
   gemiddeldeSterren,
   sorteerOpGemiddeldeSterren,
   gemiddeldeSterrenGegeven,
+  sterrenVerdelingVoorLid,
   besteBoekVoorLid,
   groepeerPerLocatie,
 } = require('../lib/analyse.ts');
@@ -145,6 +146,28 @@ test('besteBoekVoorLid geeft het boek met de hoogste sterren van dat lid, bij ge
 
 test('besteBoekVoorLid geeft null als een lid nog niets beoordeeld heeft', () => {
   assert.equal(besteBoekVoorLid(boekenMetSterren, 'Jelte'), null);
+});
+
+test('sterrenVerdelingVoorLid telt hoe vaak een lid elk aantal sterren gaf, inclusief nullen', () => {
+  assert.deepEqual(sterrenVerdelingVoorLid(boekenMetSterren, 'Chris'), [
+    { label: '0 sterren', aantal: 0 },
+    { label: '1 ster', aantal: 0 },
+    { label: '2 sterren', aantal: 1 },
+    { label: '3 sterren', aantal: 0 },
+    { label: '4 sterren', aantal: 0 },
+    { label: '5 sterren', aantal: 2 },
+  ]);
+});
+
+test('sterrenVerdelingVoorLid geeft enkel nullen als een lid nog niets beoordeeld heeft', () => {
+  assert.deepEqual(sterrenVerdelingVoorLid(boekenMetSterren, 'Jelte'), [
+    { label: '0 sterren', aantal: 0 },
+    { label: '1 ster', aantal: 0 },
+    { label: '2 sterren', aantal: 0 },
+    { label: '3 sterren', aantal: 0 },
+    { label: '4 sterren', aantal: 0 },
+    { label: '5 sterren', aantal: 0 },
+  ]);
 });
 
 const boekenMetLocatie = [

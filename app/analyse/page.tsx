@@ -8,14 +8,21 @@ import Sterren from '../components/Sterren';
 import LidIcoon from '../components/LidIcoon';
 
 const { readData } = boekenclub as unknown as { readData: (filePath?: string) => BoekenclubData };
-const { telLandenVanAuteurs, telGeslachtVanAuteurs, telTijdvakken, gemiddeldeSterrenGegeven, besteBoekVoorLid } =
-  analyse as unknown as {
-    telLandenVanAuteurs: (boeken: Boek[]) => Telling[];
-    telGeslachtVanAuteurs: (boeken: Boek[]) => Telling[];
-    telTijdvakken: (boeken: Boek[]) => Telling[];
-    gemiddeldeSterrenGegeven: (boeken: Boek[], lid: string) => number | null;
-    besteBoekVoorLid: (boeken: Boek[], lid: string) => Boek | null;
-  };
+const {
+  telLandenVanAuteurs,
+  telGeslachtVanAuteurs,
+  telTijdvakken,
+  gemiddeldeSterrenGegeven,
+  sterrenVerdelingVoorLid,
+  besteBoekVoorLid,
+} = analyse as unknown as {
+  telLandenVanAuteurs: (boeken: Boek[]) => Telling[];
+  telGeslachtVanAuteurs: (boeken: Boek[]) => Telling[];
+  telTijdvakken: (boeken: Boek[]) => Telling[];
+  gemiddeldeSterrenGegeven: (boeken: Boek[], lid: string) => number | null;
+  sterrenVerdelingVoorLid: (boeken: Boek[], lid: string) => Telling[];
+  besteBoekVoorLid: (boeken: Boek[], lid: string) => Boek | null;
+};
 
 export const dynamic = 'force-dynamic';
 
@@ -56,6 +63,11 @@ function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
         <p>
           Best beoordeeld: {besteBoek.titel} (<Sterren score={besteSterren} />)
         </p>
+      ) : null}
+      {gemiddelde !== null ? (
+        <div className="grafieken-grid">
+          <Balkdiagram titel="Verdeling van gegeven sterren" data={sterrenVerdelingVoorLid(boeken, lid)} />
+        </div>
       ) : null}
     </div>
   );
