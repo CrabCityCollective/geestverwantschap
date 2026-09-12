@@ -247,8 +247,33 @@
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2003,
       "datumGelezen": "2017-10-05",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Furkabaan te Utrecht",
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 3,
+          "quote": "Sfeervolle roman maar met schematische personages."
+        },
+        "Robbie": {
+          "sterren": 2,
+          "quote": "Nare vent, te weinig verdieping van de karakters."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Zo extreem dat ik er niks mee kan, personages te gedateerd."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Tegenvaller na Americanah, maar door herkenningspunten 3 sterren, verhaal te heftig."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Ondanks Kambili en allerlei andere toevoegingen waar we niet zoveel mee kunnen, heb ik dit boek snel gelezen en greep het me."
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Somber, de personages ergerden me. Helaas."
+        }
+      }
     },
     {
       "titel": "Alles wat er was",
