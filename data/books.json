@@ -1719,6 +1719,37 @@
           "quote": "Hoofdpersonage nog iets aan de oppervlakte, verhaal wel interessant."
         }
       }
+    },
+    {
+      "titel": "De onderstroom",
+      "auteur": "Benjamin Myers",
+      "landVanHerkomstAuteur": "Verenigd Koninkrijk",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Jelte",
+      "jaartalEersteDruk": 2019,
+      "datumGelezen": "2024-05-25",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Irritante schrijfstijl."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Zeer romantisch verhaal, enigszins clichématig maar wel fijn leesboek."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Gelezen in een passende omgeving (Alpen)."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Corny, maar heerlijk gelezen."
+        },
+        "Jelte": {
+          "sterren": 5,
+          "quote": "Heel puur."
+        }
+      }
     }
   ]
 }
