@@ -226,7 +226,32 @@
       "jaartalEersteDruk": 1942,
       "datumGelezen": "2022-03-27",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 4,
+          "quote": "Er lijkt weinig te gebeuren, maar er gebeurt heel veel."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Ik vind de boekbespreking het leukste van dit boek."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Doordat het gesprek uitmondde in een monoloog, voelde het voor mij als een anticlimax."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Mooi boek vol wijsheid en openhartigheid."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Intrigerende roman die de lezer met vragen achterlaat."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Prachtig hoe een half boek gevuld kan worden met een monoloog en toch boeiend kan zijn."
+        }
+      }
     },
     {
       "titel": "Judas",
