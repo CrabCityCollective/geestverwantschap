@@ -1041,8 +1041,37 @@
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 2014,
       "datumGelezen": "2016-10-02",
-      "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "locatieBespreking": "Groeneweg te Zwolle",
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 4,
+          "quote": "Bijzonder geschreven gelaagde puzzel, die ik zonder mijn boekenclub waarschijnlijk niet had opgelost. Het eerste boek waarin dingen niet kunnen, waarbij ik niet dacht: dit kan helemaal niet."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Meest interessante boek dat ik heb gelezen, tot nu toe in de boekenclub."
+        },
+        "Robbie": {
+          "sterren": 5,
+          "quote": ""
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ondanks vertekende interpretatie toch van genoten, origineelste boek tot nu toe."
+        },
+        "Esther": {
+          "sterren": 5,
+          "quote": "Hoe sneller ze de realiteitszin verloor, hoe sneller ik ging lezen."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Ingenieus geweven meta-fictie."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Prachtig portret van afbrokkelende realiteitszin."
+        }
+      }
     },
     {
       "titel": "De onervarenen",
