@@ -1075,7 +1075,36 @@
       "jaartalEersteDruk": 2016,
       "datumGelezen": "2020-03-29",
       "locatieBespreking": "Online",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Chris": {
+          "sterren": 2,
+          "quote": "Een aardig idee maar de uitwerking kon me niet bekoren."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Ik vond het eigenlijk best leuk."
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Ik kon er gewoon niet zo heel veel mee."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Boekje over niks, toch plezier gelezen."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Leuk idee, maar gebrek aan inhoud maakt dat resultaat tegenvalt."
+        },
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Viel me tegen, wat heb ik nu eigenlijk geleerd?"
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Ik verwachtte een clash tussen menselijke psyche en de Japanse conformistische maatschappij. Dikke flop."
+        }
+      }
     },
     {
       "titel": "Huis van volmaakte eenzaamheid",
