@@ -1063,8 +1063,37 @@
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 1999,
       "datumGelezen": "2014-10-11",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Kerkweg te Utrecht",
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Nog leuker dan vooraf verwacht."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ik had het gevoel dat ik naar een 10-delige serie zat te kijken."
+        },
+        "Robbie": {
+          "sterren": 2,
+          "quote": "Net te weinig links voor de samenhang."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Leuk om te zoeken naar de links."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Een prikkelende, genre-overschrijdende puzzel."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Boek met ups en downs, drie sterren voor de stijl."
+        },
+        "Esther": {
+          "sterren": "n.v.t.",
+          "quote": "Niet gelezen, Chris z'n schuld."
+        }
+      }
     },
     {
       "titel": "Buurtsupermens",
