@@ -1052,8 +1052,29 @@
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2015,
       "datumGelezen": "2017-02-12",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Egelantierstraat te Utrecht",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Prachtig in het water gevallen utopie, die je in elke tijdsgeest kan plaatsen."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Heerlijk lezen over diepe ellende."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": ""
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Mooi geschreven roman over wanhoop en waanzin."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Mooi tragisch verhaal, niet het allerbeste van Van Leeuwen tot nu toe, maar zeker herkenbaar en passend binnen haar werk."
+        }
+      }
     },
     {
       "titel": "De geestverwantschap",
