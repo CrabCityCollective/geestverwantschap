@@ -1883,6 +1883,37 @@
           "quote": "Heel puur."
         }
       }
+    },
+    {
+      "titel": "Oroppa",
+      "auteur": "Safae el Khannoussi",
+      "landVanHerkomstAuteur": "Marokko/Nederland",
+      "geslachtAuteur": "Vrouw",
+      "uitgekozenDoor": "Robbie",
+      "jaartalEersteDruk": 2024,
+      "locatieBespreking": "Furkabaan te Utrecht",
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 3,
+          "quote": "Las wel lekker, maar soms was het overzicht wat moeilijk te krijgen."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Elk verhaaltje vond ik interessant."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Niet voor mij geschreven."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Met veel zwung geschreven over rafelranden van de maatschappij dat me niet in zijn greep kreeg."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Verwarrend boek dat mij toch wist te boeien."
+        }
+      }
     }
   ]
 }
