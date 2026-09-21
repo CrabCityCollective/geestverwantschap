@@ -4,7 +4,7 @@ export default function Nav({
   actief,
   breed,
 }: {
-  actief?: 'boekenlijst' | 'analytics' | 'on-tour';
+  actief?: 'boekenlijst' | 'analytics' | 'on-tour' | 'quiz';
   breed?: boolean;
 }) {
   return (
@@ -29,6 +29,14 @@ export default function Nav({
         <span aria-current="page">On tour</span>
       ) : (
         <Link href="/on-tour">On tour</Link>
+      )}
+      <span className="site-nav-scheiding" aria-hidden="true">
+        &middot;
+      </span>
+      {actief === 'quiz' ? (
+        <span aria-current="page">Quiz</span>
+      ) : (
+        <Link href="/quiz">Quiz</Link>
       )}
     </nav>
   );

@@ -28,3 +28,13 @@ export interface Telling {
   label: string;
   aantal: number;
 }
+
+export type QuizVraagType = 'boek' | 'lid' | 'sterren';
+
+export interface QuizVraag {
+  type: QuizVraagType;
+  quote: string;
+  vraag: string;
+  opties: string[];
+  antwoord: string;
+}
