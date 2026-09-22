@@ -1342,8 +1342,37 @@
       "uitgekozenDoor": "Jet",
       "jaartalEersteDruk": 2021,
       "datumGelezen": "2023-04-09",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "De Zware Jongens te Utrecht",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Bonuspunten voor het schrijven, en verder kon mij niets raken."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Leesbare poëzie."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Halverwege kantelde het boek van onecht naar puur, en dat vond ik mooi."
+        },
+        "Esther": {
+          "sterren": 1,
+          "quote": "Ik kan met deze stijl niet zo veel beginnen."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Het deed mij denken aan mijn lievelingsschrijfster, Joke van Leeuwen."
+        },
+        "Ruben": {
+          "sterren": 1,
+          "quote": "Dit boek heeft er bijna voor gezorgd dat ik gestopt ben met lezen."
+        },
+        "Chris": {
+          "sterren": 2,
+          "quote": "Teveel poëtisch gedweep met bomen, maar invoelbare passages over de relatie met haar vader."
+        }
+      }
     },
     {
       "titel": "NW",
