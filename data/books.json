@@ -1434,7 +1434,32 @@
       "jaartalEersteDruk": 2020,
       "datumGelezen": "2021-10-09",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Geloofwaardig, leerzaam, verrijkend boek."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Mooi om bij te mogen zijn. Prachtig."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Ik werd er heel treurig van."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Dieptreurig beeld van Glasgow met een heel mooi beeld van een jongetje met onvoorwaardelijke liefde voor zijn moeder."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Een geloofwaardige en ontroerende schets van een onderklasse milieu."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Aangrijpend, ontroerend en verschrikkelijk tragisch."
+        }
+      }
     },
     {
       "titel": "Vaders en zonen",
