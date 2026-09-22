@@ -9,14 +9,13 @@ const { genereerQuizVragen } = quiz as unknown as {
   genereerQuizVragen: (boeken: Boek[], leden: string[], aantal?: number) => QuizVraag[];
 };
 
-const AANTAL_VRAGEN_IN_POOL = 20;
 const MINIMAAL_AANTAL_VRAGEN = 5;
 
 export const dynamic = 'force-dynamic';
 
 export default function QuizPagina() {
   const data = readData();
-  const vragenpool = genereerQuizVragen(data.boeken, data.leden, AANTAL_VRAGEN_IN_POOL);
+  const vragenpool = genereerQuizVragen(data.boeken, data.leden, Number.POSITIVE_INFINITY);
 
   return (
     <>
