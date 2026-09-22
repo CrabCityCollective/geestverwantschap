@@ -2001,6 +2001,46 @@
           "quote": "Verwarrend boek dat mij toch wist te boeien."
         }
       }
+    },
+    {
+      "titel": "De Kleindochter",
+      "auteur": "Bernhard Schlink",
+      "landVanHerkomstAuteur": "Duitsland",
+      "geslachtAuteur": "Man",
+      "uitgekozenDoor": "Esther",
+      "jaartalEersteDruk": 2021,
+      "datumGelezen": "2024-09-15",
+      "locatieBespreking": "Puntbeek te Zwolle",
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 4,
+          "quote": "Meeslepend verhaal, las 'm letterlijk weg."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Mooie beschrijving van een wereld die ik niet echt ken, maar ik mis een stukje diepgang."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Interessante thematiek in een mooie roman, maar het einde voelde wat onafgerond."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Ontroerend beeld van een meisje dat haar weg zoekt in een gesloten community."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Prachtig."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Razend interessante vraagstukken over mensen en meningen en hoe dan toch soms samenhang gevonden kan worden. Had wel meer emoties verwacht en gewenst bij het lezen."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Invoelende en vakkundige schrijver, die Schlink, maar het contrast tussen Kaspar en Sigrun deed net iets te gekunsteld aan. Zeker een goed boek verder."
+        }
+      }
     }
   ]
 }
