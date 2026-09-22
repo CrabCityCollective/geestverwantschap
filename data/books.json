@@ -1303,7 +1303,36 @@
       "jaartalEersteDruk": 2019,
       "datumGelezen": "2019-03-24",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 4,
+          "quote": "Ik had hem zelf kunnen kiezen."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Iedereen kan wel iets van zichzelf herkennen in het verhaal."
+        },
+        "Chris": {
+          "sterren": 5,
+          "quote": ""
+        },
+        "Esther": {
+          "sterren": 5,
+          "quote": "Als 2e Esther in het dorp blijf je altijd Esther houden."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Het is alsof Sally Rooney bij ons aan tafel zit."
+        },
+        "Min Ae": {
+          "sterren": 5,
+          "quote": "Liever 6 sterren... lang niet meer zo'n romantisch, ontroerend boek gelezen, waarbij ik oprecht meeleef met de ontwikkeling en dynamiek van de 2 personages."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Genoten van een prachtig liefdesverhaal en de zoektocht naar wie ben je nou."
+        }
+      }
     },
     {
       "titel": "De hemel is altijd paars",
