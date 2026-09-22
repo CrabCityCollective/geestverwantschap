@@ -367,14 +367,39 @@
     },
     {
       "titel": "Herkomst",
-      "auteur": "Sasa Stanisic",
+      "auteur": "Saša Stanišić",
       "landVanHerkomstAuteur": "Duitsland",
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 2019,
       "datumGelezen": "2022-10-08",
       "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Alsof je meeleest met de mooi geformuleerde aantekeningen van de schrijver."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Veelzijdig boek waarin het Duitsland, Joegoslavië en de jeugdherinneringen mij eigen aanspraken."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Geen lekker vakantieboek. Ik miste een opbouw. ('geen roman')."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Lekker luchtig, natuurlijk geschreven."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Het interessante aspect van het boek is hoe hij omschrijft hoe hij als jonge vluchteling zijn weg vindt in een nieuw land."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": ""
+        }
+      }
     },
     {
       "titel": "Alles wat is",
