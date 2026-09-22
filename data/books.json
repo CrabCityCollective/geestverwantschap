@@ -1031,7 +1031,36 @@
       "jaartalEersteDruk": 2012,
       "datumGelezen": "2020-02-02",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 3,
+          "quote": "Verschrikkelijk & fascinerend."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Angstaanjagende geschiedenis van een verborgen wereld."
+        },
+        "Chris": {
+          "sterren": 5,
+          "quote": "Meeslepende roman over verschuivende identiteiten in de even bizarre als reële setting van Noord-Korea."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Verhaal is ongelooflijk, de setting is geloofwaardig, maar te bizar om te geloven. Het verhaal an sich is bizar."
+        },
+        "Jelte": {
+          "sterren": 5,
+          "quote": "Pareltje van poëtische schoonheid die des te harder binnenkomt als je bedenkt dat het gebaseerd is op de werkelijkheid."
+        },
+        "Min Ae": {
+          "sterren": 5,
+          "quote": "Meest originele boek gelezen, ondanks grimmige realistische elementen. De schrijfwijze en originaliteit bekoren mij zeer."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Zeer knap geschreven, waarbij de torenhoge opgave om een waarachtig portret te geven van de geliefde leider Kim Jong-Il."
+        }
+      }
     },
     {
       "titel": "De gewichtlozen",
