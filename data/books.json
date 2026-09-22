@@ -112,8 +112,37 @@
       "uitgekozenDoor": "Esther",
       "jaartalEersteDruk": 1998,
       "datumGelezen": "2014-12-13",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Egelantierstraat te Utrecht",
+      "beoordelingen": {
+        "Esther": {
+          "sterren": 3,
+          "quote": "Ik was zelf ook wel een beetje als een vis op 't droge."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": ""
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Verrassende verbanden."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Een moeilijk boekje. Een boek dat je twee keer moet lezen."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": ""
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Levensechte details, maar de personages gaan verloren in de complexiteit."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Sterke sfeer per verhaal, maar een puzzel die nu niet de baas wordt. → De schoonheid van Simple Storys zit hem in de verhalen en niet in het grotere verband."
+        }
+      }
     },
     {
       "titel": "De beesten",
