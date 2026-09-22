@@ -1445,7 +1445,36 @@
       "jaartalEersteDruk": 1862,
       "datumGelezen": "2021-12-18",
       "locatieBespreking": "Online",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Mooi verhaal uit een tijd dat idealen nog van belang waren."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Interessante roman die me toch niet helemaal wist te grijpen door de gevoelsmatige afstand."
+        },
+        "Esther": {
+          "sterren": 2,
+          "quote": "Mijn favoriete personage was Koekejina."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Wollig kostuumdrama dat ik toch met plezier heb gelezen."
+        },
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Oprechte inkijk in een boeiend tijdsgewricht."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ondanks de eerste zin heb ik hem toch graag uitgelezen."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Ik struikelde een beetje over de namen, maar heb het met plezier gelezen."
+        }
+      }
     },
     {
       "titel": "Slachthuis Vijf",
