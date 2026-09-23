@@ -452,6 +452,19 @@ summary.gemiddelde:focus-visible {
   gap: 0.7rem;
 }
 
+.lid-titel-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: inherit;
+}
+
+.lid-titel-link:hover,
+.lid-titel-link:focus-visible {
+  color: var(--goud-diep);
+  border-bottom-color: currentColor;
+}
+
 .lid-sectie {
   margin-top: 3rem;
   padding-top: 2rem;
@@ -779,6 +792,16 @@ summary.gemiddelde:focus-visible {
 
 .boek-detail-terug {
   margin: 0 0 1.5rem;
+}
+
+.lid-detail-terug {
+  margin: 0 0 1.5rem;
+}
+
+.lid-detail-titel {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
 }
 
 .boek-detail-iconen {
