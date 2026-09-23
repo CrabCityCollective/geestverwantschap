@@ -1690,7 +1690,16 @@
       "jaartalEersteDruk": 1965,
       "datumGelezen": "2013-04-28",
       "locatieBespreking": "De Mui te Amersfoort",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 5,
+          "quote": "over het leven"
+        },
+        "Min Ae": {
+          "sterren": "n.v.t.",
+          "quote": "gemene vrouw"
+        }
+      }
     },
     {
       "titel": "De consequenties",
