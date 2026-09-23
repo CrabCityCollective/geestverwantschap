@@ -6,7 +6,7 @@ const ALIASSEN: Record<string, string> = {
   Ruben: 'GameBoy',
   Jelte: 'Hulk J',
   Yvonne: 'AudioGirl',
-  'Min Ae': 'Han86',
+  'Min Ae': 'KimchiGirl',
   Marije: 'Belgin',
 };
 
