@@ -25,7 +25,7 @@ export default function LidAnalysePagina({ params }: { params: { lid: string } }
 
   return (
     <>
-      <Nav actief="analytics" breed />
+      <Nav actief="analyse" breed />
       <main className="container container-breed">
         <p className="lid-detail-terug">
           <Link href="/analyse">&larr; Terug naar analyse</Link>
