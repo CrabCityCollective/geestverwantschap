@@ -409,8 +409,29 @@
       "uitgekozenDoor": "Chris",
       "jaartalEersteDruk": 2013,
       "datumGelezen": "2018-05-02",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Egelantierstraat te Utrecht",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 2,
+          "quote": "Ik vond het prima lezen, maar ik weet niet wat ik nu echt gelezen heb."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "De enorme hoeveelheid personages en gebrek aan rode draad maken dat het boek me niet echt heeft kunnen grijpen."
+        },
+        "Jet": {
+          "sterren": 2,
+          "quote": "Het boek wist me niet te grijpen."
+        },
+        "Ruben": {
+          "sterren": 2,
+          "quote": "Salter heeft goede scènes geschreven, maar geen goed verhaal."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Bij vlagen met veel plezier gelezen, maar kreeg er uiteindelijk onvoldoende grip op."
+        }
+      }
     },
     {
       "titel": "Het verhaal van de dienstmaagd",
