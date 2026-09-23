@@ -1448,7 +1448,36 @@
       "jaartalEersteDruk": 2002,
       "datumGelezen": "2019-07-23",
       "locatieBespreking": "De Roos",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 2,
+          "quote": "Mede door de oppervlakkige personages boeide het me niet."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": ""
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": ""
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": ""
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "De zoektocht naar de zin van het leven en de worsteling van het maken van levenskeuzes zijn op een mooie manier beschreven."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Geloofwaardige treurnis, geen levenslust meer te bespeuren."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Waarachtig portret van een man die aan de dofheid en zinloosheid van het leven probeert te ontsnappen."
+        }
+      }
     },
     {
       "titel": "Shuggie Bain",
