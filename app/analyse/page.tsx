@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import * as boekenclub from '../../lib/boekenclub';
 import type { BoekenclubData } from '../../lib/types';
-import { weergaveNaam } from '../../lib/aliassen';
+import { aliasSlug, weergaveNaam } from '../../lib/aliassen';
 import Nav from '../components/Nav';
 import LidIcoon from '../components/LidIcoon';
 
@@ -41,7 +41,7 @@ export default function AnalysePagina() {
           </li>
           {data.leden.map((lid: string) => (
             <li key={lid}>
-              <Link href={`/analyse/${encodeURIComponent(lid)}`} className="analyse-link-kaart">
+              <Link href={`/analyse/${aliasSlug(lid)}`} className="analyse-link-kaart">
                 <LidIcoon lid={lid} size={40} />
                 <span>{weergaveNaam(lid)}</span>
               </Link>

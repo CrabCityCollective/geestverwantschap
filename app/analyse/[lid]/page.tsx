@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import * as boekenclub from '../../../lib/boekenclub';
 import type { Boek, BoekenclubData } from '../../../lib/types';
-import { weergaveNaam } from '../../../lib/aliassen';
+import { vindLidPerAliasSlug, weergaveNaam } from '../../../lib/aliassen';
 import Nav from '../../components/Nav';
 import LidIcoon from '../../components/LidIcoon';
 import AnalyseSectie from '../../components/AnalyseSectie';
@@ -14,7 +14,7 @@ export const dynamic = 'force-dynamic';
 
 export default function LidAnalysePagina({ params }: { params: { lid: string } }) {
   const data = readData();
-  const lid = data.leden.find((kandidaat) => kandidaat === params.lid);
+  const lid = vindLidPerAliasSlug(data.leden, params.lid);
 
   if (!lid) {
     notFound();

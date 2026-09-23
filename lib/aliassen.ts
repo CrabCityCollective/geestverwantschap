@@ -13,3 +13,11 @@ const ALIASSEN: Record<string, string> = {
 export function weergaveNaam(lid: string): string {
   return ALIASSEN[lid] ?? lid;
 }
+
+export function aliasSlug(lid: string): string {
+  return weergaveNaam(lid).toLowerCase().replace(/\s+/g, '');
+}
+
+export function vindLidPerAliasSlug(leden: string[], slug: string): string | undefined {
+  return leden.find((lid) => aliasSlug(lid) === slug);
+}
