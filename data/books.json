@@ -1822,8 +1822,37 @@
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2021,
       "datumGelezen": "2021-07-23",
-      "locatieBespreking": "Mariahoeve",
-      "beoordelingen": {}
+      "locatieBespreking": "Camping Mariahoeve te Papenvoort",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Niks op aan te merken, lekker gelezen."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": "Lekker boekje, hier hou ik van."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Met plezier gelezen, maar zal hem niet lang onthouden."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Zelden zo'n sterke neiging gehad om te applaudiseren in het laatste hoofdstuk van het boek."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Overbodige emo-crap maar gered door het hard land parallel gedoe."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Deze film zou ik leuk hebben gevonden om te kijken."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Meegesleept door deze feel good roman, maar met een lichte nasmaak."
+        }
+      }
     },
     {
       "titel": "Waar is onze moeder",
