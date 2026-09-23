@@ -1662,7 +1662,36 @@
       "jaartalEersteDruk": 2016,
       "datumGelezen": "2017-07-26",
       "locatieBespreking": "Zwolle",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Ruben": {
+          "sterren": 5,
+          "quote": "Eerlijk verhaal over het leven dat ik heb gelezen."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Technisch goed, maar het voelt niet echt."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Prachtige zware kost."
+        },
+        "Jet": {
+          "sterren": 4,
+          "quote": ""
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Veel zware details maar een prachtig verhaal."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Ik was tot tranen toe geroerd."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Ik dacht dat het boek 'Het einde van de wereld' heette."
+        }
+      }
     },
     {
       "titel": "Hard land",
