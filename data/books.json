@@ -1654,11 +1654,32 @@
       "auteur": "Dimitri Verhulst",
       "landVanHerkomstAuteur": "België",
       "geslachtAuteur": "Man",
-      "uitgekozenDoor": "n.v.t.",
+      "uitgekozenDoor": "Boekenweek",
       "jaartalEersteDruk": 2015,
       "datumGelezen": "2015-03-22",
-      "locatieBespreking": "Schiermonnikoog",
-      "beoordelingen": {}
+      "locatieBespreking": "Middenstreek te Schiermonnikoog",
+      "beoordelingen": {
+        "Jelte": {
+          "sterren": 4,
+          "quote": "92 pagina's onverwacht plezier."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Waanzinnig verhaal in krachtpatserige stijl."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Mooi verhaal in mooie Vlaamse stijl."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Liefdesgeschiedenis als essentie van Pierre's leven."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Grote levensvragen in een klein verhaal. En: wat vind ik er nu van?"
+        }
+      }
     },
     {
       "titel": "Stoner",
