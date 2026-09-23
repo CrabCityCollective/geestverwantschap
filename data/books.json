@@ -98,8 +98,41 @@
       "uitgekozenDoor": "Marije",
       "jaartalEersteDruk": 2011,
       "datumGelezen": "2016-07-16",
-      "locatieBespreking": "Schiermonnikoog",
-      "beoordelingen": {}
+      "locatieBespreking": "Hazeblom te Schiermonnikoog",
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 3,
+          "quote": "Prettig lezen, maar onprettig gevoel."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Ellendig boek op de goede manier."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Boeiend, maar was dit niveau van ellende echt nodig?"
+        },
+        "Marije": {
+          "sterren": 2,
+          "quote": "Te fragmentarisch om meegetrokken te worden in het verhaal."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Compleet boek, dat je aatprikkelt om na te denken over je eigen leven."
+        },
+        "Chris": {
+          "sterren": 3,
+          "quote": "Volgepropt boekje, dat stof geeft tot nadenken, maar me niet wist te grijpen."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Lekker lezen, maar erg extreem."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "De schijnwerkelijkheid brokkelt af tot alleen de droge kern overblijft."
+        }
+      }
     },
     {
       "titel": "Het tumult van de tijd",
