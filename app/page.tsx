@@ -5,16 +5,16 @@ import Nav from './components/Nav';
 import BoekenLijst from './components/BoekenLijst';
 
 const { getBooks } = boekenclub as unknown as { getBooks: (filePath?: string) => Boek[] };
-const { gemiddeldeSterren, sorteerOpGemiddeldeSterren } = analyse as unknown as {
+const { gemiddeldeSterren, sorteerOpDatumGelezen } = analyse as unknown as {
   gemiddeldeSterren: (boek: Boek) => number | null;
-  sorteerOpGemiddeldeSterren: (boeken: Boek[]) => Boek[];
+  sorteerOpDatumGelezen: (boeken: Boek[], richting?: 'nieuwste-eerst' | 'oudste-eerst') => Boek[];
 };
 
 export const dynamic = 'force-dynamic';
 
 export default function HomePage() {
   const alleBoeken = getBooks();
-  const boeken = sorteerOpGemiddeldeSterren(alleBoeken).map((boek) => ({
+  const boeken = sorteerOpDatumGelezen(alleBoeken).map((boek) => ({
     boek,
     index: alleBoeken.indexOf(boek),
     score: gemiddeldeSterren(boek),

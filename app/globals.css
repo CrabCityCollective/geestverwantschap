@@ -241,6 +241,11 @@ h1::after {
   border-color: var(--goud);
 }
 
+.sorteer-knop {
+  align-self: flex-start;
+  font-weight: 700;
+}
+
 .boekenlijst {
   list-style: none;
   padding: 0;

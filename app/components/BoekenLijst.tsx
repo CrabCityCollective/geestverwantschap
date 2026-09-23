@@ -4,8 +4,13 @@ import { useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Boek } from '../../lib/types';
 import { weergaveNaam } from '../../lib/aliassen';
+import * as analyse from '../../lib/analyse';
 import Sterren from './Sterren';
 import BoekTitelIconen from './BoekIconen';
+
+const { datumSorteerSleutel } = analyse as unknown as { datumSorteerSleutel: (boek: Boek) => string };
+
+type SorteerRichting = 'nieuwste-eerst' | 'oudste-eerst';
 
 interface BoekMetScore {
   boek: Boek;
@@ -32,20 +37,22 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
   const [zoekterm, setZoekterm] = useState('');
   const [geselecteerdLid, setGeselecteerdLid] = useState<string | null>(null);
   const [geselecteerdLand, setGeselecteerdLand] = useState<string | null>(null);
+  const [richting, setRichting] = useState<SorteerRichting>('nieuwste-eerst');
 
   const leden = useMemo(() => uniekeWaarden(boeken, 'uitgekozenDoor'), [boeken]);
   const landen = useMemo(() => uniekeWaarden(boeken, 'landVanHerkomstAuteur'), [boeken]);
 
-  const gefilterdeBoeken = useMemo(
-    () =>
-      boeken.filter(
+  const gefilterdeBoeken = useMemo(() => {
+    const factor = richting === 'oudste-eerst' ? 1 : -1;
+    return boeken
+      .filter(
         ({ boek }) =>
           komtOvereenMetZoekterm(boek, zoekterm) &&
           (geselecteerdLid === null || boek.uitgekozenDoor === geselecteerdLid) &&
           (geselecteerdLand === null || boek.landVanHerkomstAuteur === geselecteerdLand)
-      ),
-    [boeken, zoekterm, geselecteerdLid, geselecteerdLand]
-  );
+      )
+      .sort((a, b) => factor * datumSorteerSleutel(a.boek).localeCompare(datumSorteerSleutel(b.boek)));
+  }, [boeken, zoekterm, geselecteerdLid, geselecteerdLand, richting]);
 
   return (
     <>
@@ -97,6 +104,14 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
             ))}
           </div>
         </details>
+
+        <button
+          type="button"
+          className="filter-knop sorteer-knop"
+          onClick={() => setRichting((huidig) => (huidig === 'nieuwste-eerst' ? 'oudste-eerst' : 'nieuwste-eerst'))}
+        >
+          {richting === 'nieuwste-eerst' ? 'Nieuwste eerst ↓' : 'Oudste eerst ↑'}
+        </button>
       </div>
 
       {gefilterdeBoeken.length === 0 ? (

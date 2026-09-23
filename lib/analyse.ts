@@ -66,6 +66,19 @@ function sorteerOpGemiddeldeSterren(boeken: Boek[]): Boek[] {
   });
 }
 
+function datumSorteerSleutel(boek: Boek): string {
+  return boek.datumGelezen ?? `${boek.jaartalEersteDruk}`;
+}
+
+type SorteerRichting = 'nieuwste-eerst' | 'oudste-eerst';
+
+function sorteerOpDatumGelezen(boeken: Boek[], richting: SorteerRichting = 'nieuwste-eerst'): Boek[] {
+  const factor = richting === 'oudste-eerst' ? 1 : -1;
+  return [...boeken].sort(
+    (a, b) => factor * datumSorteerSleutel(a).localeCompare(datumSorteerSleutel(b))
+  );
+}
+
 function gemiddeldeSterrenGegeven(boeken: Boek[], lid: string): number | null {
   const sterren = boeken
     .map((boek) => boek.beoordelingen[lid]?.sterren)
@@ -145,6 +158,8 @@ module.exports = {
   telTijdvakken,
   gemiddeldeSterren,
   sorteerOpGemiddeldeSterren,
+  datumSorteerSleutel,
+  sorteerOpDatumGelezen,
   gemiddeldeSterrenGegeven,
   sterrenVerdelingVoorLid,
   besteBoekVoorLid,
