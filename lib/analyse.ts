@@ -106,6 +106,20 @@ function groepeerPerLocatie(boeken: Boek[]): { locatie: string; boeken: Boek[] }
   return Array.from(groepen, ([locatie, boeken]) => ({ locatie, boeken }));
 }
 
+function topBoekenVoorLid(boeken: Boek[], lid: string, aantal = 3): Boek[] {
+  return boeken
+    .filter((boek) => typeof boek.beoordelingen[lid]?.sterren === 'number')
+    .sort((a, b) => {
+      const sterrenA = a.beoordelingen[lid].sterren as number;
+      const sterrenB = b.beoordelingen[lid].sterren as number;
+      if (sterrenA !== sterrenB) {
+        return sterrenB - sterrenA;
+      }
+      return b.jaartalEersteDruk - a.jaartalEersteDruk;
+    })
+    .slice(0, aantal);
+}
+
 function besteBoekVoorLid(boeken: Boek[], lid: string): Boek | null {
   let beste: Boek | null = null;
   let besteSterren = -Infinity;
@@ -134,5 +148,6 @@ module.exports = {
   gemiddeldeSterrenGegeven,
   sterrenVerdelingVoorLid,
   besteBoekVoorLid,
+  topBoekenVoorLid,
   groepeerPerLocatie,
 };

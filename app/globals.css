@@ -466,6 +466,14 @@ summary.gemiddelde:focus-visible {
   margin: 0.2rem 0;
 }
 
+.top-boeken-lijst {
+  margin: 0 0 0.75rem;
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .totaal-gelezen-sectie {
   display: flex;
   justify-content: center;
