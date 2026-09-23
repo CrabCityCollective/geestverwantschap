@@ -306,7 +306,32 @@
       "jaartalEersteDruk": 2021,
       "datumGelezen": "2022-05-14",
       "locatieBespreking": "Soest",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 5,
+          "quote": "Mooie fantasie-wereld, en mooi neergezet hoe zinloos het allemaal is."
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Echt wel prachtig, maar moet wel de aandacht erbij houden."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Zeer interessant wat er zich heeft afgespeeld, zowel in het recente als het verre verleden."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Knap geconstrueerde roman, waarbij ik vooral de familiegeschiedenis het meest kon waarderen."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Geschiedenis schitterend dit keer, maar thema van Zwarte Aarde en van de Don Kozakken niet helemaal compatibel."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Alle personages maakte het wat onrustig lezen. Helaas ontdekte ik pas op 2/3 de stamboom."
+        }
+      }
     },
     {
       "titel": "Gloed",
