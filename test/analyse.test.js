@@ -9,6 +9,8 @@ const {
   telTijdvakken,
   gemiddeldeSterren,
   sorteerOpGemiddeldeSterren,
+  datumSorteerSleutel,
+  sorteerOpDatumGelezen,
   gemiddeldeSterrenGegeven,
   sterrenVerdelingVoorLid,
   besteBoekVoorLid,
@@ -141,6 +143,38 @@ test('sorteerOpGemiddeldeSterren sorteert aflopend op gemiddelde en zet onbeoord
       'Ook hoog beoordeeld, maar minder recent gelezen',
       'Laag beoordeeld, langst geleden gelezen',
       'Niet beoordeeld',
+    ]
+  );
+});
+
+test('datumSorteerSleutel geeft datumGelezen terug als die er is', () => {
+  assert.equal(datumSorteerSleutel(boekenMetSterren[0]), '2026-01-01');
+});
+
+test('datumSorteerSleutel valt terug op jaartalEersteDruk zonder datumGelezen', () => {
+  assert.equal(datumSorteerSleutel(boekenMetSterren[3]), '1990');
+});
+
+test('sorteerOpDatumGelezen sorteert standaard van nieuwste naar oudste, met fallback op jaartalEersteDruk', () => {
+  assert.deepEqual(
+    sorteerOpDatumGelezen(boekenMetSterren).map((boek) => boek.titel),
+    [
+      'Hoog beoordeeld, meest recent gelezen',
+      'Ook hoog beoordeeld, maar minder recent gelezen',
+      'Laag beoordeeld, langst geleden gelezen',
+      'Niet beoordeeld',
+    ]
+  );
+});
+
+test('sorteerOpDatumGelezen kan omgedraaid worden naar oudste eerst', () => {
+  assert.deepEqual(
+    sorteerOpDatumGelezen(boekenMetSterren, 'oudste-eerst').map((boek) => boek.titel),
+    [
+      'Niet beoordeeld',
+      'Laag beoordeeld, langst geleden gelezen',
+      'Ook hoog beoordeeld, maar minder recent gelezen',
+      'Hoog beoordeeld, meest recent gelezen',
     ]
   );
 });
