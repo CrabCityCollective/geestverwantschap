@@ -10,6 +10,7 @@ export interface Boek {
   geslachtAuteur: string;
   uitgekozenDoor: string;
   genre?: string;
+  themas?: string[];
   landSetting?: string;
   tijdSetting?: string;
   jaartalEersteDruk: number;

@@ -66,6 +66,12 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
             <dt>Uitgekozen door</dt>
             <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
           </div>
+          {boek.themas && boek.themas.length > 0 ? (
+            <div>
+              <dt>Thema&apos;s</dt>
+              <dd>{boek.themas.join(', ')}</dd>
+            </div>
+          ) : null}
           {boek.landSetting ? (
             <div>
               <dt>Land setting</dt>
