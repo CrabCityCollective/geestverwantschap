@@ -208,14 +208,43 @@
     },
     {
       "titel": "De beesten",
-      "auteur": "Gijs Wilbrik",
+      "auteur": "Gijs Wilbrink",
       "landVanHerkomstAuteur": "Nederland",
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Jelte",
       "jaartalEersteDruk": 2022,
       "datumGelezen": "2023-02-19",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "De Pomp te Utrecht",
+      "beoordelingen": {
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Lang niet zo'n beeldend treffend omschreven boek gelezen."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Hoge verwachtingen stellen meestal teleur. Bij Wilbrink niet."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Enorm gesmuld van dit heerlijke, sappige boek."
+        },
+        "Robbie": {
+          "sterren": 4,
+          "quote": "Heerlijk drama."
+        },
+        "Jet": {
+          "sterren": 5,
+          "quote": "Smeuïg en prachtig."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Ik haat dorpen."
+        },
+        "Chris": {
+          "sterren": 5,
+          "quote": "Geweldig boek vol treffende sfeertekeningen."
+        }
+      }
     },
     {
       "titel": "Oorlog en terpentijn",
