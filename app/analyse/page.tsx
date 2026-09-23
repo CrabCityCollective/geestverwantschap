@@ -15,14 +15,14 @@ const {
   telTijdvakken,
   gemiddeldeSterrenGegeven,
   sterrenVerdelingVoorLid,
-  besteBoekVoorLid,
+  topBoekenVoorLid,
 } = analyse as unknown as {
   telLandenVanAuteurs: (boeken: Boek[]) => Telling[];
   telGeslachtVanAuteurs: (boeken: Boek[]) => Telling[];
   telTijdvakken: (boeken: Boek[]) => Telling[];
   gemiddeldeSterrenGegeven: (boeken: Boek[], lid: string) => number | null;
   sterrenVerdelingVoorLid: (boeken: Boek[], lid: string) => Telling[];
-  besteBoekVoorLid: (boeken: Boek[], lid: string) => Boek | null;
+  topBoekenVoorLid: (boeken: Boek[], lid: string, aantal?: number) => Boek[];
 };
 
 export const dynamic = 'force-dynamic';
@@ -46,11 +46,19 @@ function AnalyseSectie({ titel, boeken }: { titel?: string; boeken: Boek[] }) {
 
 function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
   const gemiddelde = gemiddeldeSterrenGegeven(boeken, lid);
-  const besteBoek = besteBoekVoorLid(boeken, lid);
-  const besteSterren = besteBoek?.beoordelingen[lid].sterren;
+  const topBoeken = topBoekenVoorLid(boeken, lid);
 
   return (
     <div className="lid-statistieken">
+      {topBoeken.length > 0 ? (
+        <ol className="top-boeken-lijst">
+          {topBoeken.map((boek) => (
+            <li key={boek.titel}>
+              {boek.titel} (<Sterren score={boek.beoordelingen[lid].sterren as number} />)
+            </li>
+          ))}
+        </ol>
+      ) : null}
       <p>
         {gemiddelde !== null ? (
           <>
@@ -60,11 +68,6 @@ function LidStatistieken({ lid, boeken }: { lid: string; boeken: Boek[] }) {
           <>Nog geen sterren gegeven</>
         )}
       </p>
-      {besteBoek && typeof besteSterren === 'number' ? (
-        <p>
-          Best beoordeeld: {besteBoek.titel} (<Sterren score={besteSterren} />)
-        </p>
-      ) : null}
       {gemiddelde !== null ? (
         <div className="grafieken-grid">
           <Balkdiagram titel="Verdeling van gegeven sterren" data={sterrenVerdelingVoorLid(boeken, lid)} />

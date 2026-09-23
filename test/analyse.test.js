@@ -12,6 +12,7 @@ const {
   gemiddeldeSterrenGegeven,
   sterrenVerdelingVoorLid,
   besteBoekVoorLid,
+  topBoekenVoorLid,
   groepeerPerLocatie,
 } = require('../lib/analyse.ts');
 
@@ -158,6 +159,28 @@ test('besteBoekVoorLid geeft het boek met de hoogste sterren van dat lid, bij ge
 
 test('besteBoekVoorLid geeft null als een lid nog niets beoordeeld heeft', () => {
   assert.equal(besteBoekVoorLid(boekenMetSterren, 'Jelte'), null);
+});
+
+test('topBoekenVoorLid geeft de best beoordeelde boeken van een lid, bij gelijke stand het nieuwste boek eerst', () => {
+  assert.deepEqual(
+    topBoekenVoorLid(boekenMetSterren, 'Chris').map((boek) => boek.titel),
+    [
+      'Hoog beoordeeld, meest recent gelezen',
+      'Ook hoog beoordeeld, maar minder recent gelezen',
+      'Laag beoordeeld, langst geleden gelezen',
+    ]
+  );
+});
+
+test('topBoekenVoorLid respecteert het opgegeven aantal', () => {
+  assert.deepEqual(
+    topBoekenVoorLid(boekenMetSterren, 'Chris', 2).map((boek) => boek.titel),
+    ['Hoog beoordeeld, meest recent gelezen', 'Ook hoog beoordeeld, maar minder recent gelezen']
+  );
+});
+
+test('topBoekenVoorLid geeft lege lijst als een lid nog niets beoordeeld heeft', () => {
+  assert.deepEqual(topBoekenVoorLid(boekenMetSterren, 'Jelte'), []);
 });
 
 test('sterrenVerdelingVoorLid telt hoe vaak een lid elk aantal sterren gaf, inclusief nullen', () => {
