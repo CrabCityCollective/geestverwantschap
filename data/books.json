@@ -1583,9 +1583,42 @@
       "geslachtAuteur": "Man",
       "uitgekozenDoor": "Ruben",
       "jaartalEersteDruk": 1969,
-      "datumGelezen": "2014-05-04",
+      "datumGelezen": "2019-05-04",
       "locatieBespreking": "De Mui te Amersfoort",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Marije": {
+          "sterren": 3,
+          "quote": "Ik kwam er niet lekker in."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Was dat niet ook gewoon Billy?"
+        },
+        "Jet": {
+          "sterren": 3,
+          "quote": "Leuke oorlogsboek."
+        },
+        "Robbie": {
+          "sterren": 3,
+          "quote": "Ik miste een begin en een eind."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Wil hem nog wel eens herlezen."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Uiteindelijk een beetje teveel een parade van gekkigheid."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "—"
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Goed intellectueel spel."
+        }
+      }
     },
     {
       "titel": "De zomer hou je ook niet tegen",
