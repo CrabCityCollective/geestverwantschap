@@ -132,9 +132,10 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                     uitgekozenDoor={boek.uitgekozenDoor}
                   />
                 </h2>
-                <p className="meta">
-                  {boek.auteur}
-                  {boek.genre ? <> &middot; {boek.genre}</> : null} &middot; {boek.jaartalEersteDruk}
+                <p className="boek-auteur">{boek.auteur}</p>
+                <p className="boek-metarij">
+                  {boek.genre ? <span className="boek-genre-badge">{boek.genre}</span> : null}
+                  <span className="boek-jaartal">{boek.jaartalEersteDruk}</span>
                 </p>
                 {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
                 <dl className="boek-kenmerken">

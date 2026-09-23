@@ -45,9 +45,10 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
           />
         </div>
 
-        <p className="meta boek-detail-meta">
-          {boek.auteur}
-          {boek.genre ? <> &middot; {boek.genre}</> : null} &middot; {boek.jaartalEersteDruk}
+        <p className="boek-auteur boek-detail-auteur">{boek.auteur}</p>
+        <p className="boek-metarij boek-detail-metarij">
+          {boek.genre ? <span className="boek-genre-badge">{boek.genre}</span> : null}
+          <span className="boek-jaartal">{boek.jaartalEersteDruk}</span>
         </p>
         {boek.datumGelezen ? (
           <p className="datumGelezen boek-detail-datum">Gelezen op {boek.datumGelezen}</p>
