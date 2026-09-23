@@ -25,6 +25,7 @@ De boeken staan in [`data/books.json`](data/books.json). Dit bestand bevat:
 - `boeken`: de lijst met gelezen boeken. Elk boek heeft:
   - `titel`, `auteur`, `landVanHerkomstAuteur`, `geslachtAuteur`
   - `genre` (moet voorkomen in `genres`)
+  - `themas` (lijst met een of meer thema's van het boek)
   - `landSetting`, `tijdSetting` (land en tijd waarin het boek zich afspeelt)
   - `jaartalEersteDruk`
   - `datumGelezen` (optioneel, datum waarop het boek gelezen is, bv. `2024-05-01`)
