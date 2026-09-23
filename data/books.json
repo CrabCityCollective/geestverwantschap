@@ -58,8 +58,37 @@
       "uitgekozenDoor": "Min Ae",
       "jaartalEersteDruk": 2012,
       "datumGelezen": "2015-03-27",
-      "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "locatieBespreking": "Kerkweg te Utrecht",
+      "beoordelingen": {
+        "Robbie": {
+          "sterren": 4,
+          "quote": ""
+        },
+        "Jet": {
+          "sterren": 5,
+          "quote": "Hilarisch."
+        },
+        "Esther": {
+          "sterren": 3,
+          "quote": "Grun = fun."
+        },
+        "Jelte": {
+          "sterren": 4,
+          "quote": "Prachtig boek over de moeite met het vinden van een plekje in de wereld van onvolwassen mannen."
+        },
+        "Ruben": {
+          "sterren": 4,
+          "quote": "Een circus van grappige figuren, maar mist enige samenhang."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Grappig, mooi geschreven."
+        },
+        "Min Ae": {
+          "sterren": 4,
+          "quote": "Verademing om te lezen over mensen die niet al te veel meemaken en niet al te ambitieus zijn."
+        }
+      }
     },
     {
       "titel": "De perfecte stilte",
