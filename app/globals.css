@@ -322,9 +322,37 @@ h1::after {
   padding-bottom: 1rem;
 }
 
-.meta {
+.boek-auteur {
+  font-weight: 700;
+  font-size: 1.05rem;
   font-style: italic;
   color: var(--tekst-secundair);
+}
+
+.boek-metarij {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.boek-genre-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--goud-diep);
+  background: linear-gradient(180deg, var(--goud-licht) 0%, var(--goud) 100%);
+  color: var(--inkt);
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
+.boek-jaartal {
+  color: var(--tekst-muted);
+  font-size: 0.9rem;
 }
 
 .datumGelezen {
@@ -1015,9 +1043,13 @@ summary.gemiddelde:focus-visible {
   height: 34px;
 }
 
-.boek-detail-meta {
+.boek-detail-auteur {
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
+}
+
+.boek-detail-metarij {
+  justify-content: center;
 }
 
 .boek-detail-datum {
