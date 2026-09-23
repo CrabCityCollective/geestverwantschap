@@ -1,6 +1,6 @@
 'use strict';
 
-import type { Boek, Telling } from './types';
+import type { Boek, Telling, GenreWaardering } from './types';
 
 function tellenPerWaarde(boeken: Boek[], waarde: (boek: Boek) => string): Telling[] {
   const tellingen = new Map<string, number>();
@@ -152,6 +152,38 @@ function besteBoekVoorLid(boeken: Boek[], lid: string): Boek | null {
   return beste;
 }
 
+function genreWaardering(boeken: Boek[]): GenreWaardering[] {
+  const groepen = new Map<string, { titel: string; gemiddelde: number }[]>();
+  for (const boek of boeken) {
+    if (!boek.genre) {
+      continue;
+    }
+    const gemiddelde = gemiddeldeSterren(boek);
+    if (gemiddelde === null) {
+      continue;
+    }
+    const lijst = groepen.get(boek.genre) ?? [];
+    lijst.push({ titel: boek.titel, gemiddelde });
+    groepen.set(boek.genre, lijst);
+  }
+  return Array.from(groepen, ([genre, boekenVanGenre]) => {
+    const gesorteerdeBoeken = [...boekenVanGenre].sort((a, b) => b.gemiddelde - a.gemiddelde);
+    const gemiddelde =
+      gesorteerdeBoeken.reduce((som, boek) => som + boek.gemiddelde, 0) / gesorteerdeBoeken.length;
+    return { genre, gemiddelde, boeken: gesorteerdeBoeken };
+  }).sort((a, b) => b.gemiddelde - a.gemiddelde);
+}
+
+function clubGemiddelde(boeken: Boek[]): number | null {
+  const gemiddelden = boeken
+    .map((boek) => gemiddeldeSterren(boek))
+    .filter((gemiddelde): gemiddelde is number => gemiddelde !== null);
+  if (gemiddelden.length === 0) {
+    return null;
+  }
+  return gemiddelden.reduce((a, b) => a + b, 0) / gemiddelden.length;
+}
+
 module.exports = {
   telLandenVanAuteurs,
   telGeslachtVanAuteurs,
@@ -165,4 +197,6 @@ module.exports = {
   besteBoekVoorLid,
   topBoekenVoorLid,
   groepeerPerLocatie,
+  genreWaardering,
+  clubGemiddelde,
 };

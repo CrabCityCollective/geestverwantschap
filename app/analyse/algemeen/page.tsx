@@ -1,10 +1,16 @@
 import Link from 'next/link';
 import * as boekenclub from '../../../lib/boekenclub';
-import type { BoekenclubData } from '../../../lib/types';
+import * as analyse from '../../../lib/analyse';
+import type { Boek, BoekenclubData, GenreWaardering } from '../../../lib/types';
 import Nav from '../../components/Nav';
 import AnalyseSectie from '../../components/AnalyseSectie';
+import GenreStippen from '../../components/GenreStippen';
 
 const { readData } = boekenclub as unknown as { readData: (filePath?: string) => BoekenclubData };
+const { genreWaardering, clubGemiddelde } = analyse as unknown as {
+  genreWaardering: (boeken: Boek[]) => GenreWaardering[];
+  clubGemiddelde: (boeken: Boek[]) => number | null;
+};
 
 export const dynamic = 'force-dynamic';
 
@@ -32,6 +38,14 @@ export default function AlgemeneAnalysePagina() {
         </p>
 
         <AnalyseSectie boeken={boeken} />
+
+        <section className="analyse-sectie">
+          <GenreStippen
+            titel="Waardering per genre"
+            data={genreWaardering(boeken)}
+            clubGemiddelde={clubGemiddelde(boeken)}
+          />
+        </section>
       </main>
     </>
   );

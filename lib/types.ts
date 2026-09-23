@@ -30,6 +30,17 @@ export interface Telling {
   aantal: number;
 }
 
+export interface BoekWaardering {
+  titel: string;
+  gemiddelde: number;
+}
+
+export interface GenreWaardering {
+  genre: string;
+  gemiddelde: number;
+  boeken: BoekWaardering[];
+}
+
 export type QuizVraagType = 'boek' | 'lid' | 'sterren';
 
 export interface QuizVraag {

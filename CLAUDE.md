@@ -40,6 +40,9 @@ vond ieder lid ervan. Het is een Next.js-app (App Router) met TypeScript voor de
   vanuit een clientcomponent (`ssr: false` mag niet direct in een Server Component). Volg dit
   loader-patroon voor nieuwe kaart-/browser-only-componenten in plaats van `ssr: false` direct
   in een paginabestand te zetten.
+- `app/components/GenreStippen.tsx` toont op `/analyse/algemeen` de grafiek "Waardering per
+  genre" (een horizontale stippengrafiek per genre). De berekening staat in `genreWaardering`
+  en `clubGemiddelde` in `lib/analyse.ts`.
 
 ## Conventies
 
