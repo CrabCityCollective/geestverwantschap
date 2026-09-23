@@ -16,6 +16,8 @@ const {
   besteBoekVoorLid,
   topBoekenVoorLid,
   groepeerPerLocatie,
+  genreWaardering,
+  clubGemiddelde,
 } = require('../lib/analyse.ts');
 
 const boeken = [
@@ -282,4 +284,82 @@ test('groepeerPerLocatie groepeert boeken met dezelfde locatie en negeert boeken
 
 test('groepeerPerLocatie geeft lege lijst als geen enkel boek een locatie heeft', () => {
   assert.deepEqual(groepeerPerLocatie(boekenMetSterren), []);
+});
+
+const boekenMetGenre = [
+  {
+    titel: 'A',
+    auteur: 'X',
+    landVanHerkomstAuteur: 'Nederland',
+    geslachtAuteur: 'Vrouw',
+    uitgekozenDoor: 'Chris',
+    genre: 'Fictie',
+    jaartalEersteDruk: 2001,
+    beoordelingen: { Chris: { sterren: 5, quote: '' }, Esther: { sterren: 3, quote: '' } },
+  },
+  {
+    titel: 'B',
+    auteur: 'Y',
+    landVanHerkomstAuteur: 'Nederland',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Esther',
+    genre: 'Fictie',
+    jaartalEersteDruk: 2005,
+    beoordelingen: { Chris: { sterren: 2, quote: '' } },
+  },
+  {
+    titel: 'C',
+    auteur: 'Z',
+    landVanHerkomstAuteur: 'Frankrijk',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Chris',
+    genre: 'Poëzie',
+    jaartalEersteDruk: 1994,
+    beoordelingen: { Chris: { sterren: 5, quote: '' } },
+  },
+  {
+    titel: 'D, alleen n.v.t.',
+    auteur: 'W',
+    landVanHerkomstAuteur: 'Frankrijk',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Chris',
+    genre: 'Poëzie',
+    jaartalEersteDruk: 1990,
+    beoordelingen: { Chris: { sterren: 'n.v.t.', quote: '' } },
+  },
+  {
+    titel: 'E, geen genre',
+    auteur: 'V',
+    landVanHerkomstAuteur: 'Frankrijk',
+    geslachtAuteur: 'Vrouw',
+    uitgekozenDoor: 'Chris',
+    jaartalEersteDruk: 1985,
+    beoordelingen: { Chris: { sterren: 4, quote: '' } },
+  },
+];
+
+test('genreWaardering groepeert boeken per genre, sorteert genres en boeken aflopend op gemiddelde en slaat boeken zonder genre of zonder cijfers over', () => {
+  assert.deepEqual(genreWaardering(boekenMetGenre), [
+    {
+      genre: 'Poëzie',
+      gemiddelde: 5,
+      boeken: [{ titel: 'C', gemiddelde: 5 }],
+    },
+    {
+      genre: 'Fictie',
+      gemiddelde: 3,
+      boeken: [
+        { titel: 'A', gemiddelde: 4 },
+        { titel: 'B', gemiddelde: 2 },
+      ],
+    },
+  ]);
+});
+
+test('clubGemiddelde berekent het gemiddelde van de boekgemiddelden, alleen boeken met cijfers (ook zonder genre)', () => {
+  assert.equal(clubGemiddelde(boekenMetGenre), (4 + 2 + 5 + 4) / 4);
+});
+
+test('clubGemiddelde geeft null terug als er geen enkel boek met cijfers is', () => {
+  assert.equal(clubGemiddelde([]), null);
 });

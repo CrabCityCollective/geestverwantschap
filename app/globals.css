@@ -694,6 +694,165 @@ summary.gemiddelde:focus-visible {
   box-shadow: inset 0 0 0 1px rgba(23, 14, 5, 0.4);
 }
 
+.genrestippen-lijst {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.genrestippen-rij {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.genrestippen-kop {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.genrestippen-genre {
+  color: var(--tekst-secundair);
+  overflow-wrap: break-word;
+}
+
+.genrestippen-aantal {
+  color: var(--tekst-muted);
+  font-size: 0.85em;
+}
+
+.genrestippen-gemiddelde {
+  color: var(--tekst-secundair);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.genrestippen-baan {
+  position: relative;
+  height: 1.75rem;
+}
+
+.genrestippen-baan::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--basislijn);
+  transform: translateY(-50%);
+}
+
+.genrestippen-stip {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--serie-1);
+  opacity: 0.6;
+  border: 1px solid var(--inkt);
+  padding: 0;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.genrestippen-stip:hover {
+  opacity: 0.85;
+}
+
+.genrestippen-stip:focus-visible {
+  opacity: 1;
+  outline: 2px solid var(--goud-licht);
+  outline-offset: 2px;
+}
+
+.genrestippen-stip--actief {
+  opacity: 1;
+  box-shadow: 0 0 0 3px var(--goud-licht);
+}
+
+.genrestippen-genregemiddelde {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: var(--inkt);
+  transform: translateX(-50%);
+}
+
+.genrestippen-clublijn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-left: 2px dashed var(--tekst-muted);
+  transform: translateX(-50%);
+}
+
+.genrestippen-as {
+  display: flex;
+  justify-content: space-between;
+  color: var(--tekst-secundair);
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.genrestippen-selectie {
+  color: var(--tekst-secundair);
+  font-size: 0.9rem;
+  min-height: 1.3em;
+  margin: 0 0 0.75rem;
+}
+
+.genrestippen-legenda {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.875rem;
+  color: var(--tekst-secundair);
+}
+
+.genrestippen-legenda li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.genrestippen-legenda-stip {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--serie-1);
+  opacity: 0.6;
+  border: 1px solid var(--inkt);
+}
+
+.genrestippen-legenda-genregemiddelde {
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  background-color: var(--inkt);
+}
+
+.genrestippen-legenda-club {
+  display: inline-block;
+  width: 12px;
+  height: 0;
+  border-top: 2px dashed var(--tekst-muted);
+}
+
 .besprekingen-kaart-wrap {
   margin-top: 1.5rem;
 }
