@@ -4,7 +4,7 @@ export default function Nav({
   actief,
   breed,
 }: {
-  actief?: 'boekenlijst' | 'analytics' | 'on-tour' | 'quiz';
+  actief?: 'boekenlijst' | 'analyse' | 'on-tour' | 'quiz';
   breed?: boolean;
 }) {
   return (
@@ -17,10 +17,10 @@ export default function Nav({
       <span className="site-nav-scheiding" aria-hidden="true">
         &middot;
       </span>
-      {actief === 'analytics' ? (
-        <span aria-current="page">Analytics</span>
+      {actief === 'analyse' ? (
+        <span aria-current="page">Analyse</span>
       ) : (
-        <Link href="/analyse">Analytics</Link>
+        <Link href="/analyse">Analyse</Link>
       )}
       <span className="site-nav-scheiding" aria-hidden="true">
         &middot;
