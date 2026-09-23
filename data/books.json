@@ -1651,7 +1651,36 @@
       "jaartalEersteDruk": 2014,
       "datumGelezen": "2016-11-19",
       "locatieBespreking": "Utrecht",
-      "beoordelingen": {}
+      "beoordelingen": {
+        "Jet": {
+          "sterren": 4,
+          "quote": "Ik wist al na het eerste hoofdstuk dat het vier sterren zouden worden."
+        },
+        "Min Ae": {
+          "sterren": 3,
+          "quote": "Iets teveel van het goeie, maar verrassend leuk."
+        },
+        "Jelte": {
+          "sterren": 3,
+          "quote": "Leuk om te lezen, maar de diepere thematiek blijft vaag."
+        },
+        "Robbie": {
+          "sterren": 5,
+          "quote": "Heerlijk vaag."
+        },
+        "Esther": {
+          "sterren": 4,
+          "quote": "Dit boek laat mij nadenken over wat ik kunst vind."
+        },
+        "Chris": {
+          "sterren": 4,
+          "quote": "Boek waarin ik weg kon duiken, met interessante thematiek die wel vraagtekens achterlaat."
+        },
+        "Ruben": {
+          "sterren": 3,
+          "quote": "Geweldige neerslag van de zeitgeist, maar helaas te herkenbaar voor mij."
+        }
+      }
     },
     {
       "titel": "Het einde van de eenzaamheid",
