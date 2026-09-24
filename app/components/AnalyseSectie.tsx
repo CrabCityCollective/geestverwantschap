@@ -17,7 +17,7 @@ export default function AnalyseSectie({ titel, boeken }: { titel?: string; boeke
         <p className="grafiek-leeg">Nog geen boeken om te analyseren.</p>
       ) : (
         <div className="grafieken-grid">
-          <Balkdiagram titel="Land van herkomst auteur" data={telLandenVanAuteurs(boeken)} />
+          <Balkdiagram titel="Land auteur" data={telLandenVanAuteurs(boeken)} />
           <Balkdiagram titel="Tijdvak (jaartal eerste druk)" data={telTijdvakken(boeken)} />
           <Verdelingsbalk titel="Geslacht auteur" data={telGeslachtVanAuteurs(boeken)} />
         </div>

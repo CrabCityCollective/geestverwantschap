@@ -151,7 +151,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                 {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
                 <dl className="boek-kenmerken">
                   <div>
-                    <dt>Land van herkomst auteur</dt>
+                    <dt>Land auteur</dt>
                     <dd>{boek.landVanHerkomstAuteur}</dd>
                   </div>
                   <div>
