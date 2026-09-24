@@ -336,18 +336,41 @@ h1::after {
   gap: 0.5rem;
 }
 
-.boek-genre-badge {
+.boek-genre-themas {
   display: inline-flex;
   align-items: center;
-  padding: 0.15rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid var(--goud-diep);
-  background: linear-gradient(180deg, var(--goud-licht) 0%, var(--goud) 100%);
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.boek-genre-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  background: var(--goud-licht);
   color: var(--inkt);
   font-weight: 700;
   font-size: 0.75rem;
   font-variant: small-caps;
   letter-spacing: 0.04em;
+}
+
+.boek-themas {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.boek-thema-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--raster);
+  color: var(--tekst-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
 }
 
 .boek-jaartal {

@@ -47,7 +47,18 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
 
         <p className="boek-auteur boek-detail-auteur">{boek.auteur}</p>
         <p className="boek-metarij boek-detail-metarij">
-          {boek.genre ? <span className="boek-genre-badge">{boek.genre}</span> : null}
+          <span className="boek-genre-themas">
+            {boek.genre ? <span className="boek-genre-label">{boek.genre}</span> : null}
+            {boek.themas && boek.themas.length > 0 ? (
+              <span className="boek-themas">
+                {boek.themas.map((thema) => (
+                  <span key={thema} className="boek-thema-label">
+                    {thema}
+                  </span>
+                ))}
+              </span>
+            ) : null}
+          </span>
           <span className="boek-jaartal">{boek.jaartalEersteDruk}</span>
         </p>
         {boek.datumGelezen ? (
@@ -67,12 +78,6 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
             <dt>Uitgekozen door</dt>
             <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
           </div>
-          {boek.themas && boek.themas.length > 0 ? (
-            <div>
-              <dt>Thema&apos;s</dt>
-              <dd>{boek.themas.join(', ')}</dd>
-            </div>
-          ) : null}
           {boek.landSetting ? (
             <div>
               <dt>Land setting</dt>
