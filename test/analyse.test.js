@@ -7,6 +7,8 @@ const {
   telLandenVanAuteurs,
   telGeslachtVanAuteurs,
   telTijdvakken,
+  telGenres,
+  telThemas,
   gemiddeldeSterren,
   sorteerOpGemiddeldeSterren,
   datumSorteerSleutel,
@@ -85,6 +87,59 @@ test('telTijdvakken groepeert op decennium en sorteert chronologisch', () => {
 
 test('lege lijst geeft lege tellingen', () => {
   assert.deepEqual(telLandenVanAuteurs([]), []);
+});
+
+const boekenMetGenresEnThemas = [
+  {
+    titel: 'A',
+    auteur: 'X',
+    landVanHerkomstAuteur: 'Nederland',
+    geslachtAuteur: 'Vrouw',
+    uitgekozenDoor: 'Chris',
+    genre: 'Historisch',
+    themas: ['oorlog', 'familie'],
+    jaartalEersteDruk: 2001,
+    beoordelingen: {},
+  },
+  {
+    titel: 'B',
+    auteur: 'Y',
+    landVanHerkomstAuteur: 'Nederland',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Chris',
+    genre: 'Historisch',
+    themas: ['familie'],
+    jaartalEersteDruk: 2005,
+    beoordelingen: {},
+  },
+  {
+    titel: 'C, geen genre of themas',
+    auteur: 'Z',
+    landVanHerkomstAuteur: 'Frankrijk',
+    geslachtAuteur: 'Man',
+    uitgekozenDoor: 'Chris',
+    jaartalEersteDruk: 1994,
+    beoordelingen: {},
+  },
+];
+
+test('telGenres telt boeken per genre, sorteert aflopend en slaat boeken zonder genre over', () => {
+  assert.deepEqual(telGenres(boekenMetGenresEnThemas), [{ label: 'Historisch', aantal: 2 }]);
+});
+
+test('telGenres geeft lege lijst als geen enkel boek een genre heeft', () => {
+  assert.deepEqual(telGenres([boekenMetGenresEnThemas[2]]), []);
+});
+
+test("telThemas telt boeken per thema, telt een boek mee voor elk van zijn thema's en sorteert aflopend", () => {
+  assert.deepEqual(telThemas(boekenMetGenresEnThemas), [
+    { label: 'familie', aantal: 2 },
+    { label: 'oorlog', aantal: 1 },
+  ]);
+});
+
+test("telThemas geeft lege lijst als geen enkel boek thema's heeft", () => {
+  assert.deepEqual(telThemas([boekenMetGenresEnThemas[2]]), []);
 });
 
 const boekenMetSterren = [
