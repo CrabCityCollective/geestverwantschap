@@ -28,6 +28,23 @@ function telGeslachtVanAuteurs(boeken: Boek[]): Telling[] {
   });
 }
 
+function telGenres(boeken: Boek[]): Telling[] {
+  return tellenPerWaarde(
+    boeken.filter((boek) => Boolean(boek.genre)),
+    (boek) => boek.genre as string
+  ).sort((a, b) => b.aantal - a.aantal);
+}
+
+function telThemas(boeken: Boek[]): Telling[] {
+  const tellingen = new Map<string, number>();
+  for (const boek of boeken) {
+    for (const thema of boek.themas ?? []) {
+      tellingen.set(thema, (tellingen.get(thema) ?? 0) + 1);
+    }
+  }
+  return Array.from(tellingen, ([label, aantal]) => ({ label, aantal })).sort((a, b) => b.aantal - a.aantal);
+}
+
 function bepaalDecennium(jaartal: number): string {
   const start = Math.floor(jaartal / 10) * 10;
   return `${start}-${start + 9}`;
@@ -188,6 +205,8 @@ module.exports = {
   telLandenVanAuteurs,
   telGeslachtVanAuteurs,
   telTijdvakken,
+  telGenres,
+  telThemas,
   gemiddeldeSterren,
   sorteerOpGemiddeldeSterren,
   datumSorteerSleutel,
