@@ -163,6 +163,12 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                     <dt>Uitgekozen door</dt>
                     <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
                   </div>
+                  {boek.aantalPaginas ? (
+                    <div>
+                      <dt>Aantal pagina&apos;s</dt>
+                      <dd>{boek.aantalPaginas}</dd>
+                    </div>
+                  ) : null}
                   {boek.landSetting ? (
                     <div>
                       <dt>Land setting</dt>
