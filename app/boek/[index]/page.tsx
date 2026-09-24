@@ -60,9 +60,12 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
               </span>
             ) : null}
           </span>
-          <span className="boek-jaartal-label">{boek.jaartalEersteDruk}</span>
         </p>
         <dl className="boek-kenmerken boek-detail-kenmerken">
+          <div>
+            <dt>Jaartal</dt>
+            <dd>{boek.jaartalEersteDruk}</dd>
+          </div>
           <div>
             <dt>Land auteur</dt>
             <dd>{boek.landVanHerkomstAuteur}</dd>
