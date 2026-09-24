@@ -15,6 +15,7 @@ export interface Boek {
   tijdSetting?: string;
   debuut?: boolean;
   jaartalEersteDruk: number;
+  aantalPaginas?: number;
   datumGelezen?: string;
   locatieBespreking?: string;
   beoordelingen: Record<string, Beoordeling>;
