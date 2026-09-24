@@ -198,9 +198,12 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                       </span>
                     ) : null}
                   </span>
-                  <span className="boek-jaartal-label">{boek.jaartalEersteDruk}</span>
                 </p>
                 <dl className="boek-kenmerken boek-lijst-kenmerken">
+                  <div>
+                    <dt>Jaartal</dt>
+                    <dd>{boek.jaartalEersteDruk}</dd>
+                  </div>
                   <div>
                     <dt>Land auteur</dt>
                     <dd>{boek.landVanHerkomstAuteur}</dd>
