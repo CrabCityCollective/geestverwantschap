@@ -28,8 +28,18 @@ function komtOvereenMetZoekterm(boek: Boek, zoekterm: string): boolean {
     .some((waarde) => waarde.toLowerCase().includes(term));
 }
 
-function uniekeWaarden(boeken: BoekMetScore[], veld: 'uitgekozenDoor' | 'landVanHerkomstAuteur'): string[] {
-  const waarden = new Set(boeken.map(({ boek }) => boek[veld]));
+function uniekeWaarden(
+  boeken: BoekMetScore[],
+  veld: 'uitgekozenDoor' | 'landVanHerkomstAuteur' | 'genre'
+): string[] {
+  const waarden = new Set(
+    boeken.map(({ boek }) => boek[veld]).filter((waarde): waarde is string => Boolean(waarde))
+  );
+  return [...waarden].sort((a, b) => a.localeCompare(b, 'nl'));
+}
+
+function uniekeThemas(boeken: BoekMetScore[]): string[] {
+  const waarden = new Set(boeken.flatMap(({ boek }) => boek.themas ?? []));
   return [...waarden].sort((a, b) => a.localeCompare(b, 'nl'));
 }
 
@@ -37,10 +47,14 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
   const [zoekterm, setZoekterm] = useState('');
   const [geselecteerdLid, setGeselecteerdLid] = useState<string | null>(null);
   const [geselecteerdLand, setGeselecteerdLand] = useState<string | null>(null);
+  const [geselecteerdGenre, setGeselecteerdGenre] = useState<string | null>(null);
+  const [geselecteerdThema, setGeselecteerdThema] = useState<string | null>(null);
   const [richting, setRichting] = useState<SorteerRichting>('nieuwste-eerst');
 
   const leden = useMemo(() => uniekeWaarden(boeken, 'uitgekozenDoor'), [boeken]);
   const landen = useMemo(() => uniekeWaarden(boeken, 'landVanHerkomstAuteur'), [boeken]);
+  const genres = useMemo(() => uniekeWaarden(boeken, 'genre'), [boeken]);
+  const themas = useMemo(() => uniekeThemas(boeken), [boeken]);
 
   const gefilterdeBoeken = useMemo(() => {
     const factor = richting === 'oudste-eerst' ? 1 : -1;
@@ -49,10 +63,12 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
         ({ boek }) =>
           komtOvereenMetZoekterm(boek, zoekterm) &&
           (geselecteerdLid === null || boek.uitgekozenDoor === geselecteerdLid) &&
-          (geselecteerdLand === null || boek.landVanHerkomstAuteur === geselecteerdLand)
+          (geselecteerdLand === null || boek.landVanHerkomstAuteur === geselecteerdLand) &&
+          (geselecteerdGenre === null || boek.genre === geselecteerdGenre) &&
+          (geselecteerdThema === null || (boek.themas ?? []).includes(geselecteerdThema))
       )
       .sort((a, b) => factor * datumSorteerSleutel(a.boek).localeCompare(datumSorteerSleutel(b.boek)));
-  }, [boeken, zoekterm, geselecteerdLid, geselecteerdLand, richting]);
+  }, [boeken, zoekterm, geselecteerdLid, geselecteerdLand, geselecteerdGenre, geselecteerdThema, richting]);
 
   return (
     <>
@@ -72,7 +88,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
 
       <div className="filters-wrap">
         <details className="filter-dropdown">
-          <summary>Filter op lid{geselecteerdLid ? `: ${weergaveNaam(geselecteerdLid)}` : ''}</summary>
+          <summary>Lid{geselecteerdLid ? `: ${weergaveNaam(geselecteerdLid)}` : ''}</summary>
           <div className="filter-knoppen">
             {leden.map((lid) => (
               <button
@@ -89,7 +105,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
         </details>
 
         <details className="filter-dropdown">
-          <summary>Filter op land auteur{geselecteerdLand ? `: ${geselecteerdLand}` : ''}</summary>
+          <summary>Land{geselecteerdLand ? `: ${geselecteerdLand}` : ''}</summary>
           <div className="filter-knoppen">
             {landen.map((land) => (
               <button
@@ -105,12 +121,47 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
           </div>
         </details>
 
+        <details className="filter-dropdown">
+          <summary>Genre{geselecteerdGenre ? `: ${geselecteerdGenre}` : ''}</summary>
+          <div className="filter-knoppen">
+            {genres.map((genre) => (
+              <button
+                key={genre}
+                type="button"
+                className={`filter-knop${geselecteerdGenre === genre ? ' filter-knop-actief' : ''}`}
+                aria-pressed={geselecteerdGenre === genre}
+                onClick={() => setGeselecteerdGenre((huidig) => (huidig === genre ? null : genre))}
+              >
+                {genre}
+              </button>
+            ))}
+          </div>
+        </details>
+
+        <details className="filter-dropdown">
+          <summary>Thema{geselecteerdThema ? `: ${geselecteerdThema}` : ''}</summary>
+          <div className="filter-knoppen">
+            {themas.map((thema) => (
+              <button
+                key={thema}
+                type="button"
+                className={`filter-knop${geselecteerdThema === thema ? ' filter-knop-actief' : ''}`}
+                aria-pressed={geselecteerdThema === thema}
+                onClick={() => setGeselecteerdThema((huidig) => (huidig === thema ? null : thema))}
+              >
+                {thema}
+              </button>
+            ))}
+          </div>
+        </details>
+
         <button
           type="button"
           className="filter-knop sorteer-knop"
+          aria-label={`Sorteren, huidige richting: ${richting === 'nieuwste-eerst' ? 'nieuwste eerst' : 'oudste eerst'}`}
           onClick={() => setRichting((huidig) => (huidig === 'nieuwste-eerst' ? 'oudste-eerst' : 'nieuwste-eerst'))}
         >
-          {richting === 'nieuwste-eerst' ? 'Nieuwste eerst ↓' : 'Oudste eerst ↑'}
+          Sorteren
         </button>
       </div>
 
