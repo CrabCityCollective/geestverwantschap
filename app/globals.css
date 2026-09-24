@@ -428,6 +428,29 @@ h1::after {
   color: var(--tekst-secundair);
 }
 
+.boek-lijst-kenmerken {
+  flex-direction: column;
+  gap: 0;
+  margin: 0.75rem 0 0;
+}
+
+.boek-lijst-kenmerken div {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(138, 109, 47, 0.35);
+}
+
+.boek-lijst-kenmerken div:last-child {
+  border-bottom: none;
+}
+
+.boek-lijst-kenmerken dd {
+  text-align: right;
+}
+
 .gemiddelde {
   display: inline-flex;
   align-items: center;
