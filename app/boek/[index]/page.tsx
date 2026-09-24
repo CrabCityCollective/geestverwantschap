@@ -62,10 +62,6 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
           </span>
           <span className="boek-jaartal-label">{boek.jaartalEersteDruk}</span>
         </p>
-        {boek.datumGelezen ? (
-          <p className="datumGelezen boek-detail-datum">Gelezen op {boek.datumGelezen}</p>
-        ) : null}
-
         <dl className="boek-kenmerken boek-detail-kenmerken">
           <div>
             <dt>Land auteur</dt>
@@ -83,6 +79,12 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
             <div>
               <dt>Locatie bespreking</dt>
               <dd>{boek.locatieBespreking}</dd>
+            </div>
+          ) : null}
+          {boek.datumGelezen ? (
+            <div>
+              <dt>Datum bespreking</dt>
+              <dd>{boek.datumGelezen}</dd>
             </div>
           ) : null}
           {boek.aantalPaginas ? (
