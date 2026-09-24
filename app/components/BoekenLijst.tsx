@@ -201,7 +201,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                   <span className="boek-jaartal-label">{boek.jaartalEersteDruk}</span>
                 </p>
                 {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
-                <dl className="boek-kenmerken">
+                <dl className="boek-kenmerken boek-lijst-kenmerken">
                   <div>
                     <dt>Land auteur</dt>
                     <dd>{boek.landVanHerkomstAuteur}</dd>
@@ -214,6 +214,12 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                     <dt>Uitgekozen door</dt>
                     <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
                   </div>
+                  {boek.locatieBespreking ? (
+                    <div>
+                      <dt>Locatie bespreking</dt>
+                      <dd>{boek.locatieBespreking}</dd>
+                    </div>
+                  ) : null}
                   {boek.aantalPaginas ? (
                     <div>
                       <dt>Aantal pagina&apos;s</dt>
@@ -230,12 +236,6 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                     <div>
                       <dt>Tijd setting</dt>
                       <dd>{boek.tijdSetting}</dd>
-                    </div>
-                  ) : null}
-                  {boek.locatieBespreking ? (
-                    <div>
-                      <dt>Locatie bespreking</dt>
-                      <dd>{boek.locatieBespreking}</dd>
                     </div>
                   ) : null}
                 </dl>
