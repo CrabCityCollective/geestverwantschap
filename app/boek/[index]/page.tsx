@@ -79,6 +79,12 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
             <dt>Uitgekozen door</dt>
             <dd>{weergaveNaam(boek.uitgekozenDoor)}</dd>
           </div>
+          {boek.locatieBespreking ? (
+            <div>
+              <dt>Locatie bespreking</dt>
+              <dd>{boek.locatieBespreking}</dd>
+            </div>
+          ) : null}
           {boek.aantalPaginas ? (
             <div>
               <dt>Aantal pagina&apos;s</dt>
@@ -95,12 +101,6 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
             <div>
               <dt>Tijd setting</dt>
               <dd>{boek.tijdSetting}</dd>
-            </div>
-          ) : null}
-          {boek.locatieBespreking ? (
-            <div>
-              <dt>Locatie bespreking</dt>
-              <dd>{boek.locatieBespreking}</dd>
             </div>
           ) : null}
         </dl>
