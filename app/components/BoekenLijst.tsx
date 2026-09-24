@@ -146,7 +146,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                       </span>
                     ) : null}
                   </span>
-                  <span className="boek-jaartal">{boek.jaartalEersteDruk}</span>
+                  <span className="boek-jaartal-label">{boek.jaartalEersteDruk}</span>
                 </p>
                 {boek.datumGelezen ? <p className="datumGelezen">Gelezen op {boek.datumGelezen}</p> : null}
                 <dl className="boek-kenmerken">
