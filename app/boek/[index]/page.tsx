@@ -48,6 +48,7 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
         <p className="boek-auteur boek-detail-auteur">{boek.auteur}</p>
         <p className="boek-metarij boek-detail-metarij">
           <span className="boek-genre-themas">
+            {boek.debuut ? <span className="boek-debuut-label">Debuut</span> : null}
             {boek.genre ? <span className="boek-genre-label">{boek.genre}</span> : null}
             {boek.themas && boek.themas.length > 0 ? (
               <span className="boek-themas">

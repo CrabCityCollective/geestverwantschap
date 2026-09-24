@@ -135,6 +135,7 @@ export default function BoekenLijst({ boeken }: { boeken: BoekMetScore[] }) {
                 <p className="boek-auteur">{boek.auteur}</p>
                 <p className="boek-metarij">
                   <span className="boek-genre-themas">
+                    {boek.debuut ? <span className="boek-debuut-label">Debuut</span> : null}
                     {boek.genre ? <span className="boek-genre-label">{boek.genre}</span> : null}
                     {boek.themas && boek.themas.length > 0 ? (
                       <span className="boek-themas">

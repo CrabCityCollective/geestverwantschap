@@ -384,6 +384,19 @@ h1::after {
   letter-spacing: 0.02em;
 }
 
+.boek-debuut-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  background: var(--serie-2);
+  color: var(--perkament);
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+
 .datumGelezen {
   color: var(--tekst-muted);
   font-size: 0.9rem;
