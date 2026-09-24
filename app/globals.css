@@ -397,11 +397,6 @@ h1::after {
   letter-spacing: 0.04em;
 }
 
-.datumGelezen {
-  color: var(--tekst-muted);
-  font-size: 0.9rem;
-}
-
 .boek-kenmerken {
   display: flex;
   flex-wrap: wrap;
@@ -1115,10 +1110,6 @@ summary.gemiddelde:focus-visible {
 
 .boek-detail-metarij {
   justify-content: center;
-}
-
-.boek-detail-datum {
-  text-align: center;
 }
 
 .boek-detail-kenmerken {
