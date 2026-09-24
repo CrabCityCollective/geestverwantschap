@@ -41,3 +41,10 @@ test('elk boek heeft een landSetting en tijdSetting', () => {
     );
   }
 });
+
+test('elk boek heeft een debuut-veld van het type boolean', () => {
+  const data = readData(DATA_PATH);
+  for (const boek of data.boeken) {
+    assert.ok(typeof boek.debuut === 'boolean', `${boek.titel} heeft geen debuut-veld`);
+  }
+});

@@ -13,6 +13,7 @@ export interface Boek {
   themas?: string[];
   landSetting?: string;
   tijdSetting?: string;
+  debuut?: boolean;
   jaartalEersteDruk: number;
   datumGelezen?: string;
   locatieBespreking?: string;

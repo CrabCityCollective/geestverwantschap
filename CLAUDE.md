@@ -87,6 +87,10 @@ vond ieder lid ervan. Het is een Next.js-app (App Router) met TypeScript voor de
     dat rond de tijd van verschijnen speelt.
   - Gebruik "onbenoemd" of "onbestemd" als het boek de plaats of tijd bewust in het midden
     laat.
+- Elk boek heeft een `debuut` (boolean, direct na `tijdSetting`) die aangeeft of het boek het
+  debuut van de auteur is: de **eerste roman (of eerste graphic novel) van de auteur**. Eerder
+  werk in een ander genre (poëzie, verhalenbundels, toneel, essays, non-fictie, krantenstrips
+  of webcomics) telt niet mee als eerder werk - zo'n boek is dus alsnog een debuut.
 
 ## Bekende beperking bij geautomatiseerde runs
 
