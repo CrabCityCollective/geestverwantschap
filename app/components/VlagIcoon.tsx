@@ -232,7 +232,7 @@ const VLAGGEN: Record<string, () => ReactElement> = {
 export default function VlagIcoon({ land }: { land: string }) {
   const Vlag = VLAGGEN[land] ?? OnbekendVlag;
   return (
-    <span className="kenmerk-icoon" title={`Land van herkomst auteur: ${land}`}>
+    <span className="kenmerk-icoon" title={`Land auteur: ${land}`}>
       <svg viewBox="0 0 24 24" width="100%" height="100%">
         <Vlag />
         <Rand />

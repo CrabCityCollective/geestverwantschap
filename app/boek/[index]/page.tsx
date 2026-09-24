@@ -67,7 +67,7 @@ export default function BoekPagina({ params }: { params: { index: string } }) {
 
         <dl className="boek-kenmerken boek-detail-kenmerken">
           <div>
-            <dt>Land van herkomst auteur</dt>
+            <dt>Land auteur</dt>
             <dd>{boek.landVanHerkomstAuteur}</dd>
           </div>
           <div>
