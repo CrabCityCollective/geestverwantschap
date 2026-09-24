@@ -27,3 +27,17 @@ test('getBooks geeft de boeken uit data/books.json terug', () => {
   const data = readData(DATA_PATH);
   assert.deepEqual(getBooks(DATA_PATH), data.boeken);
 });
+
+test('elk boek heeft een landSetting en tijdSetting', () => {
+  const data = readData(DATA_PATH);
+  for (const boek of data.boeken) {
+    assert.ok(
+      typeof boek.landSetting === 'string' && boek.landSetting.length > 0,
+      `${boek.titel} heeft geen landSetting`
+    );
+    assert.ok(
+      typeof boek.tijdSetting === 'string' && boek.tijdSetting.length > 0,
+      `${boek.titel} heeft geen tijdSetting`
+    );
+  }
+});

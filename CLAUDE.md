@@ -77,6 +77,16 @@ vond ieder lid ervan. Het is een Next.js-app (App Router) met TypeScript voor de
   om boeken toe te voegen of te wijzigen, en voeg ook geen `writeData`/`addBook`/`validateBook`
   meer toe aan `lib/boekenclub.ts` - nieuwe boeken worden samen via git aan
   `data/books.json` toegevoegd.
+- Elk boek heeft `landSetting` en `tijdSetting` (direct na `themas`, eerst `landSetting` dan
+  `tijdSetting`), zodat nieuwe boeken er hetzelfde uitzien:
+  - `landSetting`: land(en) in het Nederlands waar het verhaal zich afspeelt, details tussen
+    haakjes, meerdere landen gescheiden door een komma. Bijvoorbeeld:
+    `Italië (Alpen, Milaan), Nepal`.
+  - `tijdSetting`: een jaartal, decennium of periode waarin het verhaal zich afspeelt.
+    Bijvoorbeeld: `1976`, `jaren 1930` of `1944–jaren 1980`. Gebruik "heden" voor een verhaal
+    dat rond de tijd van verschijnen speelt.
+  - Gebruik "onbenoemd" of "onbestemd" als het boek de plaats of tijd bewust in het midden
+    laat.
 
 ## Bekende beperking bij geautomatiseerde runs
 
